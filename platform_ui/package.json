@@ -1,0 +1,46 @@
+{
+  "name": "DB_Project",
+  "version": "1.0.0",
+  "description": "Healthcare Solution Software",
+  "main": "application.js",
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "browserify": "~11.1.0",
+    "fluxxor": "~1.7.3",
+    "gulp": "~3.9.0",
+    "gulp-concat": "~2.6.0",
+    "gulp-jshint": "~1.11.2",
+    "gulp-html-replace": "~1.5.4",
+    "gulp-react": "~3.0.1",
+    "gulp-streamify": "~1.0.2",
+    "gulp-uglify": "~1.4.1",
+    "gulp-util": "~3.0.6",
+    "gulp-watch": "~4.3.5",
+    "jquery": "~2.1.4",
+    "jsxc": "~0.10.0",
+    "lodash": "~3.10.1",
+    "react": "~0.13.3",
+    "react-router": "~1.0.0-rc1",
+    "react-tools": "~0.13.3",
+    "reactify": "~1.1.1",
+    "vinyl-source-stream": "~1.1.0",
+    "watchify": "~3.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Damian3395/DB_PROJECT.git"
+  },
+  "keywords": [
+    "healthcare",
+    "software"
+  ],
+  "author": "Damian Debkowski Nicole Yson",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/Damian3395/DB_PROJECT/issues"
+  }
+}
