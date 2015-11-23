@@ -1,6 +1,7 @@
 {
   "name": "DB_Project",
   "version": "1.0.0",
+  "private": true,
   "description": "Healthcare Solution Software",
   "main": "application.js",
   "dependencies": {
