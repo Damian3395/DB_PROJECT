@@ -1,15 +1,7 @@
 var gulp = require('gulp');
-var uglify = require('gulp-uglify');
 var source = require('vinyl-source-stream');
 var browserify = require('browserify');
-var watchify = require('watchify');
 var reactify = require('reactify');
-var streamify = require('gulp-streamify');
-
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var react = require('gulp-react');
-
 
 var path = {
     HTML: 'src/index.html',
