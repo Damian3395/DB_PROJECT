@@ -46,6 +46,8 @@
 * npm install vinyl-source-stream --save-dev
 * npm install react-tools -g --save-dev
 * npm install react-tools --save-dev
+* npm install request -g --save-dev
+* npm install request --save-dev
 
 ## Setup BackEnd:
 ###	Linux Ubuntu:
