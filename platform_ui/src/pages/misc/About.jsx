@@ -29,7 +29,7 @@ var About = React.createClass({
 		<div className="row">
 			<div className="col-md-3">
 				<h3 className="text-left"><strong>Pf. Tomasz Imielinski</strong></h3>
-				<img src="Tomasz_Imielinski.jpg" className="img-responsive" alt="Tomasz Imielinski"/>
+				<img src="res?img=Tomasz_Imielinski.jpg" className="img-responsive" alt="Tomasz Imielinski"/>
 			</div>
 			<div className="col-md-9">
 				<p>Graduated and received a B.E. and M.E. degree in Electrical Engineering from Politechnika Gdanska</p>
@@ -61,7 +61,7 @@ var About = React.createClass({
                 <div className="row">
                     <div className="col-md-3">
                         <h3 className="text-left"><strong>Nicole Yson</strong></h3>
-                        <img src="Nicole.jpg" className="img-responsive" alt="Nicole Yson"/>
+                        <img src="res?img=Nicole.jpg" className="img-responsive" alt="Nicole Yson"/>
                     </div>
 
                     <div className="col-md-9">
@@ -96,7 +96,7 @@ var About = React.createClass({
                 <div className="row">
                     <div className="col-md-3">
                         <h3 className="text-left"><strong>Damian Debkowski</strong></h3>
-                        <img src="Damian.jpg" className="img-responsive" alt="Damian Debkowski"/>
+                        <img src="res?img=Damian.jpg" className="img-responsive" alt="Damian Debkowski"/>
                     </div>
 
                     <div className="col-md-9">

@@ -49,10 +49,7 @@ func handleLoginUser(w http.ResponseWriter, r *http.Request){
   err := decoder.Decode(&login)
   if err != nil {
 	log.Fatal(err)
-  }
-
-  log.Println("User: ", login.ID)
-  log.Println("Password: ", login.PASSWORD)
+  }	
 
   io.WriteString(w, "Logging In User Through Proxy Server")
 }
@@ -111,6 +108,14 @@ func handleRegisterBusiness(w http.ResponseWriter, r *http.Request){
   io.WriteString(w, "Registering New Business Through Proxy Server")
 }
 
+func handleImages(w http.ResponseWriter, r *http.Request){
+  fmt.Printf("Handling Image Requests\n");
+ 
+  filePath := "res/img/" + r.URL.Query().Get("img")
+  fmt.Println("Image File Path: ", filePath) 
+  http.ServeFile(w, r, filePath)
+}
+
 func main() {
   fmt.Printf("Starting Server...\n")
   http.Handle("/", http.FileServer(http.Dir("../platform_ui/build")))
@@ -118,5 +123,6 @@ func main() {
   http.HandleFunc("/LoginBusiness", handleLoginBusiness)
   http.HandleFunc("/RegisterUser", handleRegisterUser)
   http.HandleFunc("/RegisterBusiness", handleRegisterBusiness)
+  http.HandleFunc("/res", handleImages)
   http.ListenAndServe(":8080", nil)
 }

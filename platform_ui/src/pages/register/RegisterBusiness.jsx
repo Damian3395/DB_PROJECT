@@ -1,9 +1,16 @@
 var React = require('react');
 var $ = require('jquery');
 var request = require('request');
+var Error = require('../misc/Error.jsx');
 
 var RegisterBusiness = React.createClass({
+	getInitialState: function(){
+		return({error: ""});
+	},
 	registerBusiness: function(state){
+		var userID = $('#userID').val();
+		var passwordOne = $('#password_One').val();
+		var passwordTwo = $('#password_Two').val();
 		var name = $('#name').val();
 		var address = $('#address').val();
 		var township = $('#township').val();
@@ -14,29 +21,33 @@ var RegisterBusiness = React.createClass({
 		var main_category = $('#main_Category').val();
 		var sub_category = $('#sub_Category').val();	
 
-		request({
-			url: 'http://localhost:8080/RegisterBusiness',
-			method: 'POST',
-			json: {
-				NAME: name,
-				ADDRESS: address,
-				TOWNSHIP: township,
-				MIN_AGE: min_age,
-				MAX_AGE: max_age,
-				MIN_PEOPLE: min_people,
-				MAX_PEOPLE: max_people,
-				MAIN_CATEGORY: main_category,
-				SUB_CATEGORY: sub_category
-			}
-		}, function(error, response, body){
-			if(error){
-				console.log(error);
-			}else{
-				console.log(response.statusCode, body);
-				console.log("Creating Cookie");
-				this.props.stateCallback("App");
-			}
-		}.bind(this));
+		if(passwordOne !== passwordTwo){
+			this.setState({error: "Password Field 1 and 2 Do Not Match!"});
+		}else{
+			request({
+				url: 'http://localhost:8080/RegisterBusiness',
+				method: 'POST',
+				json: {
+					NAME: name,
+					ADDRESS: address,
+					TOWNSHIP: township,
+					MIN_AGE: min_age,
+					MAX_AGE: max_age,
+					MIN_PEOPLE: min_people,
+					MAX_PEOPLE: max_people,
+					MAIN_CATEGORY: main_category,
+					SUB_CATEGORY: sub_category
+				}
+			}, function(error, response, body){
+				if(error){
+					console.log(error);
+				}else{
+					console.log(response.statusCode, body);
+					console.log("Creating Cookie");
+					this.props.stateCallback("App");
+				}
+			}.bind(this));
+		}
 	},
 	render: function(){
 		return(
@@ -48,6 +59,8 @@ var RegisterBusiness = React.createClass({
 								<h1 className="panel-title text-center"><strong>Registering Business</strong></h1>
 							</div>
 							<div className="panel-body">
+								<Error error={this.state.error}/>
+								<br/>
 								<div className="row">
 									<div className="col-xs-offset-3 col-xs-6">
 										<input className="form-control" type="text" id="name" placeholder="Business Name"/>
@@ -132,6 +145,25 @@ var RegisterBusiness = React.createClass({
 												<option value="6">6</option>
 											</select>
 										</div>
+									</div>
+								</div>
+								<br/>
+								<div className="row">
+									<div className="col-xs-offset-2 col-xs-8">
+										<input className="form-control" type="text" id="userID" placeholder="User Name"/>
+									</div>
+								</div>
+								<br/>
+								<div className="row">
+									<div className="col-xs-offset-2 col-xs-8">
+										<label>Password:</label>
+										<input className="form-control" type="password" id="password_One"/>
+									</div>
+								</div>
+								<div className="row">
+									<div className="col-xs-offset-2 col-xs-8">
+										<label>Re-Enter Password:</label>
+										<input className="form-control" type="password" id="password_Two"/>
 									</div>
 								</div>
 								<br/>
