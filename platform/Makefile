@@ -1,15 +1,13 @@
-GO_BUILD = go build
-GOPATH := $(CURDIR)/_vendor:$(GOPATH)
+SERVER=./src/server.go
 
-all: build
+all: clean build install
 
 build:
-	$(GO_BUILD) server.go
+	go build $(SERVER)
 
+install:
+	go install $(SERVER)
 
-
-
-
-
-
-
+clean:
+	rm server
+	rm ./bin/server

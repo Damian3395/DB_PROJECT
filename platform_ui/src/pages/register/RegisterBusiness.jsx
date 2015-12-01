@@ -36,7 +36,9 @@ var RegisterBusiness = React.createClass({
 					MIN_PEOPLE: min_people,
 					MAX_PEOPLE: max_people,
 					MAIN_CATEGORY: main_category,
-					SUB_CATEGORY: sub_category
+					SUB_CATEGORY: sub_category,
+					USER_ID: userID,
+					PASSWORD: passwordOne
 				}
 			}, function(error, response, body){
 				if(error){

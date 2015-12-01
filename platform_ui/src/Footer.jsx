@@ -6,12 +6,14 @@ var Footer = React.createClass({
 			<div className="container">
 				<div className="row">
 					<div className="col-md-12">
-						<p className="text-right">
-							Damian Debkowski & Nicole Yson -
-							Rutgers School of Arts and Sciences -
-							Principles of Information & Data Management -
-							2015
-						</p>
+						<footer className="text-right">
+							<p>
+								Damian Debkowski & Nicole Yson -
+								Rutgers School of Arts and Sciences -
+								Principles of Information & Data Management -
+								2015
+							</p>
+						</footer>
 					</div>
 				</div>
 			</div>

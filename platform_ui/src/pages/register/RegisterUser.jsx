@@ -57,7 +57,9 @@ var RegisterUser = React.createClass({
 					ZIPCODE: zipcode,
 					DEGREE: degree,
 					CAMPUS: campus, 
-					YEAR: year
+					YEAR: year,
+					USER_ID: userID,
+					PASSWORD: passwordOne
 				}		
 			}, function(error, response, body){
 				if(error){

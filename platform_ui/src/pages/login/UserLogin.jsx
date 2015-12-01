@@ -1,6 +1,7 @@
 var React = require('react');
 var $ = require('jquery');
 var request = require('request');
+var cookie = require('cookie');
 
 var UserLogin = React.createClass({
 	loginUser: function(){
@@ -21,6 +22,7 @@ var UserLogin = React.createClass({
 				console.log(error);
 			}else{
 				console.log(response.statusCode, body);
+				
 				console.log("Creating cookie");
 				this.props.stateCallback("App");
 			}		
