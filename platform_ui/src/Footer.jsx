@@ -3,19 +3,19 @@ var React = require('react');
 var Footer = React.createClass({
 	render: function(){
 		return(
-			<div className="container">
-				<div className="row">
-					<div className="col-md-12">
-						<footer className="text-right">
-							<p>
+			<div>
+				<footer className="footer">
+					<div className="container">
+						<div className="row">
+							<p className="text-muted">
 								Damian Debkowski & Nicole Yson -
 								Rutgers School of Arts and Sciences -
 								Principles of Information & Data Management -
 								2015
 							</p>
-						</footer>
+						</div>
 					</div>
-				</div>
+				</footer>
 			</div>
 		);
 	}

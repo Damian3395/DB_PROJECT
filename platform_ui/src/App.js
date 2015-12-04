@@ -12,7 +12,7 @@ var Window = React.createClass({
 	},
     render: function(){
         return (
-            <div>
+            <div id="wrapper">
                 <NavBar stateCallback={this.setPageState}></NavBar>
                 <Page stateCallback={this.setPageState} state={this.state.state}></Page>
 				<br></br>

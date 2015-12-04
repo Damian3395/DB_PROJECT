@@ -4,7 +4,7 @@ gnome-terminal -x ./db/NEO4J/bin/neo4j console &
 
 echo Setting Up Proxy Service Environment
 gvm use go1.4.1
-export GOPATH=/home/damian/Documents/DB_Project/platform
+export GOPATH=$HOME/Documents/DB_Project/platform
 export GOBIN=$GOPATH/bin
 echo Checking Environment
 echo GOPATH: $GOPATH

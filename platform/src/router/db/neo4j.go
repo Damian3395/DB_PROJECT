@@ -7,6 +7,82 @@ import
 	Util "./util"
 )
 
+/*
+func FindConsumer(first_name string, last_name string, address string, state string, zipcode string) (bool, err){
+	fmt.Printf("Accessing NEO4J Server: Cyphering Find Consumer\n")
+	
+	database, err := neoism.Connect("http://neo4j:12345@localhost:7474/db/data")
+
+	if err != nil {
+		fmt.Printf("NEO4J Connection FAILED\n")
+		return false, err
+	}
+
+	res := []struct {
+		A	string 'json:"n.FIRST_NAME"'
+	}{}
+
+	cq := neoism.CypherQuery{
+		Statement:'
+			MATCH (n:Consumer)
+			WHERE n.FIRST_NAME = {first_name} AND n.LAST_NAME = {last_name} AND n.ADDRESS = {address} AND n.STATE = {state} AND n.ZIPCODE = {zipcode}
+			RETURN n.FIRST_NAME
+		',
+		Parameters: neoism.Props{"first_name": first_name, "last_name": last_name, "address": address, "state": state, "zipcode": zipcode},
+		Result:		&res,
+	}
+
+	err = database.Cypher(&cq)
+	if err != nil {
+		fmt.Printf("Error Cyphering To Database\n")
+		return false, err
+	}
+
+	if len(res) == 1 {
+		return true, nil
+	}
+
+	return false, nil
+}
+
+func FindStudent(ruid string) (bool, error) {
+	fmt.Printf("Accessing NEO4J Server: Cyphering Find Student %s\n", ruid)
+
+	database, err := neoism.Connect("http://neo4j:12345@localhost:7474/db/data")
+
+	if err != nil {
+		fmt.Printf("NEO4J Connection FAILED\n")
+		return false, err
+	}
+
+	res := []struct {
+		A	string 'json:"n.RUID"'	
+	}{}
+
+	cq := neoism.CypherQuery{
+		Statement:'
+			MATCH (n:Student)
+			WHERE n.RUID = {ruid}
+			RETURN n.RUID
+		',
+		Parameters: neoism.Props{"ruid": ruid},
+		Result:		&res,
+	}
+
+	err = database.Cypher(&cq)
+	if err != nil {
+		fmt.Printf("Error Cyphering To Database\n")
+		return false, err
+	}
+
+	if len(res) == 1 {
+		return true, nil
+	}
+
+	return false, nil
+}
+*/
+
 func FindUser(userID string) (bool, error) {
 	fmt.Printf("Accessing NEO4J Server: Cyphering Find User %s\n", userID)
 
@@ -18,8 +94,8 @@ func FindUser(userID string) (bool, error) {
 	}
 	
 	res := []struct {
-        	A   string `json:"n.USER_ID"` 
-    	}{}
+        A   string `json:"n.USER_ID"` 
+    }{}
 
 	cq := neoism.CypherQuery{
     	Statement: `
@@ -75,11 +151,9 @@ func FindBusiness(userID string) (bool, error){
 	}
 
 	if len(res) == 1 {
-		fmt.Printf("User Found\n")
 		return true, nil
 	}
 
-	fmt.Printf("User Not Found\n")
 	return false, nil
 }
 
@@ -159,12 +233,12 @@ func LoginBusiness(login Util.Login_struct) (bool, error) {
 		return true, nil
 	}
 
-	fmt.Printf("User Login Failed\n")
+	fmt.Printf("Business User Login Failed\n")
 	return false, nil
 }
 
 func RegisterUser(register Util.RegisterUser_struct) (bool, error) {
-	fmt.Printf("Accessing NEO4J Server Cyphering Business Register\n")
+	fmt.Printf("Accessing NEO4J Server Cyphering User Register\n")
 	Util.PrintRegisterUser(&register);
 
 	database, err := neoism.Connect("http://neo4j:12345@localhost:7474/db/data")
@@ -179,6 +253,12 @@ func RegisterUser(register Util.RegisterUser_struct) (bool, error) {
 	if err != nil {
 		return false, err
 	}
+
+	// Check If Student Node Exists
+	//studentExists, err := FindStudent(register.RUID)
+	//if err != nil {
+	//	return false, err
+	//}
 	
 	// Create Login Node
 	if(!userExists){
@@ -201,13 +281,13 @@ func RegisterUser(register Util.RegisterUser_struct) (bool, error) {
 		cq = neoism.CypherQuery{
 		Statement: `
 			CREATE (n:Consumer {USER_ID: {user_id},
-						{FIRST_NAME: {first_name}},
-						{LAST_NAME: {last_name}},
-						{AGE: {age}},
-						{ADDRESS: {address}},
-						{TOWNSHIP: {township}},
-						{STATE: {state}},
-						{ZIPCODE: {zipcode}}
+						FIRST_NAME: {first_name},
+						LAST_NAME: {last_name},
+						AGE: {age},
+						ADDRESS: {address},
+						TOWNSHIP: {township},
+						STATE: {state},
+						ZIPCODE: {zipcode}
 				})
 		`,
 		Parameters: neoism.Props{"user_id": register.USER_ID,
@@ -227,27 +307,29 @@ func RegisterUser(register Util.RegisterUser_struct) (bool, error) {
 		}
 
 		// Create Student Node
-		fmt.Printf("Creating Student Node\n")
-		cq = neoism.CypherQuery{
-		Statement: `
+		if register.RUID != "null" { 
+			fmt.Printf("Creating Student Node\n")
+			cq = neoism.CypherQuery{
+			Statement: `
 			CREATE (n:Student {USER_ID: {user_id},
-						{RUID: {ruid}},
-						{DEGREE: {degree}},
-						{CAMPUS: {campus}},
-						{YEAR: {year}}
-				})
-		`,
-		Parameters: neoism.Props{"user_id": register.USER_ID,
-						"ruid": register.RUID,
-						"degree": register.DEGREE,
-						"campus": register.CAMPUS,
-						"year": register.YEAR},
-		}
+							RUID: {ruid},
+							DEGREE: {degree},
+							CAMPUS: {campus},
+							YEAR: {year}
+					})
+			`,
+			Parameters: neoism.Props{"user_id": register.USER_ID,
+							"ruid": register.RUID,
+							"degree": register.DEGREE,
+							"campus": register.CAMPUS,
+							"year": register.YEAR},
+			}
 
-		err = database.Cypher(&cq)
-		if err != nil {
-			fmt.Printf("Error Cyphering To Database\n")
-			return false, err
+			err = database.Cypher(&cq)
+			if err != nil {
+				fmt.Printf("Error Cyphering To Database\n")
+				return false, err
+			}
 		}
 		
 		fmt.Printf("Successfully Registered New User\n")

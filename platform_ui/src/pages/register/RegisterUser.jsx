@@ -103,13 +103,10 @@ var RegisterUser = React.createClass({
 											<input className="form-control" type="number" id="age"/>
 										</div>	
 									</div>
-									<div className="col-xs-offset-2 col-xs-3">
-										<div className="input-group">
-											<span className="input-group-addon">Are You A Rutgers Student?</span>
+									<div className="col-xs-offset-2 col-xs-6">
+										<div className="checkbox">
+											<label><input type="checkbox" id="student" onClick={this.studentChecked}/>RU a Rutgers Student?</label>
 										</div>
-									</div>
-									<div className="col-xs-offset-2 col-xs-1">
-										<input type="checkbox" id="student" onClick={this.studentChecked}/>
 									</div>
 								</div>
 								<br/>

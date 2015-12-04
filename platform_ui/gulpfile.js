@@ -7,7 +7,7 @@ var path = {
     HTML: 'src/index.html',
     MINIFIED_OUT: 'application.min.js',
     OUT: 'application.js',
-    DEST: 'build',
+    DEST: 'build/js',
     DEST_SRC: 'src',
     ALL: ['./src/**/*.jsx'],
     ENTRY_POINT: './src/App.js'

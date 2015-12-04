@@ -31,15 +31,15 @@ var Page = React.createClass({
             case "Business_Login":
                 Body = <BusinessLogin stateCallback={this.setPageState}/>
                 break;
-	    case "Register_User":
-		Body = <RegisterUser stateCallback={this.setPageState}/>
-		break;
-            case "Register_Business":
-		Body = <RegisterBusiness stateCallback={this.setPageState}/>
-		break;
+			case "Register_User":
+				Body = <RegisterUser stateCallback={this.setPageState}/>
+				break;
+			case "Register_Business":
+				Body = <RegisterBusiness stateCallback={this.setPageState}/>
+				break;
             case "App":
-		Body = <App stateCallback={this.setPageState}/>
-		break;
+				Body = <App stateCallback={this.setPageState}/>
+				break;
             default:
                 Body = <Home/>
                 console.log("Error Invalid Page State");
