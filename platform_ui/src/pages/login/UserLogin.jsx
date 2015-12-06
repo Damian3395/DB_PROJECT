@@ -1,30 +1,26 @@
 var React = require('react');
 var $ = require('jquery');
 var request = require('request');
-var cookie = require('cookie');
 
 var UserLogin = React.createClass({
 	loginUser: function(){
-		var userID = $('#userID').val();
-		var password = $('#password').val();
-		
-		console.log("Login User %s %s", userID, password);
-		
 		request({
 			url: 'http://localhost:8080/LoginUser',
 			method: 'POST',
 			json: {
-				ID: userID,
-				PASSWORD: password
+				ID: $('#userID').val(),
+				PASSWORD: $('#password').val(),
 			}
 		}, function(error, response, body){
 			if(error){
 				console.log(error);
 			}else{
-				console.log(response.statusCode, body);
-				
-				console.log("Creating cookie");
-				this.props.stateCallback("App");
+				console.log(body);
+				if(body == "Success"){
+					this.props.stateCallback("App", "User", $('#userID').val());
+				}else{
+					console.log("Display Failed");
+				}
 			}		
 		}.bind(this));
 	},

@@ -3,20 +3,17 @@ var User = require('./User.jsx');
 var Business = require('./Business.jsx');
 
 var App = React.createClass({
-	getInitialState: function(){
-		return({UserType: "User"});
-	},
 	stateCallback: function(state){
 		this.props.stateCallback(state);
 	},
 	render: function(){
 		var renderUserType;
-		switch(this.state.UserType){
+		switch(this.props.type){
 			case "User":
-				renderUserType = <User stateCallback={this.props.stateCallback}/>
+				renderUserType = <User stateCallback={this.props.stateCallback} userID={this.props.userID}/>
 				break;
 			case "Business":
-				renderUserType = <Business stateCallback={this.props.stateCallback}/>
+				renderUserType = <Business stateCallback={this.props.stateCallback} userID={this.props.userID}/>
 				break;
 			default:
 				console.log("Error UserType Undefined");

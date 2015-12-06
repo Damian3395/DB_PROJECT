@@ -15,6 +15,7 @@ var RegisterUser = React.createClass({
 		var firstName = $('#firstName').val();
 		var lastName = $('#lastName').val();
 		var age = $('#age').val();
+		var gender = $('#gender').val();
 		var address = $('#address').val();
 		var township = $('#township').val();
 		var state = $('#state').val();
@@ -49,6 +50,7 @@ var RegisterUser = React.createClass({
 					FIRST_NAME: firstName,
 					LAST_NAME: lastName,
 					AGE: age,
+					GENDER: gender,
 					STUDENT: student,
 					ADDRESS: address,
 					TOWNSHIP: township,
@@ -66,8 +68,11 @@ var RegisterUser = React.createClass({
 					console.log(error);
 				}else{
 					console.log(response.statusCode, body);
-					console.log("Creating cookie");
-					this.props.stateCallback("App");
+					if(body == "Success"){
+						this.props.stateCallback("User_Login");
+					}else{
+						console.log(body);
+					}
 				}
 			}.bind(this));
 		}	
@@ -97,13 +102,22 @@ var RegisterUser = React.createClass({
 								</div>
 								<br/>
 								<div className="row">
-									<div className="col-xs-4">
+									<div className="col-xs-3">
 										<div className="input-group">
 											<span className="input-group-addon">Age:</span>
 											<input className="form-control" type="number" id="age"/>
 										</div>	
 									</div>
-									<div className="col-xs-offset-2 col-xs-6">
+									<div className="col-xs-4">
+										<div className="input-group">
+											<span className="input-group-addon">Gender</span>
+											<select className="form-control" id="gender">
+												<option value="Male">Male</option>
+												<option value="Female">Female</option>
+											</select>
+										</div>
+									</div>
+									<div className="col-xs-5">
 										<div className="checkbox">
 											<label><input type="checkbox" id="student" onClick={this.studentChecked}/>RU a Rutgers Student?</label>
 										</div>
@@ -159,7 +173,7 @@ var RegisterUser = React.createClass({
 								<div className="row">
 									<div className="col-xs-offset-8 col-xs-4">
 										<button className="btn btn-success btn-lg btn-block" 
-											type="button" onClick={this.registerUser.bind(this, "App")}>
+											type="button" onClick={this.registerUser.bind(this, "User_Login")}>
 												Register
 										</button>
 									</div>

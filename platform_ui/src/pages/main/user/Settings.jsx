@@ -1,40 +1,170 @@
 var React = require('react');
 var $ = require('jquery');
+var _ = require('lodash');
 var request = require('request');
 
 var Settings = React.createClass({
 	getInitialState: function(){
-		return({
-			first_name: "Test Name",
-			last_name: "Test Last",
-			age: "Test Age",
-			address: "Test Address",
-			township: "Test Township",
-			state: "Test State",
-			zipcode: "Test Zipcode",
-			student: true,
-			ruid: "Test RUID",
-			degree: "Test Degree",
-			campus: "Test Campus",
-			year: "Test Year"
-		});
+		return({student: true, ruid: "", degree: "", campus: "", year: ""});
 	},
 	componentWillMount: function(){
-		console.log("Get Information From Server");
+		request({
+			url: 'http://localhost:8080/GetUserInformation',
+			method: 'POST',
+			json: {
+				ID: this.props.userID
+			}
+		}, function(error, response, body){
+			if(error){
+				console.log(error);
+			}else{
+				$('#firstName').val(body.FIRST_NAME);
+				$('#lastName').val(body.LAST_NAME);
+				$('#age').val(body.AGE);
+				$('#gender').val(body.GENDER);
+				$('#address').val(body.ADDRESS);
+				$('#township').val(body.TOWNSHIP);
+				$('#state').val(body.STATE);
+				$('#zipcode').val(body.ZIPCODE);
+			}
+		}.bind(this));
+		request({
+			url: 'http://localhost:8080/GetStudentInformation',
+			method: 'POST',
+			json: {
+				ID: this.props.userID
+			}
+		}, function(error, response, body){
+			if(error){
+				console.log(error);
+			}else{
+				if(body !== "Error: User Not Found"){
+					$('#ruid').val(body.RUID);
+					$('#campus').val(body.CAMPUS);
+					$('#degree').val(body.DEGREE);
+					$('#year').val(body.YEAR);
+					this.setState({student: true, ruid: body.RUID, campus: body.CAMPUS, degree: body.DEGREE, year: body.YEAR});
+				}else{
+					this.setState({student: false});
+				}
+			}
+		}.bind(this));
 	},
 	updateGeneral: function(){
-		console.log("Update General Information");
+		request({
+			url: 'http://localhost:8080/UpdateUserGeneral',
+			method: 'POST',
+			json: {
+				ID: this.props.userID,
+				FIRST_NAME: $('#firstName').val(),
+				LAST_NAME: $('#lastName').val(),
+				AGE: $('#age').val(),
+				GENDER: $('#gender').val()
+			}
+		}, function(error, response, body){
+			if(error){
+				console.log(error);
+			}else{
+				console.log(response.statusCode, body);
+				if(body != "Success"){	
+					this.forceUpdate();
+				}
+			}
+		}.bind(this));
 	},
 	updateAddress: function(){
-		console.log("Updating Address Information");
+		request({
+			url: 'http://localhost:8080/UpdateUserAddress',
+			method: 'POST',
+			json: {
+				ID: this.props.userID,
+				ADDRESS: $('#address').val(),
+				TOWNSHIP: $('#township').val(),
+				STATE: $('#state').val(),
+				ZIPCODE: $('#zipcode').val()
+			}
+		}, function(error, response, body){
+			if(error){
+				console.log(error);
+			}else{
+				console.log(response.statusCode, body);
+				if(body != "Success"){
+					this.forceUpdate();
+				}
+			}
+		}.bind(this));
 	},
 	updateStudent: function(){
-		console.log("Updating Student Information");
+		request({
+			url: 'http://localhost:8080/UpdateUserStudent',
+			method: 'POST',
+			json: {
+				ID: this.props.userID,
+				RUID: $('#ruid').val(),
+				DEGREE: $('#degree').val(),
+				CAMPUS: $('#campus').val(),
+				YEAR: $('#year').val()
+			}
+		}, function(error, response, body){
+			if(error){
+				console.log(error);
+			}else{
+				console.log(response.statusCode, body);
+				if(body != "Success"){
+					this.forceUpdate();
+				}
+			}
+		}.bind(this));
 	},
 	updateAll: function(){
-		console.log("Updating All User Information");
+		var ruid, degree, campus, year;
+		if(!this.state.student){
+			ruid = "remove";
+			degree = "";
+			campus = "";
+			year = "";
+		}else{
+			ruid = $('#ruid').val();
+			degree = $('#degree').val();
+			campus = $('#campus').val();
+			year = $('#year').val();
+		}
+		request({
+			url: 'http://localhost:8080/UpdateUserAll',
+			method: 'POST',
+			json: {
+				ID: this.props.userID,
+				FIRST_NAME: $('#firstName').val(),
+				LAST_NAME: $('#lastName').val(),
+				AGE: $('#age').val(),
+				GENDER: $('#gender').val(),
+				ADDRESS: $('#address').val(),
+				TOWNSHIP: $('#township').val(),
+				STATE: $('#state').val(),
+				ZIPCODE: $('#zipcode').val(),
+				RUID: ruid,
+				DEGREE: degree,
+				CAMPUS: campus,
+				YEAR: year
+			}
+		}, function(error, response, body){
+			if(error){
+				console.log(error);
+			}else{
+				console.log(response.statusCode, body);
+				if(body != "Success"){
+					this.forceUpdate();
+				}
+			}
+		}.bind(this));
 	},
 	studentChecked: function(){
+		if(!this.state.student){
+			$('#ruid').val(this.state.ruid);
+			$('#campus').val(this.state.campus);
+			$('#degree').val(this.state.degree);
+			$('#year').val(this.state.year);
+		}
 		this.setState({student: !this.state.student});
 	},
 	render: function(){
@@ -49,7 +179,7 @@ var Settings = React.createClass({
 				</div>
 				<div className="row">
 					<div className="col-md-6">
-						<input type="text" className="form-control" id="ruid" placeholder={this.state.ruid}/>
+						<input type="text" className="form-control" id="ruid"/>
 					</div>
 				</div>
 				<br/>
@@ -116,13 +246,25 @@ var Settings = React.createClass({
 				</div>
 				<div className="row">
 					<div className="col-md-4">
-						<input type="text" className="form-control" id="firstName" placeholder={this.state.first_name}/>
+						<input type="text" className="form-control" id="firstName"/>
 					</div>
 					<div className="col-md-4">
-						<input type="text" className="form-control" id="lastName" placeholder={this.state.last_name}/>	
+						<input type="text" className="form-control" id="lastName"/>	
+					</div>
+				</div>
+				<br/>
+				<div className="row">
+					<div className="col-md-4">
+						<div className="input-group">
+							<span className="input-group-addon">Gender</span>
+							<select className="form-control" id="gender">
+								<option value="Male">Male</option>	
+								<option value="Female">Female</option>	
+							</select>
+						</div>
 					</div>
 					<div className="col-md-4">
-						<input type="number" className="form-control" id="age" placeholder={this.state.age}/>
+						<input type="number" className="form-control" id="age"/>
 					</div>
 				</div>
 				<br/>
@@ -143,19 +285,19 @@ var Settings = React.createClass({
 				</div>
 				<div className="row">
 					<div className="col-offset-md-2 col-md-6">
-						<input type="text" className="form-control" id="address" placeholder={this.state.address}/>
+						<input type="text" className="form-control" id="address"/>
 					</div>
 				</div>
 				<br/>
 				<div className="row">
 					<div className="col-md-4">
-						<input type="text" className="form-control" id="township" placeholder={this.state.township}/>
+						<input type="text" className="form-control" id="township"/>
 					</div>
 					<div className="col-md-4">
-						<input type="text" className="form-control" id="state" placeholder={this.state.state}/>
+						<input type="text" className="form-control" id="state"/>
 					</div>
 					<div className="col-md-4">
-						<input type="number" className="form-control" id="zipcode" placeholder={this.state.zipcode}/>
+						<input type="number" className="form-control" id="zipcode"/>
 					</div>
 				</div>
 				<br/>
@@ -172,7 +314,12 @@ var Settings = React.createClass({
 				<div className="row">
 					<div className="col-md-6">
 						<div className="checkbox">
-							<label><input type="checkbox" id="isStudent" onClick={this.studentChecked} checked={this.state.student}/>RU a Rutgers Student?</label>
+							<label><input type="checkbox" 
+										id="isStudent" 
+										onClick={this.studentChecked} 
+										checked={this.state.student}/>
+											RU a Rutgers Student?
+							</label>
 						</div>
 					</div>
 				</div>

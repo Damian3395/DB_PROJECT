@@ -9,15 +9,15 @@ var RegisterBusiness = require("./pages/register/RegisterBusiness.jsx");
 var App = require("./pages/main/App.jsx");
 
 var Page = React.createClass({
-	setPageState: function(state){
-		this.props.stateCallback(state);
+	setPageState: function(state, type, userID){
+		this.props.stateCallback(state, type, userID);
 	},
     render: function(){
         var Body;
 
         switch(this.props.state){
             case "Home":
-                Body = <Home stateCallback={this.setPageState}/>
+                Body = <Home stateCallback={this.setPageState} type={this.props.type} userID={this.props.userID}/>
                 break;
             case "About":
                 Body = <About/>
@@ -38,7 +38,7 @@ var Page = React.createClass({
 				Body = <RegisterBusiness stateCallback={this.setPageState}/>
 				break;
             case "App":
-				Body = <App stateCallback={this.setPageState}/>
+				Body = <App stateCallback={this.setPageState} type={this.props.type} userID={this.props.userID}/>
 				break;
             default:
                 Body = <Home/>

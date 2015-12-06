@@ -1,32 +1,110 @@
 var React = require('react');
 var $ = require('jquery');
+var _ = require('lodash');
 var request = require('request');
 
 var Settings = React.createClass({
-	getInitialState: function(){
-		return({
-			business: "Test Business",
-			address: "Test Address",
-			township: "Test township",
-			min_age: "Test Min Age",
-			max_age: "Test Max Age",
-			min_people: "Test Min People",
-			max_people: "Test Max People",
-			main_category: "Test Main Category",
-			sub_category: "Test Sub Category"
-		});
-	},
 	componentWillMount: function(){
-		console.log("Get Information From Server");
+		request({
+			url: 'http://localhost:8080/GetBusinessInformation',
+			method: 'POST',
+			json: {
+				ID: this.props.userID,
+			}
+		}, function(error, response, body){
+			if(error){
+				console.log(error);
+			}else{
+				console.log(response.statusCode, body);
+				if(body == "Error"){
+					console.log("Error");	
+				}else{
+					$('#business').val(body.NAME);
+					$('#min_age').val(body.MIN_AGE);
+					$('#max_age').val(body.MAX_AGE);
+					$('#min_people').val(body.MIN_PEOPLE);
+					$('#max_people').val(body.MAX_PEOPLE);
+					$('#main_category').val(body.MAIN_CATEGORY);
+					$('#sub_category').val(body.SUB_CATEGORY);
+					$('#address').val(body.ADDRESS);
+					$('#township').val(body.TOWNSHIP);
+					$('#campus').val(body.CAMPUS);
+				}
+			}
+		}.bind(this));
 	},
 	updateGeneral: function(){
-		console.log("Update General Information");
+		request({
+			url: 'http://localhost:8080/UpdateBusinessGeneral',
+			method: 'POST',
+			json: {
+				ID: this.props.userID,
+				NAME: $('#business').val(),
+				MIN_AGE: $('#min_age').val(),
+				MAX_AGE: $('#max_age').val(),
+				MIN_PEOPLE: $('#min_people').val(),
+				MAX_PEOPLE: $('#max_people').val(),
+				MAIN_CATEGORY: $('#main_category').val(),
+				SUB_CATEGORY: $('#sub_category').val()
+			}
+		}, function(error, response, body){
+			if(error){
+				console.log(error);
+			}else{
+				console.log(response.statusCode, body);
+				if(body != "Success"){
+					this.forceUpdate();
+				}else{
+					console.log(body)		
+				}
+			}
+		}.bind(this));
 	},
 	updateAddress: function(){
-		console.log("Update Address Information");
+		request({
+			url: 'http://localhost:8080/UpdateBusinessAddress',
+			method: 'POST',
+			json: {
+				ID: this.props.userID,
+				ADDRESS: $('#address').val(),
+				TOWNSHIP: $('#township').val(),
+				CAMPUS: $('#campus').val()
+			}
+		}, function(error, response, body){
+			if(error){
+				console.log(error);
+			}else{
+				console.log(response.statusCode, body);
+			}
+		}.bind(this));
 	},
 	updateAll: function(){
-		console.log("Update All Information");
+		request({
+			url: 'http://localhost:8080/UpdateBusinessAll',
+			method: 'POST',
+			json: {
+				ID: this.props.userID,
+				NAME: $('#business').val(),
+				MIN_AGE: $('#min_age').val(),
+				MAX_AGE: $('#max_age').val(),
+				MIN_PEOPLE: $('#min_people').val(),
+				MAX_PEOPLE: $('#max_people').val(),
+				MAIN_CATEGORY: $('#main_category').val(),
+				SUB_CATEGORY: $('#sub_category').val(),
+				ADDRESS: $('#address').val(),
+				TOWNSHIP: $('#township').val()
+			}
+		}, function(error, response, body){
+			if(error){
+				console.log(error);
+			}else{
+				console.log(response.statusCode, body);
+				if(body != "Success"){
+					this.forceUpdate();
+				}
+			}
+		}.bind(this));
+
 	},
 	render: function(){
 		return(
@@ -38,7 +116,7 @@ var Settings = React.createClass({
 				</div>
 				<div className="row">
 					<div className="col-md-6">
-						<input type="text" className="form-control" id="business" placeholder={this.state.business}/>
+						<input type="text" className="form-control" id="business" placeholder="Name"/>
 					</div>
 				</div>
 				<br/>
@@ -46,28 +124,28 @@ var Settings = React.createClass({
 					<div className="col-md-5">
 						<div className="input-group">
 							<span className="input-group-addon">Min Age:</span>
-							<input type="number" className="form-control" id="min_age" placeholder={this.state.min_age}/>
+							<input type="number" className="form-control" id="min_age"/>
 						</div>
 					</div>
 					<div className="col-md-5">
 						<div className="input-group">
 							<span className="input-group-addon">Max Age:</span>
-							<input type="number" className="form-control" id="max_age" placeholder={this.state.max_age}/>
+							<input type="number" className="form-control" id="max_age"/>
 						</div>
 					</div>
 				</div>
 				<br/>
-<div className="row">
+				<div className="row">
 					<div className="col-md-5">
 						<div className="input-group">
 							<span className="input-group-addon">Min People:</span>
-							<input type="number" className="form-control" id="min_people" placeholder={this.state.min_people}/>
+							<input type="number" className="form-control" id="min_people"/>
 						</div>
 					</div>
 					<div className="col-md-5">
 						<div className="input-group">
 							<span className="input-group-addon">Max People:</span>
-							<input type="number" className="form-control" id="max_people" placeholder={this.state.max_people}/>
+							<input type="number" className="form-control" id="max_people"/>
 						</div>
 					</div>
 				</div>
@@ -77,9 +155,12 @@ var Settings = React.createClass({
 						<div className="input-group">
 							<span className="input-group-addon">Main Category:</span>
 							<select className="form-control" id="main_category">
-								<option value="One">One</option>
-								<option value="Two">Two</option>
-								<option value="Three">Three</option>
+								<option value="Food">Food</option>
+								<option value="Entertainment">Entertainment</option>
+								<option value="Sport">Sport</option>
+								<option value="Religious">Religious</option>
+								<option value="Store">Store</option>
+								<option value="Other">Other</option>
 							</select>
 						</div>
 					</div>
@@ -90,9 +171,12 @@ var Settings = React.createClass({
 						<div className="input-group">
 							<span className="input-group-addon">Sub Category:</span>
 							<select className="form-control" id="sub_category">
-								<option value="Four">Four</option>
-								<option value="Five">Five</option>
-								<option value="Six">Six</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
 							</select>
 						</div>
 					</div>
@@ -115,10 +199,23 @@ var Settings = React.createClass({
 				</div>
 				<div className="row">
 					<div className="col-md-6">
-						<input type="text" className="form-control" id="address" placeholder={this.state.address}/>
+						<input type="text" className="form-control" id="address" placeholder="Address"/>
 					</div>
 					<div className="col-md-6">
-						<input type="text" className="form-control" id="township" placeholder={this.state.township}/>
+						<input type="text" className="form-control" id="township" placeholder="Township"/>
+					</div>
+				</div>
+				<br/>
+				<div className="row">
+					<div className="col-md-6">
+						<div className="input-group">
+							<span className="input-group-addon">Campus</span>
+							<select className="form-control" id="campus">
+								<option value="New Brunswick">New Brunswick</option>
+								<option value="Newark">Newark</option>
+								<option value="Camden">Camden</option>
+							</select>
+						</div>
 					</div>
 				</div>
 				<br/>

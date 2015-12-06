@@ -1,67 +1,65 @@
 package router
 
 import(
+	"io"
 	"fmt"
 	"net/http"
-	"log"
 	db "./db"
 	util "./db/util"	
 )
 
 func HandleLoginUser(w http.ResponseWriter, r *http.Request){
 	fmt.Printf("Handling Login For User\n")
-	var login util.Login_struct
-	util.LoginToJSON(r, &login)
-	loginSuccess, err := db.LoginUser(login)
+	var user util.Login_struct
+	util.LoginToJSON(r, &user)
+	status, err := db.LoginUser(user)
+	
 	if err != nil {
-		log.Fatal(err)	
+		fmt.Printf("%s\n", err)
 	}
 
-	if loginSuccess {
-		fmt.Printf("Done Handling User Login Request\n")
-	}
+	fmt.Printf("Done Handling User Login Request\n")	
+	io.WriteString(w, status)
 }
 
 func HandleLoginBusiness(w http.ResponseWriter, r *http.Request){
 	fmt.Printf("Handling Login For Business\n")
-	var login util.Login_struct
-	util.LoginToJSON(r, &login)
-	loginSuccess, err := db.LoginBusiness(login)
+	var user util.Login_struct
+	util.LoginToJSON(r, &user)
+	status, err := db.LoginBusiness(user)
+	
 	if err != nil {
-		log.Fatal(err)	
+		fmt.Printf("%s\n", err)
 	}
 
-	if loginSuccess {
-		fmt.Printf("Done Handling Business Login Request\n")
-	}
+	fmt.Printf("Done Handling Business Login Request\n")
+	io.WriteString(w, status)
 }
 
 func HandleRegisterUser(w http.ResponseWriter, r *http.Request){
 	fmt.Printf("Handling Register For User\n")
 	var user util.RegisterUser_struct
 	util.RegisterUserToJSON(r, &user)
-	registerSuccess, err := db.RegisterUser(user)
+	status, err := db.RegisterUser(user)
 	if err != nil {
-		log.Fatal(err)	
+		fmt.Printf("%s\n", err)
 	}
 
-	if registerSuccess {
-		fmt.Printf("Done Handling User Register Request\n")
-	}
+	fmt.Printf("Done Handling User Register Request\n")
+	io.WriteString(w, status)
 }
 
 func HandleRegisterBusiness(w http.ResponseWriter, r *http.Request){
 	fmt.Printf("Handling Register For Business\n")
 	var business util.RegisterBusiness_struct
 	util.RegisterBusinessToJSON(r, &business)
-	registerSuccess, err := db.RegisterBusiness(business)
+	status, err := db.RegisterBusiness(business)
 	if err != nil {
-		log.Fatal(err)	
+		fmt.Printf("%s\n", err)
 	}
 
-	if registerSuccess {
-		fmt.Printf("Done Handling Business Register Request\n")
-	}
+	fmt.Printf("Done Handling Business Register Request\n")
+	io.WriteString(w, status)
 }
 
 func HandleImages(w http.ResponseWriter, r *http.Request){

@@ -1,5 +1,7 @@
 var React = require('react');
 var request = require('request');
+var $ = require('jquery');
+var _ = require('lodash');
 var Coupon = require('./Coupon.jsx');
 
 var Profile = React.createClass({
@@ -7,7 +9,36 @@ var Profile = React.createClass({
 		return{};
 	},
 	componentWillMount: function(){
-		console.log("Get User Coupon Information From DataBase");	
+		request({
+			url: 'http://localhost:8080/GetCurrentCoupons',
+			method: 'POST',
+			json: {
+				ID: "USERID",
+				TOKEN: "TOKEN"
+			}
+		}, function(error, response, body){
+			if(error){
+				console.log(error);
+			}else{
+				console.log(response.statusCode, body);
+			}
+		}.bind(this));
+
+		request({
+			url: 'http://localhost:8080/GetUsedCoupons',
+			method: 'POST',
+			json: {
+				ID: "USERID",
+				TOKEN: "TOKEN"
+			}
+		}, function(error, response, body){
+			if(error){
+				console.log(error);
+			}else{
+				console.log(response.statusCode, body);
+			}
+		}.bind(this));
+		console.log("Update Page State");
 	},
 	render: function(){
 		return(

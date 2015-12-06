@@ -1,16 +1,46 @@
 var React = require('react');
 var $ = require('jquery');
+var _ = require('lodash');
 var request = require('request');
 
 var Search = React.createClass({
-	getInitialState: function(){
-		return({query: "", main_category: "", sub_category: "", min_age: "", max_age: "", min_people: "", max_people: "", campus: ""});
-	},
 	getRandom: function(){
-		console.log("Random Search Result");
+		request({
+			url: 'http://localhost:8080/OptimizeCoupon',
+			method: 'POST',
+			json: {
+				ID: this.props.userID,
+			}
+		}, function(error, response, body){
+			if(error){
+				console.log(error);
+			}else{
+				console.log(response.statusCode, body);
+			}
+		}.bind(this));
 	},
 	getSearchResult: function(){
-		console.log("Getting Search Result");
+		request({
+			url: 'http://localhost:8080/QueryCoupon',
+			method: 'POST',
+			json: {
+				ID: this.props.userID,
+				QUERY: $('#query').val(),
+				MAIN_CATEGORY: $('#main_category').val(),
+				SUB_CATEGORY: $('#sub_category').val(),
+				MIN_AGE: $('#min_age').val(),
+				MAX_AGE: $('#max_age').val(),
+				MIN_PEOPLE: $('#min_people').val(),
+				MAX_PEOPLE: $('#max_people').val(),
+				CAMPUS: $('#campus').val()
+			}
+		}, function(error, response, body){
+			if(error){
+				console.log(error);
+			}else{
+				console.log(response.statusCode, body);
+			}
+		}.bind(this));
 	},
 	render: function(){
 		return(

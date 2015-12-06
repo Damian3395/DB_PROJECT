@@ -1,13 +1,99 @@
 var React = require('react');
+var $ = require('jquery');
+var _ = require('lodash');
+var request = require('request');
+var Coupon = require('./Coupon.jsx');
 
 var Manage = React.createClass({
 	getInitialState: function(){
-		return{student: false, createType: "", day: "", month: "", year: ""};
+		return{student: false, c: []};
+	},
+	shouldComponentUpdate: function(nextProps, nextState) {
+		return true;
+	},
+	componentWillMount: function(){
+		request({
+			url: 'http://localhost:8080/GetActiveCoupons',
+			method: 'POST',
+			json: {
+				ID: this.props.userID
+			}
+		}, function(error, response, body){
+			if(error){
+				console.log(error);
+			}else{
+				if(body == "None"){
+					console.log("No Active Coupons")	
+				}else{
+					console.log(body.coupons);
+					var objects = _.cloneDeep(body.coupons);
+					this.setState({c: objects});
+				}
+			}
+		}.bind(this));	
+	},
+	createCoupon: function(){
+		var student_only = "False";
+		if(this.state.student){
+			student_only = "True"
+		}
+		request({
+			url: 'http://localhost:8080/CreateCoupon',
+			method: 'POST',
+			json: {
+				ID: this.props.userID,
+				TYPE: $('#createType').val(),
+				DAY: $('#day').val(),
+				MONTH: $('#month').val(),
+				YEAR: $('#year').val(),
+				VALID: "True",
+				STUDENT: student_only
+			}
+		}, function(error, response, body){
+			if(error){
+				console.log(error);
+			}else{
+				console.log(response.statusCode, body);
+			}
+		}.bind(this));
+	},
+	removeCoupon: function(id){
+		request({
+			url: 'http://localhost:8080/RemoveCoupon',
+			method: 'POST',
+			json: {
+				ID: this.props.userID,
+				COUPON_ID: id
+			}
+		}, function(error, response, body){
+			if(error){
+				console.log(error);
+			}else{
+				console.log(response.statusCode, body);
+			}
+		}.bind(this));
 	},
 	isStudent: function(){
 		this.setState({student: !this.state.student});
 	},
 	render: function(){
+		var COUPONS = this.state.c.map(function(coupon) {
+            return <div className="row">
+						<div className="col-md-8">
+							<Coupon type={coupon.TYPE} day={coupon.DAY} month={coupon.MONTH} year={coupon.YEAR}/>	
+						</div>
+						<div clasName="col-md-4">
+							<button type="button"
+								className="btn btn-md btn-danger"
+								onClick={this.removeCoupon.bind(this, coupon.COUPON_ID)}>
+									Remove
+							</button>
+						</div>	
+					</div>
+			;
+        }.bind(this));
+        var DISPLAY = <div>{COUPONS}</div>;
+
 		return(
 			<div>
 				<div className="row">
@@ -60,12 +146,20 @@ var Manage = React.createClass({
 							<label><input type="checkbox" id="student" onClick={this.isStudent}/>For Students Only?</label>
 						</div>
 					</div>
+					<div className="col-md-offset-4 col-md-4">
+						<button type="button"
+							className="btn btn-md btn-danger btn-block"
+							onClick={this.createCoupon}>
+								Create Coupon
+						</button>
+					</div>
 				</div>
 				<div className="row">
 					<div className="col-md-12">
 						<h3 className="text-center"><strong>Current Coupons</strong></h3>
 					</div>
 				</div>
+				{DISPLAY}
 			</div>
 		);
 	}

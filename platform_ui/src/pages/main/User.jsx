@@ -11,22 +11,22 @@ var User = React.createClass({
 		this.setState({Pane: paneState});
 	},
 	logoutUser: function(){
-		this.props.stateCallback("Home");
+		this.props.stateCallback("Home", "", "");
 	},
 	render: function(){
 		var Pane;
 		switch(this.state.Pane){
 			case "Search":
-				Pane = <Search/>
+				Pane = <Search userID={this.props.userID}/>
 				break;
 			case "Profile":
-				Pane = <Profile/>
+				Pane = <Profile userID={this.props.userID}/>
 				break;
 			case "Settings":
-				Pane = <Settings/>
+				Pane = <Settings userID={this.props.userID}/>
 				break;
 			default:
-				Pane = <Profile/>
+				Pane = <Profile userID={this.props.userID}/>
 		}
 
 		return(

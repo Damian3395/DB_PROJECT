@@ -6,11 +6,77 @@ import(
 	"net/http"
 )
 
-const(
-	TRUE = 1
-	FALSE = 0
-	ERROR_
-)
+func UserToJSON(r *http.Request, structure *User_struct){
+	decoder := json.NewDecoder(r.Body)
+	err := decoder.Decode(structure)
+	if err != nil {
+		log.Fatal(err)
+	}
+}
+
+func QuerySearchToJSON(r *http.Request, structure *QuerySearch_struct){
+	decoder := json.NewDecoder(r.Body)
+	err := decoder.Decode(structure)
+	if err != nil {
+		log.Fatal(err)
+	}
+}
+
+func CreateCouponToJSON(r *http.Request, structure *CreateCoupon_struct){
+	decoder := json.NewDecoder(r.Body)
+	err := decoder.Decode(structure)
+	if err != nil {
+		log.Fatal(err)
+	}
+}
+
+func GetCouponToJSON(r *http.Request, structure *GetCoupon_struct){
+	decoder := json.NewDecoder(r.Body)
+	err := decoder.Decode(structure)
+	if err != nil {
+		log.Fatal(err)
+	}
+}
+func UserAllToJSON(r *http.Request, structure *UpdateAllUser_struct){
+	decoder := json.NewDecoder(r.Body)
+	err := decoder.Decode(structure)
+	if err != nil {
+		log.Fatal(err)
+	}
+}
+
+func GeneralUserToJSON(r *http.Request, structure *UpdateGeneralUser_struct){
+	decoder := json.NewDecoder(r.Body)
+	err := decoder.Decode(structure)
+	if err != nil {
+		log.Fatal(err)
+	}
+}
+
+func AddressUserToJSON(r *http.Request, structure *UpdateAddressUser_struct){
+	decoder := json.NewDecoder(r.Body)
+	err := decoder.Decode(structure)
+	if err != nil {
+		log.Fatal(err)
+	}
+}
+
+func GeneralBusinessToJSON(r *http.Request, structure *UpdateGeneralBusiness_struct){
+	decoder := json.NewDecoder(r.Body)
+	err := decoder.Decode(structure)
+	if err != nil {
+		log.Fatal(err)
+	}
+}
+
+func AddressBusinessToJSON(r *http.Request, structure *UpdateAddressBusiness_struct){
+	decoder := json.NewDecoder(r.Body)
+	err := decoder.Decode(structure)
+	if err != nil {
+		log.Fatal(err)
+	}
+}
+
 
 func LoginToJSON(r *http.Request, structure *Login_struct){
 	decoder := json.NewDecoder(r.Body)
@@ -59,53 +125,3 @@ func StudentToJSON(r *http.Request, structure *Student_struct){
 		log.Fatal(err)
 	}
 }
-
-func PrintLogin(login *Login_struct){
-	obj, err := json.Marshal(login)
-	if err != nil {
-		log.Fatal(err)
-	}
-	log.Println(string(obj))
-}
-
-func PrintRegisterUser(register *RegisterUser_struct){
-	obj, err := json.Marshal(register)
-	if err != nil {
-		log.Fatal(err)
-	}
-	log.Println(string(obj))
-}
-
-func PrintRegisterBusiness(register *RegisterBusiness_struct){
-	obj, err := json.Marshal(register)
-	if err != nil {
-		log.Fatal(err)
-	}
-	log.Println(string(obj))
-}
-
-func PrintConsumer(consumer *Consumer_struct){
-	obj, err := json.Marshal(consumer)
-	if err != nil {
-		log.Fatal(err)
-	}
-	log.Println(string(obj))
-}
-
-func PrintBusiness(business *Business_struct){
-	obj, err := json.Marshal(business)
-	if err != nil {
-		log.Fatal(err)
-	}
-	log.Println(string(obj))
-}
-
-func PrintStudent(student *Student_struct){
-	obj, err := json.Marshal(student)
-	if err != nil {
-		log.Fatal(err)
-	}
-	log.Println(string(obj))
-}
-
-

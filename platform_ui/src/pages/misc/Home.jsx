@@ -2,7 +2,7 @@ var React = require('react');
 
 var Home = React.createClass({
     setPageState: function(state){
-        this.props.stateCallback(state);
+        this.props.stateCallback(state, this.props.type, this.props.userID);
     },
     render: function(){
         return(

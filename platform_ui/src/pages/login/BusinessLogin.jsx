@@ -4,25 +4,22 @@ var request = require('request');
 
 var BusinessLogin = React.createClass({
 	loginBusiness: function(state){
-		var userID = $('#userID').val();
-		var password = $('#password').val();	
-	
-		console.log("Login Business %s %s", userID, password);
-
 		request({
 			url: 'http://localhost:8080/LoginBusiness',
 			method: 'POST',
 			json: {
-				ID: userID,
-				PASSWORD: password
+				ID: $('#userID').val(),
+				PASSWORD: $('#password').val()
 			}
 		}, function(error, response, body){
 			if(error){
 				console.log(error);
 			}else{
-				console.log(response.statusCode, body);
-				console.log("Creating cookie");
-				this.props.stateCallback("App");
+				if(body == "Success"){
+					this.props.stateCallback("App", "Business", $('#userID').val());
+				}else{
+					console.log("Display Error");
+				}
 			}
 		}.bind(this));		
 	},

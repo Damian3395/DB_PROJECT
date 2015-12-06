@@ -14,6 +14,7 @@ var RegisterBusiness = React.createClass({
 		var name = $('#name').val();
 		var address = $('#address').val();
 		var township = $('#township').val();
+		var campus = $('#campus').val();
 		var min_age = $('#min_Age').val();
 		var max_age = $('#max_Age').val();
 		var min_people = $('#min_People').val();
@@ -31,6 +32,7 @@ var RegisterBusiness = React.createClass({
 					NAME: name,
 					ADDRESS: address,
 					TOWNSHIP: township,
+					CAMPUS: campus,
 					MIN_AGE: min_age,
 					MAX_AGE: max_age,
 					MIN_PEOPLE: min_people,
@@ -45,8 +47,12 @@ var RegisterBusiness = React.createClass({
 					console.log(error);
 				}else{
 					console.log(response.statusCode, body);
-					console.log("Creating Cookie");
-					this.props.stateCallback("App");
+					if(body == "Success"){
+						this.props.stateCallback("Business_Login");
+					}else{
+						console.log(body);
+					}
+
 				}
 			}.bind(this));
 		}
@@ -78,12 +84,21 @@ var RegisterBusiness = React.createClass({
 								<div className="row">
 									<div className="col-xs-8">
 										<div className="input-group">
-											<span className="input-group-addon">Township:</span>
-											<select className="form-control" id="township">
+											<span className="input-group-addon">Campus:</span>
+											<select className="form-control" id="campus">
 												<option value="New Brunswick">New Brunswick</option>
 												<option value="Newark">Newark</option>
 												<option value="Camden">Camden</option>
 											</select>
+										</div>
+									</div>
+								</div>
+								<br/>
+								<div className="row">
+									<div className="col-xs-8">
+										<div className="input-group">
+											<span className="input-group-addon">Township:</span>
+											<input type="text" className="form-control" id="township"/>
 										</div>
 									</div>
 								</div>
@@ -171,7 +186,11 @@ var RegisterBusiness = React.createClass({
 								<br/>
 								<div className="row">
 									<div className="col-xs-offset-8 col-xs-4">
-										<button className="btn btn-success btn-lg btn-block" type="button" onClick={this.registerBusiness.bind(this, "App")}>Register</button>
+										<button className="btn btn-success btn-lg btn-block"
+											type="button"
+											onClick={this.registerBusiness.bind(this, "Business_Login")}>
+												Register
+										</button>
 									</div>
 								</div>
 							</div>
