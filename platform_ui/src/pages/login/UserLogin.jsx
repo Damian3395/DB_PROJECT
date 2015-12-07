@@ -5,7 +5,7 @@ var request = require('request');
 var UserLogin = React.createClass({
 	loginUser: function(){
 		request({
-			url: 'http://localhost:8080/LoginUser',
+			url: 'http://www.ruexploring.com/LoginUser',
 			method: 'POST',
 			json: {
 				ID: $('#userID').val(),
@@ -25,7 +25,7 @@ var UserLogin = React.createClass({
 		}.bind(this));
 	},
 	registerNewUser: function(state){
-		this.props.stateCallback(state);
+		this.props.stateCallback(state, "Register_User", "");
 	},
     render: function(){
         return(

@@ -25,7 +25,7 @@ func CreateCoupon(create util.CreateCoupon_struct) (string, error){
 	cq := neoism.CypherQuery{
     Statement: `
     	MATCH (n:Coupon)
-      	WHERE n.ID = {user_id} AND n.VALID = "True"
+      	WHERE n.ID = {user_id} AND n.VALID = "TRUE"
        	RETURN n.ID
     `,
     Parameters: neoism.Props{"user_id": create.ID},
@@ -48,11 +48,16 @@ func CreateCoupon(create util.CreateCoupon_struct) (string, error){
 
 		if err != nil {
 			fmt.Printf("%s\n")
-		}
+		}	
 
 		cq = neoism.CypherQuery{
 		Statement: `
+			MATCH (a:Activity)
+			WHERE a.ID = {user_id}
 			CREATE (n:Coupon {ID: {user_id},
+						NAME: a.NAME,
+						ADDRESS: a.TOWNSHIP,
+						CAMPUS: a.CAMPUS,
 						TYPE: {type},
 						DAY: {day},
 						MONTH: {month},
@@ -127,7 +132,7 @@ func GetActiveCoupons(coupon util.GetCoupon_struct) (string, error){
 	cq := neoism.CypherQuery{
     Statement: `
     	MATCH (n:Coupon)
-      	WHERE n.ID = {user_id} AND n.VALID = "True"
+      	WHERE n.ID = {user_id} AND n.VALID = "TRUE"
        	RETURN n
     `,
     Parameters: neoism.Props{"user_id": coupon.ID},

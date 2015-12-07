@@ -6,7 +6,7 @@ var request = require('request');
 var Analytics = React.createClass({
 	componentWillMount: function(){
 		request({
-			url: 'http://localhost:8080/GetExpiredCoupons',
+			url: 'http://www.ruexploring.com/GetExpiredCoupons',
 			method: 'POST',
 			json: {
 				ID: "USERID",

@@ -25,8 +25,10 @@ func main(){
 	http.HandleFunc("/UpdateUserAddress", router.UpdateUserAddress)
 	http.HandleFunc("/UpdateUserStudent", router.UpdateUserStudent)
 	http.HandleFunc("/UpdateUserAll", router.UpdateUserAll)
-	http.HandleFunc("/GetUsedCoupons", router.GetUsedCoupons)
-	http.HandleFunc("/GetCurrentCoupons", router.GetCurrentCoupons)
+	http.HandleFunc("/GetUserValidTickets", router.GetUserValidTickets)
+	http.HandleFunc("/GetUserInvalidTickets", router.GetUserInvalidTickets)
+	http.HandleFunc("/UseTicket", router.UseTicket)
+	http.HandleFunc("/CreateTicket", router.CreateTicket)
 	http.HandleFunc("/QueryCoupon", router.QueryCoupon)
 	http.HandleFunc("/OptimizeCoupon", router.OptimizeCoupon)
 
@@ -41,5 +43,5 @@ func main(){
 	http.HandleFunc("/GetExpiredCoupons", router.GetExpiredCoupons)	
 
 	//Listen On Port 8080
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe("http://www.ruexploring.com:8080", nil)
 }

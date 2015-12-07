@@ -7,7 +7,7 @@ var Coupon = React.createClass({
 				<div className="col-md-12">
 					<div className="panel panel-success">
 						<div className="panel-heading text-center">
-							<div><h4><span className="label label-success">Coupon</span></h4></div>
+							<div><h4><span className="label label-success">Coupon {this.props.name}</span></h4></div>
 						</div>
 						<div className="panel-body">
 								<div className="row">

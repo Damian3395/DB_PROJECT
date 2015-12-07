@@ -9,7 +9,6 @@ import(
 	util "./db/util"
 )
 
-//GetUserInformation
 func GetUserInformation(w http.ResponseWriter, r *http.Request){
 	fmt.Printf("Handling Get User Information\n")
 	
@@ -53,7 +52,6 @@ func GetStudentInformation(w http.ResponseWriter, r *http.Request){
 
 }
 
-//UpdateUserGeneral
 func UpdateUserGeneral(w http.ResponseWriter, r *http.Request){
 	fmt.Printf("Handling Update User General Information\n")
 	
@@ -75,7 +73,6 @@ func UpdateUserGeneral(w http.ResponseWriter, r *http.Request){
 	io.WriteString(w, status)
 }
 
-//UpdateUserAddress
 func UpdateUserAddress(w http.ResponseWriter, r *http.Request){
 	fmt.Printf("Handling Update User Address Information\n")
 
@@ -97,7 +94,6 @@ func UpdateUserAddress(w http.ResponseWriter, r *http.Request){
 	io.WriteString(w, status)
 }
 
-//UpdateUserStudent
 func UpdateUserStudent(w http.ResponseWriter, r *http.Request){
 	fmt.Printf("Handling Update User Student Information\n")
 
@@ -119,7 +115,6 @@ func UpdateUserStudent(w http.ResponseWriter, r *http.Request){
 	io.WriteString(w, status)
 }
 
-//UpdateUserAll
 func UpdateUserAll(w http.ResponseWriter, r *http.Request){
 	fmt.Printf("Handling Update All User Information\n")
 
@@ -141,27 +136,89 @@ func UpdateUserAll(w http.ResponseWriter, r *http.Request){
 	io.WriteString(w, status)
 }
 
-//GetUsedCoupons
-func GetUsedCoupons(w http.ResponseWriter, r *http.Request){
-	fmt.Printf("Handling Get Used Coupons\n")
+func GetUserInvalidTickets(w http.ResponseWriter, r *http.Request){
+	fmt.Printf("Handling Get User Invalid Tickets\n")
 
-	//Do Stuff
+	var user util.User_struct
+	util.UserToJSON(r, &user)
 	
-	fmt.Printf("Done Handling Get Used Coupons\n")
-	io.WriteString(w, "User Used Coupons Retrieved\n")
+	contents, err := ioutil.ReadAll(r.Body)
+	if err != nil {
+		fmt.Printf("%s\n", err)
+	}
+	fmt.Printf("%s\n", string(contents))
+	
+	status, err := db.GetUserInvalidTickets(user)
+	if err != nil {
+		fmt.Printf("%s\n", err)
+	}
+
+	fmt.Printf("Done Handling Get User Invalid Tickets\n")
+	io.WriteString(w, status)
 }
 
-//GetCurrentCoupons
-func GetCurrentCoupons(w http.ResponseWriter, r *http.Request){
-	fmt.Printf("Handling Get Current Coupons\n")
+func GetUserValidTickets(w http.ResponseWriter, r *http.Request){
+	fmt.Printf("Handling Get User Valid Tickets\n")
 
-	//Do Stuff
+	var user util.User_struct
+	util.UserToJSON(r, &user)
 	
-	fmt.Printf("Done Handling Get Current Coupons\n")
-	io.WriteString(w, "Use Active Coupons Retrieved\n")
+	contents, err := ioutil.ReadAll(r.Body)
+	if err != nil {
+		fmt.Printf("%s\n", err)
+	}
+	fmt.Printf("%s\n", string(contents))
+	
+	status, err := db.GetUserValidTickets(user)
+	if err != nil {
+		fmt.Printf("%s\n", err)
+	}
+	
+	fmt.Printf("Done Handling Get User Valid Tickets\n")
+	io.WriteString(w, status)
 }
 
-//QueryCoupon
+func UseTicket(w http.ResponseWriter, r *http.Request){
+	fmt.Printf("Handling Use Ticket\n")
+
+	var ticket util.Ticket_struct
+	util.TicketToJSON(r, &ticket)
+	
+	contents, err := ioutil.ReadAll(r.Body)
+	if err != nil {
+		fmt.Printf("%s\n", err)
+	}
+	fmt.Printf("%s\n", string(contents))
+	
+	status, err := db.UseTicket(ticket)
+	if err != nil {
+		fmt.Printf("%s\n", err)
+	}
+		
+	fmt.Printf("Done Handling Use Ticket\n")
+	io.WriteString(w, status)
+}
+
+func CreateTicket(w http.ResponseWriter, r *http.Request){
+	fmt.Printf("Handling Create Ticket\n")
+
+	var ticket util.Ticket_struct
+	util.TicketToJSON(r, &ticket)
+	
+	contents, err := ioutil.ReadAll(r.Body)
+	if err != nil {
+		fmt.Printf("%s\n", err)
+	}
+	fmt.Printf("%s\n", string(contents))
+	
+	status, err := db.CreateTicket(ticket)
+	if err != nil {
+		fmt.Printf("%s\n", err)
+	}	
+	fmt.Printf("Done Handling Create Ticket\n")
+	io.WriteString(w, status)
+}
+
 func QueryCoupon(w http.ResponseWriter, r *http.Request){
 	fmt.Printf("Handling Query Coupon\n")
 
@@ -183,7 +240,6 @@ func QueryCoupon(w http.ResponseWriter, r *http.Request){
 	io.WriteString(w, status)
 }
 
-//OptimizeCoupon
 func OptimizeCoupon(w http.ResponseWriter, r *http.Request){
 	fmt.Printf("Handling Optimize Coupon\n")
 

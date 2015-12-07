@@ -2,11 +2,12 @@ var React = require('react');
 var $ = require('jquery');
 var _ = require('lodash');
 var request = require('request');
+var Options = require('../../misc/Options.jsx');
 
 var Settings = React.createClass({
 	componentWillMount: function(){
 		request({
-			url: 'http://localhost:8080/GetBusinessInformation',
+			url: 'http://www.ruexploring.com/GetBusinessInformation',
 			method: 'POST',
 			json: {
 				ID: this.props.userID,
@@ -155,12 +156,7 @@ var Settings = React.createClass({
 						<div className="input-group">
 							<span className="input-group-addon">Main Category:</span>
 							<select className="form-control" id="main_category">
-								<option value="Food">Food</option>
-								<option value="Entertainment">Entertainment</option>
-								<option value="Sport">Sport</option>
-								<option value="Religious">Religious</option>
-								<option value="Store">Store</option>
-								<option value="Other">Other</option>
+								<Options type="main"/>
 							</select>
 						</div>
 					</div>
@@ -171,12 +167,7 @@ var Settings = React.createClass({
 						<div className="input-group">
 							<span className="input-group-addon">Sub Category:</span>
 							<select className="form-control" id="sub_category">
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-								<option value="6">6</option>
+								<Options typ="sub"/>
 							</select>
 						</div>
 					</div>

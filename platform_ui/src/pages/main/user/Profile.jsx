@@ -2,19 +2,40 @@ var React = require('react');
 var request = require('request');
 var $ = require('jquery');
 var _ = require('lodash');
-var Coupon = require('./Coupon.jsx');
+var Display = require('./Display.jsx');
 
 var Profile = React.createClass({
 	getInitialState: function(){
-		return{};
+		return{tickets: []};
 	},
 	componentWillMount: function(){
 		request({
-			url: 'http://localhost:8080/GetCurrentCoupons',
+			url: 'http://www.ruexploring.com/GetUserValidTickets',
 			method: 'POST',
 			json: {
-				ID: "USERID",
-				TOKEN: "TOKEN"
+				ID: this.props.userID
+			}
+		}, function(error, response, body){
+			if(error){
+				console.log(error);
+			}else{
+				console.log(response.statusCode, body);
+                if(body == "Active Coupons Does Not Exist"){
+					this.setState({tickets: body});
+				}else{
+					var objects = _.cloneDeep(body.coupons);
+					this.setState({tickets: objects});
+				}
+			}
+		}.bind(this));
+	},
+	useCoupon: function(id){
+		request({
+			url: 'http://localhost:8080/UseTicket',
+			method: 'POST',
+			json: {
+				ID: this.props.userID,
+				COUPON_ID: id
 			}
 		}, function(error, response, body){
 			if(error){
@@ -25,20 +46,26 @@ var Profile = React.createClass({
 		}.bind(this));
 
 		request({
-			url: 'http://localhost:8080/GetUsedCoupons',
+			url: 'http://localhost:8080/GetUserValidTickets',
 			method: 'POST',
 			json: {
-				ID: "USERID",
-				TOKEN: "TOKEN"
+				ID: this.props.userID
 			}
 		}, function(error, response, body){
 			if(error){
 				console.log(error);
 			}else{
 				console.log(response.statusCode, body);
+                if(body == "Active Coupons Does Not Exist"){
+					this.setState({tickets: body});
+				}else{
+					var objects = _.cloneDeep(body.coupons);
+					this.setState({tickets: objects});
+				}
 			}
 		}.bind(this));
-		console.log("Update Page State");
+
+		this.forceUpdate();
 	},
 	render: function(){
 		return(
@@ -48,16 +75,7 @@ var Profile = React.createClass({
 						<h3 className="text-center"><strong>Current Coupons:</strong></h3>
 					</div>
 				</div>
-				
-				<Coupon type="In-Use"/>
-
-				<div className="row">
-					<div className="col-md-12">
-						<h3 className="text-center"><strong>Used Coupons:</strong></h3>
-					</div>
-				</div>
-				
-				<Coupon type="Used"/>
+				<Display tickets={this.state.tickets} useCoupon={this.useCoupon}/>
 			</div>
 		);
 	}

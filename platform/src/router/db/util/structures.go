@@ -17,6 +17,7 @@ type GetCoupon_struct struct{
 type Ticket_struct struct {
 	ID string
 	COUPON_ID string
+	VALID string
 }
 
 type QuerySearch_struct struct {

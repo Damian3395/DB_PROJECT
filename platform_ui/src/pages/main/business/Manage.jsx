@@ -13,7 +13,7 @@ var Manage = React.createClass({
 	},
 	componentWillMount: function(){
 		request({
-			url: 'http://localhost:8080/GetActiveCoupons',
+			url: 'http://www.ruexploring.com/GetActiveCoupons',
 			method: 'POST',
 			json: {
 				ID: this.props.userID
@@ -23,7 +23,8 @@ var Manage = React.createClass({
 				console.log(error);
 			}else{
 				if(body == "None"){
-					console.log("No Active Coupons")	
+					console.log("No Active Coupons")
+					this.setState({c: "No Active Coupons"});	
 				}else{
 					console.log(body.coupons);
 					var objects = _.cloneDeep(body.coupons);
@@ -46,7 +47,7 @@ var Manage = React.createClass({
 				DAY: $('#day').val(),
 				MONTH: $('#month').val(),
 				YEAR: $('#year').val(),
-				VALID: "True",
+				VALID: "TRUE",
 				STUDENT: student_only
 			}
 		}, function(error, response, body){
@@ -56,6 +57,8 @@ var Manage = React.createClass({
 				console.log(response.statusCode, body);
 			}
 		}.bind(this));
+
+		this.forceUpdate();
 	},
 	removeCoupon: function(id){
 		request({
@@ -77,23 +80,27 @@ var Manage = React.createClass({
 		this.setState({student: !this.state.student});
 	},
 	render: function(){
-		var COUPONS = this.state.c.map(function(coupon) {
-            return <div className="row">
-						<div className="col-md-8">
-							<Coupon type={coupon.TYPE} day={coupon.DAY} month={coupon.MONTH} year={coupon.YEAR}/>	
+		var DISPLAY;
+		if(this.state.c == "No Active Coupons"){
+			DISPLAY = <div>NO ACTIVE COUPONS</div>
+		}else{
+			var COUPONS = this.state.c.map(function(coupon) {
+				return <div className="row">
+							<div className="col-md-8">
+								<Coupon type={coupon.TYPE} day={coupon.DAY} month={coupon.MONTH} year={coupon.YEAR}/>	
+							</div>
+							<div clasName="col-md-4">
+								<button type="button"
+									className="btn btn-md btn-danger"
+									onClick={this.removeCoupon.bind(this, coupon.COUPON_ID)}>
+										Remove
+								</button>
+							</div>	
 						</div>
-						<div clasName="col-md-4">
-							<button type="button"
-								className="btn btn-md btn-danger"
-								onClick={this.removeCoupon.bind(this, coupon.COUPON_ID)}>
-									Remove
-							</button>
-						</div>	
-					</div>
-			;
-        }.bind(this));
-        var DISPLAY = <div>{COUPONS}</div>;
-
+				;
+			}.bind(this));
+			DISPLAY = <div>{COUPONS}</div>;
+		}
 		return(
 			<div>
 				<div className="row">
@@ -106,9 +113,13 @@ var Manage = React.createClass({
 						<div className="input-group">
 							<span className="input-group-addon">Coupon Type: </span>
 							<select className="form-control" id="createType">
-								<option value="one">One</option>
-								<option value="two">Two</option>
-								<option value="three">Three</option>
+								<option value="10% off">10% off</option>
+								<option value="20% off">20% off</option>
+								<option value="30% off">30% off</option>
+								<option value="40% off">40% off</option>
+								<option value="50% off">50% off</option>
+								<option value="60% off">60% off</option>
+								<option value="70% off">70% off</option>
 							</select>
 						</div>
 					</div>

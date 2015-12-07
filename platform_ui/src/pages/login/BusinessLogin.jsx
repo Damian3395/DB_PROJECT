@@ -24,7 +24,7 @@ var BusinessLogin = React.createClass({
 		}.bind(this));		
 	},
 	registerNewBusiness: function(state){
-		this.props.stateCallback(state);	
+		this.props.stateCallback(state, "Register_Business", "");	
 	},
 	render: function(){
         return(

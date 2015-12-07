@@ -2,8 +2,27 @@ var React = require('react');
 var $ = require('jquery');
 var _ = require('lodash');
 var request = require('request');
+var Options = require('../../misc/Options.jsx');
 
 var Search = React.createClass({
+	getInitialState: function(){
+		return{tickets: []};	
+	},
+	createTicket: function(id){
+		request({
+			url: 'http://www.ruexploring.com/CreateTicket',
+			method: 'POST',
+			json: {
+				ID: this.props.userID,
+			}
+		}, function(error, response, body){
+			if(error){
+				console.log(error);
+			}else{
+				console.log(response.statusCode, body);
+			}
+		}.bind(this));
+	},
 	getRandom: function(){
 		request({
 			url: 'http://localhost:8080/OptimizeCoupon',
@@ -16,6 +35,8 @@ var Search = React.createClass({
 				console.log(error);
 			}else{
 				console.log(response.statusCode, body);
+				var objects = _.cloneDeep(body.coupons);
+                this.setState({tickets: objects});
 			}
 		}.bind(this));
 	},
@@ -39,11 +60,31 @@ var Search = React.createClass({
 				console.log(error);
 			}else{
 				console.log(response.statusCode, body);
+				var objects = _.cloneDeep(body.coupons);
+                this.setState({tickets: objects});
 			}
 		}.bind(this));
 	},
 	render: function(){
-		return(
+		var COUPONS = this.state.tickets.map(function(coupon) {
+            return <div className="row">
+                        <div className="col-md-8">
+                            <Coupon type={coupon.TYPE} day={coupon.DAY} month={coupon.MONTH} year={coupon.YEAR}
+									name={coupon.NAME} address={coupon.ADDRESS} township={coupon.TOWNSHIP} campus={coupon.CAMPUS}/>
+                        </div>
+                        <div clasName="col-md-4">
+                            <button type="button"
+                                className="btn btn-md btn-danger"
+                                onClick={this.createTicket.bind(this, coupon.COUPON_ID)}>
+                                    Add
+                            </button>
+                        </div>
+                    </div>
+            ;
+        }.bind(this));
+        var DISPLAY = <div>{COUPONS}</div>;
+	
+		return (	
 			<div>
 				<div className="row">
 					<div className="col-md-12">
@@ -64,9 +105,7 @@ var Search = React.createClass({
 						<div className="input-group">
 							<span className="input-group-addon">Main Category: </span>
 							<select	className="form-control" id="main_category">
-								<option value="One">One</option>
-								<option value="Two">Two</option>
-								<option value="Three">Three</option>
+								<Options type="main"/>
 							</select>
 						</div>	
 					</div>
@@ -77,9 +116,7 @@ var Search = React.createClass({
 						<div className="input-group">
 							<span className="input-group-addon">Sub Category: </span>
 							<select	className="form-control" id="sub_category">
-								<option value="Four">Four</option>
-								<option value="Five">Five</option>
-								<option value="Six">Six</option>
+								<Options type="sub"/>
 							</select>
 						</div>	
 					</div>
@@ -129,14 +166,7 @@ var Search = React.createClass({
 				</div>
 				<br/>
 				<div className="row">
-					<div className="col-md-4">
-						<button type="button"
-							className="btn btn-lg btn-block btn-success"
-							onClick={this.getRandom}>
-								Random
-						</button>
-					</div>
-					<div className="col-md-offset-4 col-md-4">
+					<div className="col-md-offset-8 col-md-4">
 						<button type="button"
 							className="btn btn-lg btn-block btn-primary"
 							onClick={this.getSearchResult}>
@@ -150,6 +180,7 @@ var Search = React.createClass({
 						<h3 className="text-center"><strong>Coupons Found</strong></h3>
 					</div>
 				</div>
+				{DISPLAY}
 			</div>
 		);
 	}

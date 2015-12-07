@@ -9,7 +9,7 @@ var Settings = React.createClass({
 	},
 	componentWillMount: function(){
 		request({
-			url: 'http://localhost:8080/GetUserInformation',
+			url: 'http://ruexploring.com/GetUserInformation',
 			method: 'POST',
 			json: {
 				ID: this.props.userID

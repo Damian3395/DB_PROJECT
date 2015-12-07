@@ -14,6 +14,14 @@ func UserToJSON(r *http.Request, structure *User_struct){
 	}
 }
 
+func TicketToJSON(r *http.Request, structure *Ticket_struct){
+	decoder := json.NewDecoder(r.Body)
+	err := decoder.Decode(structure)
+	if err != nil {
+		log.Fatal(err)
+	}
+}
+
 func QuerySearchToJSON(r *http.Request, structure *QuerySearch_struct){
 	decoder := json.NewDecoder(r.Body)
 	err := decoder.Decode(structure)

@@ -1,0 +1,1001 @@
+USER_ID,NAME,MAIN_CATEGORY,SUB_CATEGORY,ADDRESS,TOWNSHIP,CAMPUS,MIN_AGE,MAX_AGE,MIN_PEOPLE,MAX_PEOPLE
+Hills931441,BurgersMall,Sport,Japanese,286 Market Street,Fairfield,Newark,8,67,2,9
+SellingGoods815593,SportsGeneric,Cafe,Mexican,23 Center Street,Piscataway,Newark,17,44,2,8
+AlcoholSeller594187,Outdoor SpotPark,Food,Shooting Range,495 Mesquite Road,Roxbury,Camden,19,39,3,10
+EthnicFood172182,BigStore,Cafe,Surfing,97 Airport Lane,Franklin,Camden,12,26,2,10
+SellingGoods343478,StoreCafe,Sport,BBQ,209 Mountain View,Edison,Newark,3,44,5,9
+ApplesAndOranges225116,FactoryPasta,Cafe,Thai,57 Hemlock,Aberdeen,New Brunswick,21,24,4,10
+Hills130307,PolishFine n Dine,Food,Coffee Shop,293 Mountain View,Franklin,New Brunswick,4,48,4,9
+SellingGoods278024,SmallLittle,Food,Southern,303 Ridge Road,Pittsgrove,New Brunswick,4,62,2,7
+AlcoholSeller780623,BigRing,Food,Indian,337 Laurel Steet,Gloucester,New Brunswick,5,58,1,8
+SportGoods27392,KingClothing,Sport,Coffee Shop,593 Maple Road,Cranbury,Newark,19,33,5,7
+SellingGoods644892,ElectronicsBig,Cafe,Fast food,681 Lehua Lane,Edgewater Park,New Brunswick,3,67,3,7
+Eating464562,ElectronicsSmall,Sport,Go Karting,924 Maple Street,Hillsborough,Newark,7,66,4,7
+ApplesAndOranges570207,CafeIce Cream,Cafe,Sailing,825 Strawberry Avenue,Haddon,New Brunswick,2,58,1,9
+EthnicFood810321,SmallMall,Outdoor,Bowling,808 Hemlock,Bedminster,Newark,17,27,5,6
+SurfingInTheUSA22285,RingDeli,Cafe,Shooting Range,515 School Street,South Orange,Camden,16,25,2,7
+GoodCafe76151,ParkSmall,Sport,Diner,501 Mesquite Road,Roxbury,New Brunswick,3,60,2,7
+ApplesAndOranges553586,LittleBig,Sport,South American,13 Maple Street,Branchburg,Camden,17,60,2,5
+SportsCenter28166,DeliStore,Food,South American,155 Davis Road,Cherry Hill,New Brunswick,7,67,5,8
+SportsCenter256341,MallDeli,Cafe,Mediterranean,211 Cherry Avenue,Bernards,Newark,6,36,4,8
+RuggedOutdoors956061,BurgersCafe,Outdoor,Sailing,933 Maple Road,Rochelle,New Brunswick,15,26,3,6
+Eating68754,RingSmall,Food,Camping,614 Sycamore Street,Edison,Camden,15,28,5,7
+Hills38806,GenericRestaurant,Sport,Canoeing,971 Jackson Road,Piscataway,New Brunswick,2,55,2,10
+SurfingInTheUSA442435,StoreRing,Cafe,Mediterranean,461 Birch Street,South Orange,Newark,18,70,3,8
+FoodLove569405,ClothingDeli,Sport,Coffee Shop,265 Cypress Street,Pittsgrove,New Brunswick,15,70,3,5
+SportGoods183392,FactoryKing,Outdoor,Mexican,763 Ridge Avenue,Scotch Plains,Camden,21,68,5,6
+Hills296550,ClothingRestaurant,Sport,Coffee Shop,132 Spring Street,Bridgewater,New Brunswick,15,71,3,7
+ApplesAndOranges619786,BigSports,Sport,Vietnamese,991 Church Street,Pittsgrove,Newark,13,72,5,8
+ApplesAndOranges787055,FactoryRing,Cafe,Archery,517 Wood Avenue,Riverside,Newark,19,40,3,8
+FoodLove686307,RingElectronics,Cafe,Indian,824 Adams Lane,Franklin,Camden,9,49,2,7
+SellingGoods351957,FactoryFine n Dine,Food,Sailing,618 Evergreen,Aberdeen,Newark,14,68,3,9
+GoodCafe840759,Fine n DineElectronics,Outdoor,Mediterranean,906 Main Street,Aberdeen,New Brunswick,10,41,2,7
+PizzaShack742551,BurgersOutdoor Spot,Cafe,Fast food,645 Cherry Avenue,Union,Newark,20,71,5,10
+ApplesAndOranges684538,DeliPizza,Sport,Coffee Shop,288 Wood Avenue,Allamuchy,New Brunswick,9,72,3,7
+SportGoods26782,PizzaIce Cream,Sport,Shooting Range,989 Navajo Road,Stow Creek,Newark,7,62,3,10
+GoodCafe42028,SportsFactory,Sport,Swimming,852 Elm Street,Plainsboro,Newark,18,57,3,8
+SurfingInTheUSA710635,BigSmall,Outdoor,Coffee Shop,439 Church Street,South Hackensack,Newark,18,51,1,5
+EthnicFood808320,Whole SalesRing,Sport,Fast food,30 Airport Lane,East Brunswick,New Brunswick,4,75,3,9
+FoodLove284328,MediumFactory,Sport,Shooting Range,134 Mountain View,Lyndhurst,Newark,17,68,4,9
+SurfingInTheUSA42382,DeliPizza,Food,Camping,685 Oak Lane,Bridgewater,Newark,12,47,5,10
+Sporty926925,LittleWhole Sales,Sport,Diner,260 Adams Lane,Stow Creek,Newark,21,47,5,5
+Hills980519,LittleRestaurant,Cafe,Indian,686 Hemlock Road,Edgewater Park,Newark,20,66,2,5
+Eating914580,RingPark,Food,Go Karting,503 Narragansett Avenue,Aberdeen,New Brunswick,20,49,3,7
+PizzaShack965120,CafePolish,Food,BBQ,540 Canyon Street,Teaneck,Camden,7,53,3,5
+AlcoholSeller39868,CafePolish,Outdoor,Spanish,701 Market Street,Parsippany-Troy Hills,Newark,18,65,3,7
+SportsCenter313765,PastaDeli,Outdoor,Camping,152 Lee Street,Bedminster,Camden,11,40,1,5
+SurfingInTheUSA584700,PolishWhole Sales,Food,South American,870 Hill Avenue,Piscataway,Newark,12,43,1,6
+Eating727134,SportsFactory,Outdoor,Golf,969 Hemlock,Robbinsville,New Brunswick,13,33,5,10
+Sporty77965,RestaurantSports,Outdoor,Shooting Range,46 Hill Avenue,Rockway,Newark,9,33,4,7
+RuggedOutdoors427906,RestaurantOutdoor Spot,Sport,Fast food,689 Church Street,Piscataway,New Brunswick,5,25,2,6
+RuggedOutdoors420671,SportsLittle,Sport,Mountain Biking,581 South Park,Riverside,New Brunswick,11,22,2,5
+AlcoholSeller947749,PastaRestaurant,Outdoor,Bubble Tea,628 Spring Street,Alexandria,Newark,17,56,5,8
+SportsCenter710611,RingPark,Sport,Bubble Tea,810 Quail Lane,Robbinsville,Newark,14,35,4,9
+SportGoods349435,StoreBurgers,Food,Spanish,421 Hillside Street,Pittsgrove,Camden,17,71,4,6
+ApplesAndOranges93652,PizzaPizza,Cafe,Italian,568 Cherry Avenue,Stillwater,Newark,7,33,4,6
+SurfingInTheUSA331746,StoreGeneric,Sport,Japanese,705 Columbine Road,Haddon,New Brunswick,18,40,5,9
+SellingGoods134675,GenericPizza,Cafe,Indian,881 North Park,Stillwater,Newark,9,25,2,9
+SurfingInTheUSA643034,SmallOutdoor Spot,Cafe,Mediterranean,859 Strawberry Avenue,Hillsborough,New Brunswick,15,69,4,8
+FoodLove290487,DeliElectronics,Outdoor,Mediterranean,76 Ridge Road,Teaneck,Camden,18,70,3,10
+SportGoods245795,Whole SalesPasta,Outdoor,Diner,874 Main Street,East Windsor,New Brunswick,21,26,5,7
+Sporty871013,FactorySports,Food,Indian,789 Aloha Street,Stillwater,New Brunswick,15,67,5,5
+SellingGoods393414,ParkElectronics,Outdoor,South American,51 Laurel Steet,Piscataway,Newark,12,58,5,8
+ApplesAndOranges231489,DeliKing,Outdoor,Mediterranean,953 Bay Road,East Windsor,New Brunswick,15,40,4,5
+ApplesAndOranges248009,DeliSmall,Cafe,Bubble Tea,22 Market Street,Bedminster,Camden,4,31,2,5
+Eating100608,RestaurantMedium,Cafe,Chinese,588 Adams Lane,Edison,Camden,8,24,3,5
+GoodCafe987143,PolishSmall,Outdoor,Swimming,588 Cypress Street,Montgomery,Newark,15,48,2,10
+Eating848837,CafeIce Cream,Cafe,Polish,401 Pinon Street,East Brunswick,New Brunswick,5,68,2,5
+Sporty472309,FactoryDeli,Food,South American,545 Dogwood Street,Hillsborough,New Brunswick,18,28,3,5
+ApplesAndOranges926038,MallDeli,Cafe,Fast food,134 Oak Lane,Montgomery,Newark,18,64,4,10
+Eating570884,DeliWhole Sales,Food,Bar,992 Strawberry Avenue,Rockway,New Brunswick,12,26,4,9
+RuggedOutdoors477428,DeliElectronics,Cafe,Diner,376 Elm Street,Roxbury,Newark,17,24,2,6
+SurfingInTheUSA668049,ParkFine n Dine,Cafe,Archery,999 Chestnut Avenue,Sparta,Newark,9,80,1,6
+ApplesAndOranges333683,Whole SalesIce Cream,Outdoor,Diner,55 Spruce Street,Cranbury,New Brunswick,4,74,1,9
+PizzaShack633793,Whole SalesOutdoor Spot,Food,Polish,654 Cypress Street,Cranbury,New Brunswick,19,72,1,6
+SportGoods909969,Fine n DineRing,Cafe,Diner,47 Maplestory Road,Scotch Plains,Newark,12,29,5,8
+SurfingInTheUSA315487,FactoryElectronics,Food,Spanish,542 Chestnut Avenue,Cranbury,New Brunswick,17,26,1,8
+Eating390066,ClothingDeli,Outdoor,Sailing,850 Cedar Avenue,Allamuchy,New Brunswick,5,57,3,8
+EthnicFood435636,SportsLittle,Cafe,Diner,973 Chestnut Avenue,Rockway,Camden,10,79,2,5
+SurfingInTheUSA717179,PolishFine n Dine,Outdoor,Bowling,789 Prospect Street,Branchburg,Newark,13,79,5,5
+SellingGoods647767,PastaDeli,Sport,Chinese,174 Hampton Street,Bedminster,Newark,9,77,3,8
+Hills172211,Fine n DineMall,Outdoor,Bowling,633 Ridge Avenue,East Windsor,Newark,17,80,4,6
+RuggedOutdoors719048,CafeElectronics,Cafe,Coffee Shop,788 Cottonwood Lane,Haddon,New Brunswick,19,73,1,5
+SportGoods265248,StoreSports,Sport,Polish,146 Johnson Street,Aberdeen,Camden,19,69,5,7
+SellingGoods191475,Whole SalesKing,Sport,Fast food,987 Birch Street,Branchburg,New Brunswick,13,22,5,5
+Sporty138831,PastaMall,Food,Diner,872 Columbine Road,Fairfield,Newark,21,31,3,6
+SportGoods122777,ElectronicsIce Cream,Food,Bubble Tea,396 Maple Road,Lyndhurst,New Brunswick,15,42,5,10
+AlcoholSeller531541,BurgersPasta,Outdoor,Indian,247 Prospect Street,Teaneck,New Brunswick,5,26,1,9
+Hills975766,BurgersIce Cream,Outdoor,Thai,325 Main Street,Edgewater Park,Camden,11,67,5,9
+FoodLove283622,StoreFine n Dine,Food,Bowling,204 Spring Street,Edison,New Brunswick,12,77,4,9
+GoodCafe637390,ElectronicsFactory,Food,Mediterranean,505 Prospect Street,Teaneck,Newark,19,49,4,10
+SportsCenter271827,PizzaMall,Sport,Camping,387 Magnolia,Bedminster,Camden,14,64,5,6
+EthnicFood717363,StoreWhole Sales,Food,Thai,793 Hampton Street,Ewing,Camden,3,34,3,9
+Hills689803,PizzaIce Cream,Sport,Coffee Shop,296 Aspen Street,Hillsborough,New Brunswick,6,74,2,10
+FoodLove568274,ElectronicsRestaurant,Outdoor,Go Karting,155 Spring Street,Fairfield,Camden,2,37,4,8
+Eating35583,MediumRing,Outdoor,Coffee Shop,2 Willow Street,Lyndhurst,Camden,13,79,5,7
+SportGoods568610,Whole SalesMall,Sport,BBQ,624 Maple Road,East Windsor,Camden,8,62,5,8
+GoodCafe142619,Whole SalesPasta,Sport,Bubble Tea,435 Strawberry Avenue,Gloucester,New Brunswick,20,59,3,7
+RuggedOutdoors233951,GenericGeneric,Sport,Go Karting,279 Lakeview,Scotch Plains,New Brunswick,14,56,2,6
+GoodCafe313424,RestaurantMall,Sport,Go Karting,322 Mill Street,Princeton,Newark,10,59,3,9
+Hills613422,Whole SalesIce Cream,Outdoor,BBQ,58 Willow Street,Alexandria,Camden,19,32,2,8
+EthnicFood559625,LittleGeneric,Cafe,BBQ,705 Hampton Street,Edgewater Park,Newark,11,43,5,5
+ApplesAndOranges919041,MallRing,Cafe,Chinese,811 Center Avenue,Edison,Newark,2,33,4,8
+AlcoholSeller852753,BurgersOutdoor Spot,Food,Mountain Biking,607 Spring Street,Union,Camden,17,64,1,9
+PizzaShack65691,LittleRestaurant,Cafe,Shooting Range,442 Mill Street,Roxbury,Camden,19,52,3,8
+Hills573936,Whole SalesMall,Cafe,Canoeing,502 Lakeview,Edgewater Park,Camden,12,64,2,8
+EthnicFood547213,PizzaDeli,Sport,Diner,31 Johnson Street,Edison,Newark,14,52,2,10
+GoodCafe503225,Fine n DineKing,Food,Mountain Biking,156 Pioneer Road,Parsippany-Troy Hills,Newark,3,21,1,7
+AlcoholSeller733278,SportsKing,Outdoor,Spanish,885 Chestnut Avenue,Branchburg,Camden,17,35,2,8
+PizzaShack679370,SmallBurgers,Sport,Thai,16 Strawberry Avenue,Aberdeen,Newark,7,21,2,8
+RuggedOutdoors732279,ElectronicsKing,Food,Southern,640 Birch Street,Edison,New Brunswick,18,39,5,7
+Hills417092,RingKing,Sport,Bowling,686 Hillside Street,Aberdeen,Newark,16,21,5,7
+ApplesAndOranges684999,CafePasta,Food,Archery,703 Mill Street,Princeton,Camden,11,53,5,9
+AlcoholSeller297531,ElectronicsMall,Cafe,Spanish,553 Hampton Street,Edison,Newark,14,44,2,6
+FoodLove9493,Whole SalesPizza,Sport,Chinese,604 Lee Street,Edison,New Brunswick,7,29,1,9
+RuggedOutdoors716343,MallKing,Cafe,Thai,823 Apache Street,Cranbury,New Brunswick,13,29,4,10
+SellingGoods441530,SmallPizza,Outdoor,Indian,349 Madison Avenue,Cranbury,Newark,4,29,3,6
+SurfingInTheUSA883913,BurgersSports,Cafe,Skiing,211 Center Street,Stillwater,New Brunswick,15,60,3,8
+GoodCafe616047,CafePasta,Food,Japanese,135 Hemlock Road,Stow Creek,Newark,2,28,2,9
+Sporty207068,RingMedium,Outdoor,Surfing,163 Lakeview,Stow Creek,New Brunswick,19,51,3,5
+RuggedOutdoors494335,Whole SalesWhole Sales,Cafe,Thai,442 Prospect Street,Rochelle,Camden,21,73,3,9
+Sporty751629,GenericGeneric,Food,Golf,100 Cedar Avenue,Stow Creek,Camden,21,49,3,9
+PizzaShack456008,MallPolish,Outdoor,Skiing,354 Pioneer Road,East Brunswick,New Brunswick,3,72,1,7
+SportsCenter903271,PolishKing,Food,Coffee Shop,307 Aloha Street,Parsippany-Troy Hills,Newark,17,23,5,6
+SurfingInTheUSA416516,Ice CreamPasta,Cafe,Go Karting,865 Aloha Street,Bridgewater,Newark,14,21,1,10
+Eating457335,ElectronicsPizza,Outdoor,Japanese,316 Ridge Road,Haddon,Newark,2,67,5,6
+SportsCenter517720,PastaPolish,Sport,Swimming,729 Hickory Street,Roxbury,New Brunswick,18,37,4,10
+FoodLove678258,FactoryKing,Sport,Spanish,81 Chestnut Avenue,Roxbury,Newark,15,41,5,7
+SportGoods519903,BurgersGeneric,Sport,Thai,123 Navajo Road,Haddon,Newark,12,27,1,7
+Eating712634,RestaurantKing,Outdoor,Shooting Range,159 Lehua Lane,Montgomery,Newark,9,40,5,6
+GoodCafe915994,DeliCafe,Cafe,Camping,314 Sycamore Street,Ewing,Newark,5,51,3,10
+SportGoods481880,RestaurantElectronics,Food,Indian,146 School Street,Teaneck,Newark,18,61,1,5
+SportsCenter785236,RestaurantBurgers,Sport,Golf,898 Maple Street,East Brunswick,Newark,17,70,1,8
+SportsCenter765522,Fine n DineSmall,Cafe,Shooting Range,45 Cedar Avenue,South Orange,Newark,8,42,1,9
+SportGoods690360,MediumPark,Food,Bar,459 Center Street,Montgomery,Newark,9,23,2,6
+RuggedOutdoors169892,GenericMall,Outdoor,Spanish,928 Lee Street,Haddon,Newark,21,37,3,6
+SurfingInTheUSA92640,MediumElectronics,Outdoor,Spanish,413 Oak Lane,Allamuchy,Camden,4,51,5,7
+FoodLove292412,Fine n DineFine n Dine,Food,Vietnamese,718 Johnson Street,Alexandria,Newark,17,31,5,7
+SportsCenter281997,Whole SalesBurgers,Sport,Chinese,899 Airport Lane,Scotch Plains,New Brunswick,8,45,5,8
+Sporty277241,RingOutdoor Spot,Sport,Swimming,630 Strawberry Avenue,Piscataway,Newark,12,47,4,8
+SellingGoods698119,GenericKing,Food,Bar,526 Aspen Street,Stow Creek,Newark,3,43,4,8
+SportsCenter440987,BurgersWhole Sales,Cafe,Spanish,707 Jackson Road,Cherry Hill,Camden,20,22,5,5
+AlcoholSeller546872,BurgersBig,Outdoor,Bowling,138 Spring Street,Parsippany-Troy Hills,Camden,10,24,5,9
+GoodCafe205001,KingMedium,Sport,Go Karting,526 Johnson Street,Alexandria,Camden,17,50,5,6
+FoodLove7874,BurgersCafe,Food,Go Karting,288 Johnson Street,East Brunswick,Camden,3,68,3,5
+AlcoholSeller605240,RestaurantBurgers,Sport,Japanese,209 Apache Street,Rochelle,New Brunswick,19,74,1,8
+FoodLove118894,StoreFactory,Cafe,Skiing,313 Adams Lane,Haddon,New Brunswick,3,30,5,10
+AlcoholSeller535779,Outdoor SpotIce Cream,Food,BBQ,986 Hemlock,Stillwater,Newark,6,48,2,6
+Eating731048,ParkStore,Cafe,Canoeing,380 Cypress Street,Cherry Hill,Newark,2,70,5,8
+Hills900646,StoreClothing,Food,Southern,532 Elm Street,East Brunswick,Newark,5,44,3,8
+Eating514887,Fine n DineFine n Dine,Sport,Golf,975 Highland Road,South Brunswick,New Brunswick,5,25,4,6
+PizzaShack808629,BurgersClothing,Cafe,Vietnamese,204 School Street,Plainsboro,New Brunswick,19,28,2,6
+FoodLove508448,PizzaFactory,Outdoor,Japanese,421 Wood Avenue,Edgewater Park,New Brunswick,8,56,2,10
+RuggedOutdoors412261,StoreStore,Cafe,Camping,249 Washington Street,Lyndhurst,New Brunswick,20,33,2,6
+Sporty190248,Whole SalesPark,Outdoor,Thai,77 Maplestory Road,Stillwater,Camden,4,41,4,7
+RuggedOutdoors53794,ParkBurgers,Cafe,Japanese,429 Magnolia,Sparta,Camden,12,32,4,8
+Eating329416,SmallClothing,Sport,Vietnamese,55 Johnson Street,Rochelle,New Brunswick,8,73,1,10
+SportGoods393596,KingIce Cream,Food,Italian,326 Walnut Street,Piscataway,New Brunswick,16,40,5,9
+RuggedOutdoors469475,Outdoor SpotFine n Dine,Sport,South American,119 Hampton Street,East Windsor,Camden,4,77,2,10
+FoodLove622667,ElectronicsIce Cream,Sport,Polish,561 Canyon Street,Rochelle,Camden,9,37,5,7
+SportGoods585116,DeliRestaurant,Food,Diner,663 Maple Road,Lyndhurst,Camden,4,40,3,10
+FoodLove944327,SmallClothing,Food,Chinese,707 Forest Street,Edgewater Park,Camden,15,54,2,7
+PizzaShack470745,BurgersMall,Cafe,Polish,172 Mesquite Road,Franklin,New Brunswick,21,56,3,6
+FoodLove495742,PolishBurgers,Food,Bubble Tea,881 Juniper Street,Bridgewater,Camden,18,34,2,9
+RuggedOutdoors528873,MediumSmall,Outdoor,Golf,937 Maple Street,Union,Newark,16,38,3,10
+Eating74076,ClothingBurgers,Sport,Fast food,761 Johnson Street,Parsippany-Troy Hills,Camden,16,72,1,6
+Eating820581,ElectronicsRestaurant,Cafe,Mediterranean,888 Dogwood Street,Robbinsville,Newark,2,66,5,5
+SportGoods156611,BurgersDeli,Outdoor,Swimming,506 Hillside Street,Fairfield,Camden,17,65,4,10
+FoodLove35503,FactoryDeli,Cafe,South American,23 Dogwood Street,Lyndhurst,New Brunswick,9,54,4,5
+EthnicFood102075,GenericFactory,Sport,Shooting Range,426 Cedar Street,Haddon,New Brunswick,12,22,5,8
+SurfingInTheUSA471177,BigSmall,Cafe,Surfing,759 School Street,Edison,New Brunswick,12,79,5,7
+Eating162605,PolishStore,Cafe,Southern,767 Maple Road,Branchburg,Newark,3,76,2,9
+SurfingInTheUSA922652,GenericStore,Cafe,Vietnamese,779 Cypress Street,Montgomery,Camden,9,61,3,6
+GoodCafe851470,PizzaSmall,Cafe,Bar,454 Bay Road,Montgomery,New Brunswick,11,26,2,9
+EthnicFood418612,MallBurgers,Cafe,Coffee Shop,154 Court Street,Princeton,Newark,20,73,1,9
+GoodCafe276495,Fine n DineSmall,Cafe,Thai,797 Oak Lane,Fairfield,Camden,20,78,5,8
+ApplesAndOranges944016,StoreOutdoor Spot,Food,Polish,715 Ridge Street,Stillwater,New Brunswick,16,78,5,6
+SellingGoods937125,SportsPizza,Sport,Southern,767 Maple Road,Hillsborough,New Brunswick,18,24,1,6
+ApplesAndOranges601158,ParkFactory,Outdoor,South American,240 Oak Lane,Plainsboro,Camden,3,46,2,9
+PizzaShack657423,Outdoor SpotFine n Dine,Food,Vietnamese,886 Pioneer Road,Edgewater Park,Newark,21,72,3,8
+ApplesAndOranges349836,ParkIce Cream,Outdoor,Fast food,276 Chestnut Avenue,Hillsborough,Camden,14,25,3,9
+SellingGoods674765,LittleBurgers,Outdoor,Thai,176 River Road,East Windsor,New Brunswick,17,71,2,8
+Eating941536,MallSports,Outdoor,Romanian,969 Lehua Lane,Fairfield,Camden,16,42,5,5
+PizzaShack777678,KingBurgers,Cafe,Archery,609 Sunset Road,East Hanover,Camden,5,55,2,9
+FoodLove617455,ClothingElectronics,Food,Bubble Tea,426 Canyon Street,Piscataway,Camden,3,35,2,8
+SportsCenter267403,ParkStore,Outdoor,Southern,501 Columbine Road,South Brunswick,Camden,9,24,1,7
+EthnicFood378211,KingPizza,Outdoor,Go Karting,807 Davis Road,Aberdeen,Camden,4,39,1,9
+Hills606489,SportsRestaurant,Food,Surfing,106 Lakeview,South Hackensack,Newark,9,64,2,5
+ApplesAndOranges481607,ClothingDeli,Cafe,Sailing,399 Church Street,Union,Camden,19,61,2,7
+EthnicFood494567,BigRing,Cafe,Canoeing,870 Pinon Street,Union,Newark,16,42,3,5
+SurfingInTheUSA820429,LittlePark,Outdoor,Indian,115 Hickory Street,Branchburg,Newark,17,51,2,10
+Hills460662,Ice CreamRing,Outdoor,Bubble Tea,663 Main Street,Roxbury,Camden,15,25,2,10
+SportsCenter489414,ParkPolish,Food,Shooting Range,657 Spring Street,Cranbury,Newark,2,72,5,8
+EthnicFood168736,PolishPark,Sport,Mediterranean,674 Maple Street,Montgomery,Camden,13,54,4,8
+Sporty989037,BurgersSmall,Food,Surfing,583 River Road,Pittsgrove,New Brunswick,9,76,1,6
+SellingGoods361887,MallStore,Cafe,Southern,800 Chestnut Avenue,Stow Creek,Camden,21,44,4,7
+Eating982949,ClothingClothing,Outdoor,Mexican,233 Wood Avenue,East Windsor,Newark,7,77,4,10
+PizzaShack459918,StoreKing,Sport,Chinese,145 Mountain View,Edgewater Park,Camden,5,38,2,5
+RuggedOutdoors516150,FactoryDeli,Sport,Spanish,109 Maplestory Road,East Windsor,Newark,16,38,5,8
+AlcoholSeller140506,CafeGeneric,Cafe,Mexican,638 Meadow Street,Bedminster,Newark,19,29,2,6
+RuggedOutdoors869236,BurgersOutdoor Spot,Food,Golf,273 Jackson Road,South Hackensack,New Brunswick,21,22,2,10
+ApplesAndOranges729528,Fine n DinePizza,Cafe,Southern,460 Cedar Avenue,Lyndhurst,Camden,13,45,4,6
+EthnicFood414611,ParkFine n Dine,Outdoor,South American,582 Willow Street,Cherry Hill,Newark,16,73,2,9
+SurfingInTheUSA306301,ClothingFine n Dine,Food,Chinese,450 Walnut Street,Bernards,New Brunswick,6,72,4,7
+SportGoods654275,MediumKing,Cafe,Thai,446 Evergreen,Bedminster,Camden,4,51,4,10
+SellingGoods645688,RestaurantPizza,Food,Surfing,588 Cottonwood Lane,Branchburg,New Brunswick,17,66,5,9
+Hills893380,PolishBurgers,Food,Archery,554 Lee Street,Stillwater,Camden,21,68,5,7
+SellingGoods719743,ParkPark,Cafe,Swimming,427 Hickory Street,Alexandria,Newark,17,30,2,10
+FoodLove891157,ClothingSports,Sport,Archery,175 Juniper Street,Berlin,Newark,10,30,3,10
+AlcoholSeller812648,PizzaElectronics,Outdoor,Surfing,262 Cedar Avenue,East Brunswick,New Brunswick,9,61,3,5
+Hills482603,MallStore,Outdoor,BBQ,952 Main Street,East Hanover,Camden,5,45,3,6
+SurfingInTheUSA558218,LittleClothing,Cafe,Chinese,468 Cedar Street,Allamuchy,Newark,7,24,3,8
+Sporty513431,GenericGeneric,Food,Polish,762 Willow Street,Parsippany-Troy Hills,Newark,9,66,4,7
+SurfingInTheUSA76173,Outdoor SpotRestaurant,Cafe,Indian,585 Hickory Street,East Hanover,New Brunswick,5,58,1,9
+SellingGoods557821,ParkSports,Outdoor,Surfing,566 Jackson Road,Stillwater,Newark,7,63,1,8
+SportGoods589197,SportsCafe,Food,Romanian,381 Hemlock,Stow Creek,New Brunswick,19,46,1,6
+SportsCenter90944,PizzaCafe,Sport,Mediterranean,137 Maple Street,East Brunswick,Newark,8,52,2,6
+FoodLove567887,GenericElectronics,Cafe,Indian,75 Narragansett Avenue,Gloucester,New Brunswick,2,23,4,9
+PizzaShack800184,PizzaLittle,Sport,Thai,115 Mill Street,Hillsborough,Newark,7,36,3,8
+PizzaShack466616,MallMall,Outdoor,Bar,942 School Street,Ewing,Camden,20,38,5,8
+EthnicFood757157,GenericFactory,Food,Diner,629 Main Street,Stow Creek,New Brunswick,18,73,3,7
+GoodCafe443455,DeliClothing,Sport,Thai,234 Ridge Road,Fairfield,New Brunswick,2,37,2,6
+SportGoods586736,PizzaRestaurant,Food,Bubble Tea,399 Elm Street,Hillsborough,Camden,15,23,5,10
+SportGoods846833,MallBig,Cafe,Mexican,514 Palo Verde,South Hackensack,Camden,11,72,5,8
+SportGoods112587,Whole SalesBig,Food,Japanese,703 Spring Street,Cherry Hill,New Brunswick,11,34,1,8
+Eating516785,BurgersBurgers,Cafe,Surfing,18 Spruce Street,Parsippany-Troy Hills,Newark,7,47,5,8
+FoodLove550141,MediumWhole Sales,Outdoor,Southern,314 Adams Lane,Piscataway,Newark,8,47,4,5
+PizzaShack902707,RestaurantPasta,Sport,Swimming,389 Navajo Road,Stillwater,New Brunswick,2,75,3,5
+ApplesAndOranges894102,ClothingStore,Sport,Skiing,843 Palo Verde,Haddon,New Brunswick,8,60,5,10
+ApplesAndOranges58818,MallIce Cream,Sport,Spanish,168 Cypress Street,Plainsboro,Newark,18,46,5,10
+FoodLove680063,PastaOutdoor Spot,Sport,Mountain Biking,227 Orchard Avenue,Bedminster,Newark,12,35,4,6
+SellingGoods627809,StoreFactory,Sport,Bowling,504 Columbine Road,East Windsor,Camden,10,36,5,9
+SellingGoods231634,BurgersMall,Outdoor,Fast food,782 Wood Avenue,Fairfield,Camden,19,46,3,5
+RuggedOutdoors104125,ParkMall,Outdoor,Surfing,640 Strawberry Avenue,Lyndhurst,Newark,9,21,4,10
+EthnicFood151917,MallGeneric,Outdoor,Vietnamese,201 Court Avenue,Scotch Plains,Newark,20,45,3,10
+SellingGoods269156,CafeBig,Cafe,Surfing,825 Mountain View,Stillwater,Newark,6,58,1,5
+Sporty975122,Outdoor SpotBig,Food,Golf,846 Dogwood Street,Rochelle,Newark,11,30,4,6
+RuggedOutdoors159619,PastaSmall,Sport,Bar,88 Columbine Road,Union,Camden,15,61,4,10
+SportsCenter693185,StoreKing,Cafe,Fast food,987 North Park,Gloucester,Camden,5,49,4,6
+RuggedOutdoors787114,StoreRing,Food,Mountain Biking,852 Washington Avenue,Union,Newark,14,66,4,10
+GoodCafe481342,Whole SalesGeneric,Outdoor,Fast food,865 Wood Avenue,Robbinsville,New Brunswick,8,76,5,9
+RuggedOutdoors640025,ElectronicsPizza,Cafe,Polish,291 Spring Street,Bridgewater,Camden,2,77,2,7
+Hills100541,PastaPasta,Outdoor,Indian,877 Ridge Street,Plainsboro,New Brunswick,11,36,5,6
+ApplesAndOranges951209,Fine n DineMedium,Cafe,Skiing,481 Pinon Street,Ewing,Camden,8,75,2,5
+FoodLove107474,ParkMedium,Food,Sailing,225 Hemlock,Bernards,Camden,3,51,2,6
+GoodCafe503697,PolishLittle,Sport,BBQ,641 Washington Avenue,Bernards,Camden,17,62,1,10
+EthnicFood706265,BigRestaurant,Cafe,Mexican,131 River Road,Princeton,Camden,6,39,2,6
+EthnicFood792560,DeliStore,Sport,Southern,986 Wood Avenue,Gloucester,Camden,13,47,4,10
+Hills376187,BurgersOutdoor Spot,Food,Southern,473 River Road,Cranbury,Camden,13,37,3,8
+SportsCenter779107,MediumBig,Food,Chinese,215 Lehua Lane,Edgewater Park,Newark,10,65,2,8
+EthnicFood107835,SmallCafe,Sport,Thai,780 Lehua Lane,Bedminster,Newark,12,24,5,9
+Hills941695,FactoryRing,Food,Diner,523 Shore Street,Haddon,Newark,9,57,2,5
+FoodLove614501,PolishOutdoor Spot,Sport,Mountain Biking,625 Airport Lane,Gloucester,New Brunswick,11,37,5,8
+SellingGoods491376,Whole SalesSports,Cafe,Swimming,119 Hemlock Road,South Hackensack,Camden,20,51,2,9
+FoodLove429320,MediumKing,Outdoor,Diner,606 Lehua Lane,Rochelle,New Brunswick,13,52,3,8
+Eating186178,DeliPolish,Food,Diner,599 Strawberry Avenue,Parsippany-Troy Hills,New Brunswick,15,51,5,10
+Sporty439238,BigWhole Sales,Food,Mexican,941 Chestnut Avenue,Fairfield,Newark,12,62,3,5
+PizzaShack987874,BurgersMedium,Outdoor,Surfing,204 Aloha Street,Princeton,Camden,2,31,5,10
+PizzaShack126730,MallWhole Sales,Cafe,Surfing,36 Cypress Street,East Windsor,Camden,2,31,1,9
+ApplesAndOranges671034,SportsPizza,Cafe,Spanish,797 Center Street,Bernards,Camden,5,78,3,10
+ApplesAndOranges260347,SportsSports,Food,Spanish,718 Lee Street,Edgewater Park,Camden,12,48,1,5
+GoodCafe333030,Fine n DinePizza,Outdoor,Chinese,638 Maple Street,Roxbury,Camden,11,62,2,7
+Sporty47003,GenericRestaurant,Sport,Mexican,46 Main Street,Haddon,New Brunswick,8,23,2,8
+Sporty799547,StoreElectronics,Food,Skiing,722 Hill Avenue,South Hackensack,Newark,6,62,5,8
+SportGoods199872,SmallSports,Sport,Mexican,205 Juniper Street,Bridgewater,Camden,17,42,4,8
+Eating735946,PolishGeneric,Food,South American,521 Navajo Road,Teaneck,New Brunswick,20,53,2,9
+GoodCafe699421,RingElectronics,Food,Spanish,584 Ridge Avenue,Franklin,Camden,21,51,2,10
+Eating238093,DeliSmall,Food,Coffee Shop,36 Meadow Street,Plainsboro,Camden,12,21,2,8
+EthnicFood556278,MallMedium,Sport,Vietnamese,577 Aspen Street,Princeton,Newark,19,36,4,10
+SurfingInTheUSA527974,BurgersDeli,Food,Golf,631 Pioneer Road,Bedminster,Newark,9,21,2,7
+EthnicFood103763,SmallPizza,Food,Romanian,59 North Park,South Hackensack,Camden,3,60,1,6
+AlcoholSeller105789,Fine n DineElectronics,Cafe,BBQ,377 Laurel Steet,Hillsborough,Newark,6,21,4,6
+FoodLove737904,PolishClothing,Outdoor,Bar,163 Dogwood Street,Allamuchy,Camden,21,50,5,8
+SportGoods178199,SportsWhole Sales,Sport,Fast food,72 Pinon Street,Parsippany-Troy Hills,Newark,10,60,2,7
+GoodCafe211355,SmallClothing,Cafe,Romanian,690 Washington Street,East Windsor,New Brunswick,4,36,1,8
+EthnicFood842,Fine n DinePark,Cafe,Southern,136 Cedar Avenue,South Orange,New Brunswick,14,30,2,8
+AlcoholSeller108259,PizzaPark,Food,Archery,593 Washington Avenue,South Orange,New Brunswick,7,33,2,7
+ApplesAndOranges663714,GenericMall,Food,Polish,272 Mill Street,Bedminster,Camden,3,46,4,8
+SportGoods732783,Outdoor SpotClothing,Outdoor,Mediterranean,281 School Street,Edgewater Park,New Brunswick,8,21,4,6
+GoodCafe413610,PolishSmall,Outdoor,Southern,341 Cedar Street,Cranbury,Camden,15,43,4,6
+ApplesAndOranges192438,SportsRing,Cafe,Romanian,653 Magnolia,Union,New Brunswick,3,28,1,10
+ApplesAndOranges620308,CafeElectronics,Cafe,Thai,395 Hemlock Road,Berlin,Camden,10,25,1,5
+Eating632325,Whole SalesSports,Sport,Southern,154 Spring Street,Haddon,Camden,5,53,3,7
+Sporty978041,SmallRing,Sport,Archery,544 Quail Lane,Edgewater Park,Newark,15,43,4,8
+SellingGoods129374,Ice CreamRestaurant,Outdoor,Skiing,161 Sycamore Street,Montgomery,Camden,6,52,1,7
+Eating993565,PolishDeli,Sport,South American,411 Maplestory Road,Cranbury,New Brunswick,14,57,1,7
+SurfingInTheUSA310188,GenericGeneric,Sport,Golf,689 Washington Avenue,Rockway,Newark,17,59,2,5
+PizzaShack360909,LittleRing,Sport,Spanish,321 Columbine Road,Piscataway,Newark,3,52,1,9
+ApplesAndOranges573457,SportsBig,Sport,Surfing,385 Center Street,Franklin,Camden,6,46,1,5
+ApplesAndOranges99609,SmallClothing,Sport,Japanese,486 Columbine Road,Plainsboro,Newark,9,32,2,5
+RuggedOutdoors461744,PastaRestaurant,Sport,Mexican,899 Lee Street,Cranbury,Camden,9,23,1,7
+ApplesAndOranges228942,RingWhole Sales,Outdoor,Mediterranean,297 South Park,Princeton,Camden,18,54,3,10
+AlcoholSeller807568,PastaClothing,Food,Coffee Shop,821 Walnut Street,Union,Camden,8,46,2,10
+AlcoholSeller942241,Fine n DineMedium,Outdoor,Skiing,732 Forest Street,Rochelle,New Brunswick,18,79,1,5
+Eating29176,Ice CreamRestaurant,Food,BBQ,158 Elm Street,Rochelle,Newark,15,30,4,6
+FoodLove898030,GenericRestaurant,Sport,Sailing,380 Wood Avenue,Hillsborough,Camden,9,56,2,5
+PizzaShack495534,Whole SalesDeli,Cafe,Go Karting,321 Shore Street,Montgomery,Newark,2,64,2,10
+ApplesAndOranges65901,CafeFine n Dine,Food,Surfing,244 Hillside Street,Rockway,New Brunswick,18,43,4,9
+ApplesAndOranges392867,LittleWhole Sales,Food,Skiing,705 Mesquite Road,Aberdeen,New Brunswick,9,35,5,10
+EthnicFood680761,Whole SalesLittle,Cafe,Japanese,264 Main Street,Haddon,Camden,11,56,5,8
+SportsCenter9679,ElectronicsSmall,Cafe,Archery,113 South Park,Cranbury,New Brunswick,20,53,4,5
+SellingGoods123272,KingDeli,Cafe,Mexican,380 Church Street,Rockway,Newark,20,77,5,6
+Sporty121542,Ice CreamRing,Cafe,Mediterranean,455 Magnolia,Plainsboro,Camden,6,37,5,5
+SellingGoods857196,PizzaIce Cream,Sport,Camping,575 Willow Street,Princeton,Newark,9,36,3,5
+SportsCenter655587,Whole SalesRing,Cafe,Skiing,449 Lee Street,Alexandria,New Brunswick,2,68,2,8
+ApplesAndOranges52228,KingGeneric,Sport,South American,770 Juniper Street,Union,New Brunswick,8,36,1,9
+EthnicFood627981,BurgersRing,Food,Diner,842 Cypress Street,Pittsgrove,Newark,5,29,4,7
+GoodCafe601711,PizzaCafe,Sport,Canoeing,865 Aspen Street,Berlin,New Brunswick,11,78,5,10
+SurfingInTheUSA851317,ParkRing,Cafe,Indian,484 Magnolia,Aberdeen,Newark,7,79,4,8
+SurfingInTheUSA611899,PizzaIce Cream,Cafe,Archery,98 Prospect Street,Piscataway,New Brunswick,11,59,4,6
+Eating205448,PolishKing,Outdoor,Thai,43 Orchard Avenue,Bridgewater,Newark,9,67,3,7
+Sporty946668,RingPasta,Sport,Bar,982 Dogwood Street,South Orange,New Brunswick,6,51,3,9
+PizzaShack440785,PolishDeli,Cafe,Southern,876 Market Street,Parsippany-Troy Hills,Camden,20,39,2,7
+EthnicFood34075,PolishRestaurant,Cafe,Romanian,83 Wood Avenue,South Orange,Camden,5,34,1,9
+SellingGoods398343,DeliGeneric,Cafe,Southern,258 School Street,Roxbury,New Brunswick,14,56,3,10
+Sporty113103,RingMedium,Cafe,South American,153 Meadow Street,Pittsgrove,Newark,10,55,1,7
+GoodCafe934444,RestaurantPolish,Food,Indian,969 Cottonwood Lane,Bedminster,Camden,17,79,4,9
+EthnicFood230379,GenericMall,Cafe,Bar,379 Apache Street,Bridgewater,Newark,11,67,4,7
+SurfingInTheUSA380388,PastaKing,Sport,Romanian,955 Lee Street,Haddon,New Brunswick,2,38,2,6
+Sporty526242,SportsPolish,Cafe,Thai,115 Johnson Street,Cranbury,Camden,6,69,1,5
+RuggedOutdoors790993,GenericWhole Sales,Outdoor,Romanian,73 Madison Avenue,Lyndhurst,Camden,3,43,1,5
+EthnicFood546203,DeliMedium,Outdoor,Canoeing,866 Highland Road,Cherry Hill,Newark,6,55,1,6
+PizzaShack543564,DeliRestaurant,Cafe,South American,783 Ridge Road,Stow Creek,Newark,16,35,3,9
+SellingGoods820285,Outdoor SpotFine n Dine,Outdoor,Japanese,952 Oak Lane,Robbinsville,Newark,4,70,4,6
+Eating956819,Outdoor SpotIce Cream,Food,South American,179 Hillside Street,Allamuchy,New Brunswick,13,44,3,10
+RuggedOutdoors119838,PolishFine n Dine,Food,BBQ,340 Mountain View,Bridgewater,Newark,11,44,5,6
+SportsCenter672001,Ice CreamFactory,Food,Golf,674 Walnut Street,Sparta,New Brunswick,14,30,3,5
+SportGoods473872,MallMedium,Outdoor,Chinese,49 Lakeview,Montgomery,New Brunswick,15,61,5,10
+Sporty548511,SportsRing,Cafe,Southern,959 Sycamore Street,South Hackensack,Newark,16,46,4,9
+RuggedOutdoors590484,StorePark,Sport,Skiing,970 Court Street,Scotch Plains,Newark,15,27,2,5
+GoodCafe879931,PizzaWhole Sales,Food,Golf,899 Washington Street,Plainsboro,New Brunswick,10,56,4,7
+PizzaShack872934,Ice CreamPolish,Food,Southern,584 Columbine Road,Robbinsville,New Brunswick,12,47,1,9
+AlcoholSeller37981,SportsWhole Sales,Cafe,Skiing,413 Meadow Street,Parsippany-Troy Hills,Newark,20,42,3,5
+Hills894064,FactoryGeneric,Outdoor,Camping,703 Ridge Avenue,Haddon,New Brunswick,12,61,1,7
+SportGoods389786,SportsRing,Sport,Fast food,641 Madison Avenue,Haddon,Camden,9,70,5,6
+SportsCenter438077,PolishWhole Sales,Sport,Archery,561 Lakeview,Robbinsville,Camden,12,33,5,6
+RuggedOutdoors574550,SportsSmall,Outdoor,Surfing,347 Cedar Avenue,Sparta,Camden,10,36,2,8
+SellingGoods491158,FactorySports,Sport,Mexican,330 Elm Street,Union,Camden,2,57,5,7
+SportGoods183692,ElectronicsKing,Sport,Italian,374 Pioneer Road,Riverside,New Brunswick,2,61,1,5
+EthnicFood179607,MallPasta,Sport,Surfing,346 Mountain View,East Brunswick,New Brunswick,12,47,2,5
+Hills61416,SmallPizza,Cafe,Shooting Range,65 Evergreen,Bernards,Newark,7,69,1,7
+FoodLove971460,SportsWhole Sales,Outdoor,BBQ,831 Spruce Street,East Hanover,New Brunswick,17,78,2,10
+SportGoods971094,ParkWhole Sales,Cafe,Diner,856 Ridge Avenue,Riverside,Camden,3,61,1,5
+AlcoholSeller963446,StoreOutdoor Spot,Outdoor,Mediterranean,751 Juniper Street,Sparta,New Brunswick,11,77,2,10
+Sporty271883,DeliRing,Sport,Chinese,555 Johnson Street,Gloucester,New Brunswick,10,68,3,8
+SurfingInTheUSA229510,RingBig,Cafe,Coffee Shop,734 Hemlock Road,Montgomery,Newark,7,69,1,8
+FoodLove973297,MediumSmall,Outdoor,Archery,656 Court Street,Bedminster,Newark,13,68,5,5
+SurfingInTheUSA312650,GenericWhole Sales,Sport,Bowling,568 Wood Avenue,Stillwater,New Brunswick,9,41,2,8
+Sporty85466,MallWhole Sales,Sport,Indian,814 Center Street,South Orange,Camden,2,61,2,7
+Eating511669,ElectronicsCafe,Cafe,Mexican,28 Aspen Street,Cherry Hill,New Brunswick,13,41,3,5
+AlcoholSeller328336,CafeRestaurant,Sport,Skiing,944 Maple Street,Haddon,New Brunswick,18,23,2,6
+SurfingInTheUSA601553,SportsFine n Dine,Outdoor,Japanese,793 Cedar Avenue,South Brunswick,Camden,9,51,4,9
+Eating56482,RingCafe,Sport,Shooting Range,793 Meadow Street,Piscataway,New Brunswick,14,43,1,5
+SurfingInTheUSA9061,Outdoor SpotOutdoor Spot,Food,Indian,396 Cypress Street,Scotch Plains,New Brunswick,6,66,1,5
+SportsCenter109892,Whole SalesPasta,Outdoor,Polish,118 Cedar Avenue,Union,New Brunswick,9,24,4,10
+SportsCenter378708,PizzaMall,Sport,Mexican,272 Cedar Avenue,Riverside,Newark,2,54,2,8
+PizzaShack224171,GenericFine n Dine,Food,Shooting Range,418 Prospect Street,Sparta,Newark,5,80,2,6
+FoodLove726351,CafeRestaurant,Cafe,Japanese,81 Hillside Street,Lyndhurst,New Brunswick,4,66,4,5
+RuggedOutdoors405736,SmallLittle,Cafe,Camping,649 Madison Avenue,Edison,Newark,3,31,5,8
+Hills722214,MallFactory,Food,Mountain Biking,298 Evergreen,Branchburg,Camden,5,48,2,9
+SellingGoods219488,RestaurantElectronics,Food,Canoeing,168 River Road,Pittsgrove,Camden,2,80,1,6
+Sporty873431,SmallCafe,Food,Shooting Range,79 Court Avenue,Haddon,New Brunswick,9,42,1,10
+RuggedOutdoors562256,Whole SalesRing,Food,Southern,785 Laurel Steet,Plainsboro,Newark,11,42,4,8
+RuggedOutdoors953508,PizzaBig,Outdoor,Diner,575 Washington Street,Aberdeen,New Brunswick,17,39,1,6
+EthnicFood923608,PastaSmall,Sport,Diner,150 Canyon Street,South Brunswick,Camden,17,76,2,10
+FoodLove657686,Ice CreamIce Cream,Cafe,Go Karting,749 Mountain View,Piscataway,Newark,12,21,5,10
+Eating865684,LittleFactory,Food,Mexican,502 Bay Road,Rochelle,Camden,17,67,3,6
+SellingGoods147170,Whole SalesMedium,Cafe,Go Karting,999 River Road,Parsippany-Troy Hills,New Brunswick,6,47,1,6
+FoodLove633783,Whole SalesClothing,Cafe,Italian,107 Mill Street,Bedminster,New Brunswick,3,26,4,7
+RuggedOutdoors860795,FactoryPizza,Sport,Diner,184 Cherry Avenue,Bedminster,New Brunswick,8,58,4,7
+Sporty739502,SmallPark,Sport,Mountain Biking,116 Cedar Street,East Hanover,Newark,9,37,1,8
+FoodLove357143,ClothingRestaurant,Food,Bar,909 Wood Avenue,Cherry Hill,Camden,9,65,1,6
+EthnicFood787393,ParkSports,Cafe,Mediterranean,842 Dogwood Street,Allamuchy,Camden,17,36,4,10
+RuggedOutdoors414500,BurgersCafe,Outdoor,Fast food,108 Ridge Street,South Brunswick,Newark,15,24,1,5
+Hills965954,Ice CreamPasta,Outdoor,BBQ,895 Cottonwood Lane,Franklin,Newark,4,58,5,5
+FoodLove655633,RestaurantStore,Sport,Archery,5 Prospect Street,Robbinsville,Newark,21,32,3,9
+SurfingInTheUSA912420,Outdoor SpotFactory,Sport,Surfing,764 Evergreen,Franklin,Newark,21,50,2,6
+Sporty598793,FactoryDeli,Cafe,Mexican,861 Hampton Street,Cranbury,Camden,8,25,5,6
+Sporty408794,Whole SalesDeli,Cafe,Bowling,85 Spring Street,Fairfield,Newark,17,35,1,7
+SurfingInTheUSA665812,RestaurantSmall,Food,Shooting Range,996 Hemlock Road,Lyndhurst,Newark,8,29,4,9
+Sporty653674,Ice CreamFine n Dine,Outdoor,Golf,753 Maple Street,Edison,Newark,9,52,3,5
+EthnicFood565938,PizzaPolish,Food,Bubble Tea,840 Airport Lane,Pittsgrove,Newark,21,70,1,8
+Sporty644433,BigPolish,Food,Japanese,561 Dogwood Street,South Brunswick,Camden,4,78,5,10
+SportGoods773710,LittleRestaurant,Sport,Indian,155 Cypress Street,Stow Creek,New Brunswick,4,64,1,10
+Sporty634986,LittleElectronics,Food,Japanese,949 Center Avenue,Plainsboro,Camden,7,28,5,7
+ApplesAndOranges919206,ParkWhole Sales,Cafe,Archery,672 Sunset Road,Hillsborough,New Brunswick,7,49,5,6
+SurfingInTheUSA150507,MallElectronics,Outdoor,Sailing,841 Highland Road,East Windsor,Camden,18,29,3,5
+Sporty986199,ParkRing,Sport,Bubble Tea,120 Dogwood Street,South Orange,Camden,10,31,2,5
+PizzaShack997730,BurgersRing,Sport,Swimming,326 Shore Street,Rochelle,New Brunswick,2,61,1,9
+SportsCenter694604,CafeMall,Outdoor,Fast food,293 Sycamore Street,South Brunswick,New Brunswick,18,26,5,7
+SellingGoods477966,Ice CreamElectronics,Outdoor,Vietnamese,770 Hickory Street,Aberdeen,Newark,11,35,2,7
+SellingGoods452200,LittleRing,Outdoor,Southern,286 Hill Avenue,Hillsborough,Newark,21,75,2,7
+PizzaShack636994,FactoryMedium,Sport,Skiing,722 Mesquite Road,Roxbury,New Brunswick,11,74,3,7
+ApplesAndOranges417260,Fine n DineDeli,Food,Surfing,314 Market Street,Branchburg,New Brunswick,20,68,1,8
+SellingGoods914560,PastaElectronics,Outdoor,Chinese,208 Sunset Road,Montgomery,New Brunswick,8,47,5,6
+GoodCafe394884,BurgersDeli,Cafe,South American,557 Maplestory Road,Berlin,New Brunswick,17,29,5,10
+SportGoods560082,PastaStore,Food,Romanian,181 Hickory Street,South Hackensack,Newark,16,67,5,7
+RuggedOutdoors834760,GenericPasta,Cafe,Thai,291 Sunset Road,Plainsboro,Camden,18,68,2,9
+SportGoods333448,CafeDeli,Sport,Diner,793 Lee Street,Aberdeen,Camden,14,55,5,6
+SportGoods211487,ElectronicsPark,Outdoor,Mediterranean,302 Spring Street,Edison,New Brunswick,9,49,1,5
+Hills933180,SportsRing,Sport,Italian,510 Madison Avenue,Plainsboro,Camden,14,40,2,5
+AlcoholSeller620653,StoreMall,Cafe,Go Karting,251 Cedar Street,Berlin,Camden,9,37,2,7
+RuggedOutdoors918433,FactoryPark,Sport,Romanian,552 Spring Street,Princeton,Newark,21,32,3,8
+SellingGoods797910,RestaurantPizza,Outdoor,Shooting Range,788 Canyon Street,South Orange,New Brunswick,9,80,2,10
+Eating98416,PizzaSmall,Outdoor,Japanese,531 Cedar Street,Stow Creek,Camden,12,62,3,5
+AlcoholSeller720422,RingRestaurant,Sport,Romanian,873 Cedar Street,Teaneck,New Brunswick,5,56,3,9
+EthnicFood892527,RestaurantDeli,Food,Swimming,86 Dogwood Street,Princeton,Newark,13,61,1,6
+Hills394961,PastaKing,Food,Shooting Range,656 Cedar Avenue,Piscataway,Camden,17,52,5,10
+Eating649469,SmallMall,Sport,Archery,608 Lakeview,Fairfield,Camden,18,50,5,9
+AlcoholSeller278441,Whole SalesFine n Dine,Outdoor,Camping,261 Johnson Street,East Windsor,Camden,2,73,3,5
+SportGoods531482,ParkFine n Dine,Outdoor,Surfing,118 Center Street,Princeton,Newark,20,43,5,8
+RuggedOutdoors308715,FactoryPasta,Food,Camping,865 Cherry Avenue,East Windsor,Camden,2,62,1,9
+Hills386753,PolishStore,Outdoor,Shooting Range,49 Hillside Street,South Orange,New Brunswick,18,66,5,5
+EthnicFood156060,DeliMedium,Sport,Mountain Biking,418 Prospect Street,Princeton,New Brunswick,16,68,3,5
+SportGoods175605,BigFactory,Cafe,Camping,639 Mill Street,South Orange,Newark,13,77,4,9
+GoodCafe582145,LittleOutdoor Spot,Cafe,Canoeing,766 Aloha Street,Piscataway,Camden,7,64,5,5
+FoodLove682799,Ice CreamGeneric,Food,Bubble Tea,766 Strawberry Avenue,Rockway,Newark,12,50,2,10
+Hills315067,PizzaLittle,Food,Surfing,946 North Park,Edgewater Park,New Brunswick,13,72,4,7
+EthnicFood609197,SportsWhole Sales,Cafe,Spanish,911 Forest Street,South Hackensack,New Brunswick,3,60,5,9
+SportsCenter667133,LittleMedium,Outdoor,Diner,125 Oak Lane,Piscataway,Camden,4,77,1,5
+Hills804043,KingWhole Sales,Cafe,Spanish,147 Strawberry Avenue,Pittsgrove,Newark,13,37,5,8
+ApplesAndOranges865089,Outdoor SpotPasta,Cafe,Swimming,244 Hemlock Road,South Brunswick,New Brunswick,14,69,4,6
+SportsCenter96813,Whole SalesMedium,Outdoor,Mexican,891 Palo Verde,Alexandria,New Brunswick,7,36,5,7
+ApplesAndOranges801905,MallIce Cream,Sport,Archery,16 Center Avenue,Franklin,Newark,11,36,4,8
+SportsCenter636226,Whole SalesStore,Cafe,Skiing,236 Court Street,Roxbury,Camden,16,41,5,9
+AlcoholSeller478523,ClothingRing,Food,Bar,707 Forest Street,South Orange,Camden,4,64,5,10
+Sporty82811,StoreIce Cream,Food,Bubble Tea,580 Dogwood Street,Aberdeen,Camden,5,42,4,9
+AlcoholSeller344689,StoreRing,Food,Polish,117 Jackson Road,Union,Newark,4,64,1,7
+RuggedOutdoors478771,Ice CreamLittle,Outdoor,BBQ,429 Main Street,Gloucester,Newark,2,39,5,6
+Eating854143,KingBurgers,Food,Southern,689 Ridge Avenue,South Orange,Camden,9,51,2,10
+Sporty992094,GenericDeli,Sport,Romanian,293 Aspen Street,Princeton,Newark,7,71,2,5
+GoodCafe466058,Whole SalesFine n Dine,Outdoor,South American,193 Johnson Street,East Brunswick,New Brunswick,14,68,3,10
+SurfingInTheUSA803425,ElectronicsPasta,Sport,Sailing,334 Aspen Street,South Orange,New Brunswick,21,43,2,5
+ApplesAndOranges788879,Ice CreamIce Cream,Outdoor,Skiing,818 Market Street,Bernards,New Brunswick,7,51,3,5
+Eating539654,MallSports,Outdoor,Mediterranean,491 Cedar Street,Piscataway,Camden,8,24,1,5
+SurfingInTheUSA457859,StorePolish,Food,Romanian,566 Church Street,South Brunswick,Newark,14,74,1,6
+SportsCenter543039,PastaSmall,Sport,Canoeing,158 Hemlock,Berlin,Camden,8,70,1,5
+FoodLove239516,StoreSmall,Sport,Fast food,921 Cedar Avenue,Pittsgrove,Newark,14,40,2,10
+FoodLove278327,MediumPasta,Cafe,Sailing,605 River Road,Bernards,New Brunswick,6,67,3,10
+Hills482619,GenericBig,Sport,Sailing,85 Center Street,Plainsboro,Camden,17,59,1,8
+SellingGoods658792,CafeSports,Outdoor,Polish,260 Meadow Street,Bernards,Newark,8,27,1,7
+EthnicFood12934,KingOutdoor Spot,Outdoor,Diner,174 Maple Road,Plainsboro,Newark,21,28,2,5
+RuggedOutdoors897202,PolishSports,Sport,Bowling,40 Bay Road,Rochelle,Newark,11,43,3,8
+SellingGoods234368,KingSports,Sport,Camping,639 Evergreen,Pittsgrove,Newark,5,21,3,10
+EthnicFood553427,BigStore,Outdoor,Japanese,912 Elm Street,Pittsgrove,Camden,17,33,2,5
+PizzaShack65003,RestaurantRing,Outdoor,Mediterranean,141 Sunset Road,Branchburg,Camden,17,77,3,8
+RuggedOutdoors167151,SmallClothing,Outdoor,Mediterranean,821 Lehua Lane,South Brunswick,Camden,16,21,3,7
+RuggedOutdoors785962,MediumPizza,Cafe,Bubble Tea,827 Cedar Avenue,Bridgewater,New Brunswick,11,72,2,7
+ApplesAndOranges446766,MediumBig,Sport,Bar,245 Juniper Street,Edison,Camden,9,48,4,7
+Sporty251548,MediumBig,Cafe,Skiing,249 Dogwood Street,South Brunswick,Camden,12,58,2,7
+SellingGoods371490,ElectronicsMedium,Food,Diner,265 Hickory Street,Fairfield,Newark,17,66,1,8
+EthnicFood33402,SportsFactory,Food,Bar,106 Elm Street,South Hackensack,New Brunswick,2,77,5,8
+Eating65288,StorePasta,Outdoor,Swimming,406 Sycamore Street,Allamuchy,Newark,4,51,1,5
+SportsCenter585208,ClothingDeli,Food,Swimming,156 Lehua Lane,Cranbury,Newark,20,59,3,5
+SurfingInTheUSA198187,CafeWhole Sales,Sport,Bubble Tea,227 Elm Street,Stow Creek,New Brunswick,12,68,3,5
+ApplesAndOranges529701,StoreIce Cream,Food,Bowling,970 Hickory Street,Princeton,New Brunswick,8,55,3,10
+PizzaShack684584,ClothingSmall,Sport,Indian,681 Church Street,Stow Creek,New Brunswick,4,70,4,7
+SellingGoods115108,PolishClothing,Cafe,Skiing,779 Wood Avenue,Stillwater,Camden,5,74,2,7
+PizzaShack873672,RestaurantGeneric,Cafe,Skiing,171 Cedar Street,Pittsgrove,Camden,16,38,1,5
+Eating581762,MallFine n Dine,Outdoor,Coffee Shop,540 Dogwood Street,Bridgewater,Newark,4,34,1,10
+SurfingInTheUSA903724,ElectronicsWhole Sales,Sport,Mexican,863 Adams Lane,Montgomery,New Brunswick,16,73,5,9
+SellingGoods312126,PastaPizza,Food,Mountain Biking,85 River Road,Franklin,Camden,5,80,2,7
+GoodCafe573904,DeliPolish,Sport,Chinese,595 Hillside Street,Edison,Newark,4,53,4,7
+Hills830640,CafeDeli,Sport,Spanish,471 Aloha Street,Ewing,New Brunswick,16,24,2,8
+RuggedOutdoors213512,ClothingRing,Sport,Surfing,767 Ridge Road,South Orange,Camden,19,33,2,6
+SellingGoods717718,RingIce Cream,Food,Skiing,822 Cottonwood Lane,Berlin,New Brunswick,9,76,2,5
+GoodCafe123237,StoreSports,Food,Italian,9 Cottonwood Lane,Stillwater,New Brunswick,5,67,5,7
+SellingGoods387341,DeliElectronics,Food,Surfing,652 Maple Road,Pittsgrove,Newark,17,62,4,6
+SportGoods969101,RingBig,Cafe,Thai,235 Forest Street,Bedminster,New Brunswick,11,22,4,7
+SurfingInTheUSA876765,BigOutdoor Spot,Food,Mountain Biking,705 Adams Lane,Lyndhurst,Camden,19,63,5,5
+RuggedOutdoors744622,Outdoor SpotIce Cream,Sport,Coffee Shop,424 Aloha Street,Ewing,Camden,18,39,5,6
+FoodLove774111,MediumKing,Food,Camping,811 Church Street,Gloucester,Newark,12,27,3,10
+AlcoholSeller820577,Whole SalesDeli,Outdoor,Archery,54 Lehua Lane,Union,New Brunswick,6,67,2,6
+SportGoods205656,PizzaIce Cream,Outdoor,Camping,110 Laurel Steet,Aberdeen,Newark,20,43,2,8
+PizzaShack523487,MediumBig,Cafe,Shooting Range,348 Pioneer Road,Rockway,Newark,8,78,4,7
+SportsCenter331167,MallElectronics,Food,Italian,391 Center Street,Bernards,Camden,8,30,2,5
+SurfingInTheUSA828216,DeliRestaurant,Cafe,Spanish,246 Sunset Road,Princeton,Newark,17,23,4,7
+PizzaShack680271,RingOutdoor Spot,Outdoor,South American,121 Sycamore Street,South Orange,Newark,18,38,5,9
+FoodLove622921,Fine n DineSports,Cafe,Surfing,454 Forest Street,Piscataway,Newark,5,56,5,5
+Hills14519,CafeSports,Food,Chinese,779 Jackson Road,Haddon,Newark,4,41,2,8
+SportsCenter386048,LittleWhole Sales,Sport,Chinese,697 Hampton Street,Cherry Hill,Newark,5,72,4,7
+SurfingInTheUSA276042,PolishOutdoor Spot,Sport,Surfing,702 Washington Street,Montgomery,New Brunswick,15,77,1,5
+Hills107801,Ice CreamPasta,Food,Thai,632 Palo Verde,Cherry Hill,Newark,3,35,3,6
+Eating921303,PizzaDeli,Food,Spanish,963 Willow Street,Stow Creek,New Brunswick,5,72,1,6
+SportGoods90177,MallMall,Sport,Thai,497 Airport Lane,Alexandria,Camden,8,59,1,9
+RuggedOutdoors585121,BigClothing,Food,South American,516 Airport Lane,East Windsor,Newark,16,33,4,10
+Hills494774,PastaMall,Cafe,Spanish,271 Highland Road,Plainsboro,Newark,12,55,1,5
+EthnicFood508457,GenericBig,Outdoor,Polish,563 Johnson Street,Plainsboro,New Brunswick,15,37,1,10
+RuggedOutdoors93641,RingDeli,Outdoor,Swimming,355 Elm Street,Robbinsville,New Brunswick,8,27,3,7
+SellingGoods663046,Fine n DineIce Cream,Outdoor,Coffee Shop,855 Palo Verde,Bernards,Newark,21,63,5,9
+SportGoods221891,Whole SalesSports,Sport,Japanese,908 Hemlock,Teaneck,New Brunswick,4,76,3,10
+SportGoods201428,ElectronicsDeli,Sport,Bubble Tea,918 Navajo Road,Princeton,New Brunswick,6,54,3,9
+RuggedOutdoors688295,StorePasta,Food,Chinese,829 Cedar Street,Robbinsville,Newark,6,52,4,10
+Hills660024,SportsPasta,Outdoor,Vietnamese,269 Ridge Road,Cherry Hill,Newark,3,70,2,9
+SportsCenter480748,Whole SalesBurgers,Outdoor,Mediterranean,320 Dogwood Street,Robbinsville,Newark,2,37,3,9
+PizzaShack954108,RingPizza,Cafe,Archery,694 Birch Street,Alexandria,Camden,9,50,1,7
+ApplesAndOranges428127,Fine n DineElectronics,Food,Romanian,290 Lakeview,East Windsor,Camden,13,28,3,9
+ApplesAndOranges919569,CafeRing,Cafe,Bubble Tea,313 Maplestory Road,Branchburg,Newark,11,64,5,9
+Hills180005,Whole SalesPolish,Sport,Japanese,386 Washington Street,Lyndhurst,Newark,10,45,4,10
+SellingGoods940387,Fine n DineBig,Outdoor,Vietnamese,654 Mountain View,Pittsgrove,Newark,2,78,2,5
+SportGoods705864,MallWhole Sales,Sport,Italian,826 Aspen Street,Scotch Plains,Newark,13,69,3,7
+SportsCenter424023,ParkCafe,Cafe,Romanian,624 Ridge Street,Union,Newark,20,43,4,5
+SellingGoods713862,DeliPark,Sport,Indian,280 Center Avenue,Parsippany-Troy Hills,Newark,19,34,2,6
+AlcoholSeller436635,ClothingMedium,Cafe,Chinese,938 Bay Road,Rockway,Newark,20,26,2,5
+Hills521182,CafeKing,Food,Archery,263 Jackson Road,Sparta,Camden,7,45,1,8
+SellingGoods300612,ParkPasta,Food,Italian,816 Market Street,Stow Creek,Camden,7,51,4,9
+ApplesAndOranges799556,RingMedium,Outdoor,Surfing,106 Aloha Street,Fairfield,Camden,20,39,2,6
+GoodCafe907068,MediumSports,Outdoor,Mediterranean,350 Apache Street,Branchburg,New Brunswick,21,29,2,10
+Eating388222,PolishPizza,Sport,Surfing,821 Highland Road,East Hanover,Newark,14,70,1,7
+Hills547802,GenericPizza,Sport,Mountain Biking,487 Airport Lane,Fairfield,Newark,19,34,1,7
+SportsCenter610206,MediumStore,Food,Bowling,298 Market Street,Union,New Brunswick,13,78,5,10
+GoodCafe370479,CafeGeneric,Sport,Coffee Shop,20 Walnut Street,Aberdeen,Newark,17,27,2,6
+GoodCafe873994,BigOutdoor Spot,Outdoor,Chinese,682 Willow Street,East Hanover,Newark,8,62,2,9
+Sporty884719,SportsPasta,Sport,Vietnamese,665 Ridge Road,Sparta,Newark,2,78,3,8
+Eating859775,Fine n DineSports,Cafe,Camping,470 Laurel Steet,Sparta,New Brunswick,4,34,5,6
+FoodLove280085,RestaurantLittle,Outdoor,Swimming,123 Narragansett Avenue,East Brunswick,Camden,19,56,5,5
+ApplesAndOranges782921,DeliCafe,Outdoor,Southern,58 Walnut Street,Haddon,Newark,3,69,3,8
+Sporty415736,CafeBig,Cafe,Shooting Range,973 Lehua Lane,Hillsborough,Newark,9,58,1,10
+SellingGoods262715,MallBig,Cafe,Mountain Biking,366 Adams Lane,Robbinsville,Newark,4,51,5,9
+EthnicFood395612,RestaurantIce Cream,Outdoor,Camping,914 Magnolia,South Orange,Camden,7,60,1,10
+PizzaShack89989,BigMall,Cafe,Polish,670 Mesquite Road,Gloucester,Newark,6,80,1,6
+SurfingInTheUSA158436,ElectronicsFine n Dine,Outdoor,Thai,959 Jackson Road,South Brunswick,Newark,15,22,1,7
+PizzaShack250655,SmallMall,Outdoor,Spanish,624 South Park,Berlin,Camden,6,23,3,10
+PizzaShack429230,BurgersOutdoor Spot,Sport,Thai,808 Cypress Street,Franklin,Newark,15,79,1,6
+Sporty992908,Outdoor SpotRestaurant,Cafe,South American,758 Market Street,East Brunswick,Newark,3,51,3,6
+FoodLove46598,DeliStore,Cafe,Polish,914 Maple Road,Pittsgrove,New Brunswick,11,60,1,10
+AlcoholSeller851641,LittleMall,Food,Swimming,649 Pioneer Road,Robbinsville,Camden,9,50,5,8
+SportGoods598992,SmallStore,Cafe,Bubble Tea,801 Cedar Street,Rockway,Newark,18,22,4,9
+AlcoholSeller231648,Fine n DineBig,Outdoor,Spanish,211 Birch Street,Stow Creek,Newark,20,47,2,9
+SurfingInTheUSA717777,RestaurantSmall,Cafe,Japanese,296 Mesquite Road,Branchburg,Newark,6,63,5,7
+Hills86207,Ice CreamSports,Sport,Sailing,347 Hill Avenue,Plainsboro,Camden,8,72,2,9
+EthnicFood190906,Whole SalesRestaurant,Food,Skiing,104 Pioneer Road,Lyndhurst,Camden,18,75,5,7
+RuggedOutdoors422328,SmallPasta,Outdoor,Mountain Biking,666 Cedar Avenue,Allamuchy,New Brunswick,3,46,5,8
+SurfingInTheUSA497633,BurgersIce Cream,Cafe,Bowling,710 Davis Road,Stow Creek,New Brunswick,13,30,3,6
+AlcoholSeller355508,Ice CreamPolish,Sport,Camping,743 Cherry Avenue,Cranbury,New Brunswick,7,80,4,10
+RuggedOutdoors695539,Whole SalesMall,Sport,Go Karting,730 Prospect Street,East Brunswick,New Brunswick,19,33,5,8
+Sporty470710,LittleFactory,Outdoor,BBQ,374 Evergreen,Edison,New Brunswick,16,41,3,9
+SellingGoods209409,StorePasta,Outdoor,Chinese,138 Aloha Street,Alexandria,Camden,6,55,3,6
+GoodCafe745702,SmallMall,Sport,Indian,820 Maple Road,Berlin,Newark,17,57,4,8
+Eating842944,ParkRestaurant,Food,Southern,795 Maplestory Road,Pittsgrove,New Brunswick,19,77,3,10
+AlcoholSeller564287,SmallKing,Outdoor,Go Karting,853 Prospect Street,East Hanover,Newark,17,64,3,6
+PizzaShack67167,PizzaPizza,Cafe,Spanish,63 Maplestory Road,Teaneck,Newark,16,80,3,8
+RuggedOutdoors939747,ElectronicsRestaurant,Cafe,Bubble Tea,273 Cedar Street,Allamuchy,New Brunswick,10,65,2,6
+EthnicFood330548,ClothingCafe,Food,Mountain Biking,181 Wood Avenue,Roxbury,New Brunswick,14,74,1,8
+RuggedOutdoors992915,PastaCafe,Sport,South American,782 Maplestory Road,Riverside,New Brunswick,14,43,1,6
+Sporty187783,CafeOutdoor Spot,Cafe,South American,302 Hampton Street,Cherry Hill,Camden,10,66,3,5
+SportGoods425237,StoreWhole Sales,Sport,Camping,277 South Park,East Brunswick,Camden,2,36,4,9
+Sporty23822,PolishGeneric,Cafe,Go Karting,829 Evergreen,Rockway,Newark,5,75,4,5
+SurfingInTheUSA14882,CafeSmall,Cafe,Swimming,150 Cottonwood Lane,Berlin,Newark,17,25,4,6
+AlcoholSeller936041,RingKing,Food,Camping,865 Hemlock,Haddon,Camden,13,48,4,5
+GoodCafe668532,PastaFine n Dine,Sport,Mountain Biking,515 Cedar Avenue,Bridgewater,Newark,19,30,5,7
+Eating392450,KingFactory,Sport,Sailing,233 Church Street,Berlin,New Brunswick,7,39,2,8
+ApplesAndOranges686725,BurgersLittle,Outdoor,South American,956 Maple Street,Alexandria,New Brunswick,2,58,2,9
+Sporty475803,LittleCafe,Sport,Bubble Tea,960 Forest Street,East Windsor,Camden,4,27,2,9
+FoodLove466135,Outdoor SpotPolish,Cafe,Polish,216 Willow Street,Bernards,Newark,11,46,4,6
+Hills249192,DeliDeli,Sport,Archery,755 Hampton Street,Allamuchy,Newark,10,61,5,7
+SportsCenter103139,SmallRing,Food,Golf,324 Hemlock Road,Aberdeen,New Brunswick,21,36,4,6
+Sporty916132,GenericFactory,Cafe,Bar,619 Washington Street,Piscataway,Newark,21,51,1,9
+EthnicFood304440,RingStore,Cafe,Bowling,701 South Park,South Brunswick,Camden,15,45,3,10
+SurfingInTheUSA764712,DeliBurgers,Food,Golf,196 Walnut Street,Allamuchy,Camden,11,22,4,7
+GoodCafe288358,BurgersRestaurant,Food,Southern,9 Court Avenue,East Windsor,New Brunswick,6,31,5,8
+RuggedOutdoors376999,Ice CreamMall,Food,Skiing,623 Wood Avenue,Allamuchy,Newark,11,54,1,9
+PizzaShack686467,SportsLittle,Sport,Go Karting,796 Cherry Avenue,South Brunswick,Camden,20,56,5,10
+SportGoods614049,LittleKing,Sport,Sailing,723 Court Avenue,South Hackensack,New Brunswick,19,26,1,9
+PizzaShack947218,Ice CreamPasta,Sport,Swimming,801 Jackson Road,Ewing,Camden,10,28,4,8
+SportsCenter281798,FactoryPasta,Sport,Indian,338 Cedar Avenue,Alexandria,Camden,8,34,3,10
+RuggedOutdoors427933,GenericRing,Outdoor,Mediterranean,861 Quail Lane,Cranbury,New Brunswick,8,37,1,6
+SportsCenter142292,MediumMall,Outdoor,Camping,551 Willow Street,Lyndhurst,Newark,3,74,1,7
+AlcoholSeller850346,KingGeneric,Cafe,Surfing,5 Court Avenue,Haddon,Newark,4,70,5,5
+AlcoholSeller296287,BigGeneric,Sport,Spanish,453 Hemlock,Bedminster,Camden,11,64,3,8
+AlcoholSeller765504,MediumIce Cream,Sport,Bar,774 Dogwood Street,Ewing,Camden,4,66,5,5
+GoodCafe689006,StoreBurgers,Outdoor,Go Karting,127 Ridge Road,Sparta,Newark,15,29,5,10
+Eating133167,DeliKing,Sport,BBQ,944 Hemlock,Stillwater,New Brunswick,6,57,1,6
+SurfingInTheUSA471586,ClothingBurgers,Food,Go Karting,371 Maple Road,Allamuchy,New Brunswick,14,76,3,6
+GoodCafe134227,RingMedium,Sport,South American,25 Forest Street,Parsippany-Troy Hills,Newark,4,25,5,6
+Eating970847,PastaFine n Dine,Sport,Romanian,189 Apache Street,Fairfield,Newark,13,34,4,8
+GoodCafe224304,MediumPasta,Sport,Swimming,726 Narragansett Avenue,Scotch Plains,New Brunswick,18,73,4,8
+EthnicFood927173,SmallStore,Outdoor,Mountain Biking,889 Market Street,Edgewater Park,New Brunswick,10,71,5,7
+Sporty571547,RestaurantKing,Cafe,Indian,451 Wood Avenue,Fairfield,New Brunswick,10,58,2,5
+SportsCenter734398,RestaurantStore,Outdoor,Japanese,866 Laurel Steet,Alexandria,New Brunswick,7,66,4,5
+FoodLove657466,RestaurantPizza,Sport,Shooting Range,836 Pinon Street,Piscataway,Newark,19,78,2,6
+PizzaShack819963,GenericCafe,Sport,Japanese,713 Columbine Road,Montgomery,Camden,13,78,1,5
+SportGoods461591,MallSports,Outdoor,Mediterranean,710 Center Avenue,Edgewater Park,Newark,9,25,5,7
+SurfingInTheUSA835487,SmallSports,Cafe,Thai,294 Madison Avenue,Ewing,New Brunswick,7,64,1,8
+Hills984829,PizzaGeneric,Outdoor,Polish,248 Mill Street,Scotch Plains,Camden,18,53,2,5
+SportGoods925787,GenericKing,Cafe,Bowling,388 Cedar Avenue,Piscataway,New Brunswick,8,80,1,10
+SportsCenter601833,ClothingRing,Cafe,Bowling,71 Sycamore Street,Scotch Plains,Newark,4,22,1,7
+Sporty589505,Fine n DineDeli,Outdoor,Go Karting,51 Aspen Street,Montgomery,Newark,21,44,1,7
+AlcoholSeller159394,ElectronicsPizza,Sport,Indian,393 Hampton Street,Alexandria,New Brunswick,12,77,3,6
+SportsCenter647707,BigMall,Outdoor,Bowling,283 Main Street,Aberdeen,New Brunswick,12,27,2,5
+AlcoholSeller952499,StoreBurgers,Outdoor,Vietnamese,632 Laurel Steet,Sparta,New Brunswick,5,66,4,6
+Eating494150,PastaGeneric,Sport,Bubble Tea,881 Prospect Street,Piscataway,New Brunswick,7,40,5,10
+Sporty296551,Fine n DineBig,Cafe,Vietnamese,751 Laurel Steet,Rockway,Camden,4,74,4,10
+Eating686154,RingRestaurant,Sport,Bubble Tea,89 Dogwood Street,Riverside,Newark,19,67,3,6
+FoodLove509966,Whole SalesMall,Sport,Surfing,317 Magnolia,Berlin,Newark,21,61,4,7
+PizzaShack488727,PizzaPolish,Cafe,Coffee Shop,122 Ridge Street,Sparta,New Brunswick,11,43,2,6
+RuggedOutdoors736747,LittleMedium,Cafe,Spanish,998 Cottonwood Lane,Edison,Newark,5,59,4,7
+Sporty877405,PolishMall,Cafe,Mexican,926 Cedar Avenue,Bedminster,Camden,17,31,3,9
+GoodCafe901348,BigFactory,Food,Golf,779 Spring Street,Cranbury,Camden,18,24,5,8
+AlcoholSeller59924,Outdoor SpotLittle,Food,Bubble Tea,971 River Road,Cherry Hill,Camden,20,36,2,6
+SurfingInTheUSA617570,Outdoor SpotPolish,Cafe,Indian,199 Church Street,Sparta,Camden,21,32,4,6
+SurfingInTheUSA752172,PolishOutdoor Spot,Outdoor,Mexican,268 Juniper Street,Aberdeen,New Brunswick,14,73,1,10
+SurfingInTheUSA974699,GenericKing,Sport,South American,141 Cypress Street,Allamuchy,New Brunswick,19,78,3,8
+SportGoods46651,KingSmall,Sport,South American,321 Maple Street,Gloucester,Camden,6,64,3,8
+SportsCenter277692,StorePasta,Cafe,Shooting Range,5 Washington Street,Edison,Camden,21,71,5,6
+SurfingInTheUSA662320,StoreWhole Sales,Outdoor,Swimming,822 Pinon Street,Cranbury,Newark,4,65,4,5
+EthnicFood513354,PastaElectronics,Cafe,Bowling,716 Bay Road,East Hanover,Newark,13,32,3,6
+FoodLove603591,KingPizza,Outdoor,Mediterranean,638 River Road,Teaneck,Newark,9,39,3,10
+EthnicFood774566,KingWhole Sales,Outdoor,Mountain Biking,453 Cherry Avenue,Franklin,New Brunswick,21,74,3,7
+ApplesAndOranges674829,SmallRing,Outdoor,Mountain Biking,460 Spring Street,Bernards,Newark,19,51,5,6
+ApplesAndOranges504950,PizzaBig,Food,Mediterranean,772 Spring Street,Cherry Hill,Newark,4,66,1,7
+GoodCafe214178,ClothingBig,Cafe,Golf,887 River Road,Stillwater,New Brunswick,10,62,4,9
+EthnicFood877134,MediumOutdoor Spot,Food,Italian,425 Juniper Street,Sparta,Camden,10,32,5,5
+Sporty339849,LittlePasta,Cafe,Mediterranean,990 Canyon Street,Stillwater,Camden,15,80,5,6
+GoodCafe348860,CafeBig,Cafe,Archery,279 Washington Avenue,Robbinsville,Newark,7,45,5,9
+ApplesAndOranges678207,RingMedium,Outdoor,Sailing,967 Madison Avenue,Aberdeen,New Brunswick,8,48,2,5
+Hills704161,CafePolish,Outdoor,Romanian,72 Hill Avenue,Berlin,Camden,3,71,1,10
+SurfingInTheUSA711304,BigSmall,Sport,Mexican,378 Ridge Street,Sparta,Camden,10,63,4,9
+GoodCafe26077,SmallLittle,Sport,Skiing,271 School Street,Rockway,Camden,5,43,5,6
+Sporty294346,FactoryFactory,Cafe,Fast food,376 Willow Street,South Hackensack,New Brunswick,4,67,2,7
+SportsCenter484294,SmallGeneric,Food,Mexican,358 Magnolia,East Brunswick,Newark,5,51,3,10
+SurfingInTheUSA836492,ElectronicsWhole Sales,Cafe,Sailing,434 Court Street,Plainsboro,Camden,7,28,1,7
+SportsCenter723314,StoreFactory,Food,Thai,51 Palo Verde,Robbinsville,New Brunswick,15,29,3,9
+FoodLove989936,PastaCafe,Outdoor,Swimming,72 Laurel Steet,Pittsgrove,Newark,10,68,3,10
+ApplesAndOranges594201,MallFine n Dine,Outdoor,Golf,55 Aspen Street,East Windsor,New Brunswick,2,24,2,9
+SurfingInTheUSA907298,MallFine n Dine,Outdoor,Mexican,292 Lehua Lane,East Windsor,New Brunswick,18,62,1,8
+SportsCenter200694,Ice CreamPasta,Sport,Archery,493 Hickory Street,Haddon,New Brunswick,19,79,3,9
+ApplesAndOranges593686,SportsSmall,Food,Japanese,979 Oak Lane,Teaneck,Camden,12,45,5,9
+SportGoods846655,PizzaBig,Sport,Vietnamese,210 Spring Street,Cherry Hill,Camden,17,42,4,7
+SellingGoods970801,ParkGeneric,Food,Camping,908 Hillside Street,Stow Creek,New Brunswick,8,37,1,7
+SportsCenter934179,Ice CreamKing,Outdoor,Go Karting,319 Orchard Avenue,South Hackensack,New Brunswick,2,69,3,8
+Sporty338398,PastaClothing,Food,Canoeing,739 Aloha Street,Riverside,Camden,3,33,4,7
+Eating541697,RestaurantSmall,Cafe,Southern,917 Strawberry Avenue,Aberdeen,Newark,4,66,1,10
+AlcoholSeller984154,CafeCafe,Food,Thai,456 Mountain View,Union,New Brunswick,17,50,3,5
+SurfingInTheUSA909253,ClothingBig,Cafe,Skiing,334 Hill Avenue,Rockway,Camden,11,49,2,9
+PizzaShack722919,GenericGeneric,Cafe,Spanish,634 Walnut Street,Aberdeen,New Brunswick,13,74,5,10
+Hills102735,Ice CreamDeli,Outdoor,Thai,77 Ridge Street,Haddon,Camden,9,50,1,6
+FoodLove214219,BurgersPasta,Outdoor,Mountain Biking,561 Columbine Road,Lyndhurst,New Brunswick,14,29,3,9
+SellingGoods396976,ParkRing,Food,BBQ,327 Cypress Street,Riverside,Camden,16,58,5,5
+EthnicFood710010,RingPolish,Outdoor,Chinese,567 Cedar Street,South Orange,Newark,14,25,1,7
+Sporty909842,RestaurantKing,Food,Romanian,304 Willow Street,Rochelle,Camden,7,72,5,9
+ApplesAndOranges124871,CafeSmall,Food,Coffee Shop,982 Mountain View,Branchburg,Camden,19,69,1,5
+Hills196760,BigPark,Outdoor,Japanese,514 Oak Lane,Riverside,New Brunswick,7,35,2,9
+RuggedOutdoors31827,SportsGeneric,Outdoor,Indian,896 Oak Lane,Teaneck,New Brunswick,19,68,4,8
+AlcoholSeller492234,PastaSmall,Outdoor,Thai,170 Narragansett Avenue,Alexandria,New Brunswick,17,23,1,5
+SportGoods513210,FactoryPolish,Sport,Japanese,845 Maple Street,Branchburg,Newark,5,56,3,5
+Eating880081,MediumSmall,Sport,Bar,996 Juniper Street,Stow Creek,Camden,12,67,3,7
+EthnicFood432744,PolishGeneric,Outdoor,Diner,273 Mountain View,Robbinsville,Newark,3,36,1,6
+ApplesAndOranges144354,StoreOutdoor Spot,Cafe,Chinese,215 Oak Lane,Bernards,Newark,8,63,1,6
+GoodCafe215195,PolishMedium,Food,Mexican,77 Ridge Street,South Orange,New Brunswick,4,72,1,9
+Eating714094,SmallPizza,Cafe,BBQ,363 Apache Street,Stow Creek,Newark,14,33,3,9
+RuggedOutdoors224134,StoreSports,Sport,Surfing,606 Hemlock Road,Bedminster,New Brunswick,7,65,4,6
+Eating764836,FactoryIce Cream,Sport,Mediterranean,762 Quail Lane,Pittsgrove,Camden,15,64,1,6
+SportGoods329308,PastaCafe,Food,Mediterranean,832 Hillside Street,Bedminster,Camden,8,52,4,10
+Eating437925,ClothingBig,Food,Vietnamese,669 Chestnut Avenue,Edison,Camden,16,32,1,7
+GoodCafe843048,ElectronicsMall,Outdoor,Camping,944 Lee Street,Bernards,Camden,6,50,1,5
+ApplesAndOranges615333,MediumPark,Outdoor,Coffee Shop,751 Pinon Street,Montgomery,Camden,21,30,5,7
+SellingGoods177091,PizzaRing,Sport,Mexican,772 Willow Street,East Hanover,Camden,21,57,2,8
+Hills103548,MallLittle,Outdoor,Indian,60 Maple Street,Haddon,New Brunswick,3,46,3,8
+SellingGoods167350,PizzaKing,Cafe,Mediterranean,602 Strawberry Avenue,Robbinsville,Newark,15,66,1,8
+Sporty523613,LittleKing,Food,Shooting Range,173 Ridge Road,Bridgewater,Newark,21,43,2,8
+SurfingInTheUSA593811,Outdoor SpotKing,Outdoor,Chinese,918 Sycamore Street,Fairfield,Newark,7,39,5,6
+SportsCenter116263,Outdoor SpotPizza,Cafe,South American,310 Willow Street,Pittsgrove,Camden,20,37,1,6
+AlcoholSeller808018,BigPolish,Cafe,Vietnamese,468 Pioneer Road,Piscataway,Newark,3,70,5,5
+FoodLove454119,Fine n DineCafe,Sport,Canoeing,871 Laurel Steet,Roxbury,Newark,12,27,2,6
+GoodCafe564448,RestaurantGeneric,Food,Spanish,984 Hemlock,Rockway,Camden,15,32,5,10
+ApplesAndOranges239067,LittleGeneric,Sport,Indian,779 Shore Street,Princeton,Newark,15,41,3,5
+ApplesAndOranges284026,KingFactory,Outdoor,Shooting Range,396 Adams Lane,Sparta,Newark,5,32,4,6
+SportGoods304959,BigPark,Cafe,Bar,479 Maplestory Road,East Hanover,New Brunswick,10,42,3,7
+Hills178847,Outdoor SpotSports,Outdoor,Southern,77 Willow Street,Edison,Newark,9,31,4,10
+AlcoholSeller938983,Fine n DineOutdoor Spot,Food,BBQ,335 Prospect Street,Berlin,New Brunswick,18,67,4,9
+PizzaShack284566,LittleGeneric,Food,Romanian,562 Mesquite Road,East Hanover,Camden,19,55,3,9
+Sporty270086,Fine n DinePolish,Cafe,Archery,977 Mesquite Road,Union,Newark,14,67,2,6
+RuggedOutdoors253843,ClothingPark,Cafe,Mountain Biking,97 Dogwood Street,Montgomery,Camden,2,44,3,7
+EthnicFood880286,Outdoor SpotRing,Food,Polish,1000 Ridge Road,Teaneck,New Brunswick,9,28,2,9
+SportGoods804184,PizzaOutdoor Spot,Cafe,Romanian,302 Center Street,Franklin,Camden,12,78,1,5
+ApplesAndOranges134544,GenericPolish,Sport,Thai,665 Aspen Street,Bridgewater,New Brunswick,13,26,2,10
+PizzaShack11892,PolishCafe,Cafe,Southern,436 Walnut Street,Aberdeen,New Brunswick,21,68,2,9
+SellingGoods356164,MallBurgers,Outdoor,Surfing,500 Mountain View,Edgewater Park,Camden,17,42,5,7
+AlcoholSeller544525,ElectronicsMedium,Food,Indian,830 Cedar Avenue,East Hanover,Newark,10,62,3,10
+Eating974754,KingSports,Cafe,Romanian,544 Chestnut Avenue,Riverside,Camden,16,26,5,7
+SportsCenter660556,BigElectronics,Sport,South American,502 Cedar Avenue,Lyndhurst,Newark,13,54,3,9
+Eating896877,LittlePark,Outdoor,Archery,215 South Park,South Hackensack,Camden,10,69,3,8
+Hills141918,KingRestaurant,Sport,Surfing,424 Juniper Street,Scotch Plains,New Brunswick,12,34,3,5
+Hills860660,Ice CreamSmall,Outdoor,Mexican,858 Aspen Street,Riverside,Newark,17,35,2,6
+SellingGoods274362,RingLittle,Food,Italian,926 Juniper Street,Haddon,New Brunswick,7,57,4,10
+GoodCafe78670,ElectronicsDeli,Sport,Italian,105 Narragansett Avenue,Branchburg,Newark,18,40,3,5
+PizzaShack56931,ParkClothing,Sport,Skiing,199 Cypress Street,Plainsboro,Camden,17,56,2,9
+Sporty368986,ParkPasta,Sport,Italian,236 Cedar Avenue,South Hackensack,Newark,14,66,5,9
+RuggedOutdoors359412,BigClothing,Cafe,South American,188 School Street,Bridgewater,New Brunswick,11,28,2,9
+RuggedOutdoors64506,BurgersPizza,Cafe,Fast food,260 Court Avenue,Stow Creek,Newark,14,46,5,5
+Hills76002,KingIce Cream,Food,Bar,364 Canyon Street,Fairfield,Newark,5,36,4,6
+FoodLove729895,ElectronicsPasta,Cafe,Mountain Biking,198 Sunset Road,Plainsboro,Newark,21,50,1,7
+SellingGoods717918,ClothingFactory,Food,Italian,243 Cypress Street,East Hanover,Camden,17,79,4,10
+AlcoholSeller150723,Whole SalesLittle,Cafe,Southern,366 Center Street,Bedminster,Camden,3,76,5,7
+SurfingInTheUSA790612,ClothingMedium,Food,Mediterranean,198 Hemlock Road,Edgewater Park,Newark,19,26,2,10
+Eating257274,GenericWhole Sales,Outdoor,Archery,595 Hemlock,Stillwater,New Brunswick,21,60,4,5
+AlcoholSeller24327,PastaBurgers,Cafe,Sailing,115 Juniper Street,East Windsor,Newark,10,73,5,7
+FoodLove59743,GenericOutdoor Spot,Cafe,Bubble Tea,313 Court Avenue,Edgewater Park,Newark,14,61,3,10
+SportGoods381488,ClothingOutdoor Spot,Food,Camping,716 Lehua Lane,East Windsor,Camden,3,71,2,6
+SportsCenter483589,PizzaRing,Sport,Fast food,95 Washington Avenue,Franklin,Newark,16,35,1,9
+PizzaShack715011,CafeElectronics,Food,Sailing,792 Aspen Street,Teaneck,Camden,14,35,4,7
+Sporty107653,RingFactory,Outdoor,Fast food,81 Meadow Street,Bridgewater,New Brunswick,15,34,1,9
+Hills904395,LittleFine n Dine,Cafe,Go Karting,582 Center Avenue,Piscataway,Camden,18,31,3,10
+PizzaShack791664,ClothingLittle,Cafe,BBQ,515 Center Street,Edison,Camden,5,33,2,8
+SellingGoods231128,PastaOutdoor Spot,Sport,Coffee Shop,291 Narragansett Avenue,Allamuchy,Camden,15,67,5,10
+Hills518249,RestaurantPasta,Food,Mountain Biking,505 Pioneer Road,Edison,Camden,14,37,4,5
+AlcoholSeller471294,MallFactory,Sport,Shooting Range,669 Church Street,Allamuchy,Newark,16,33,5,8
+GoodCafe557885,ElectronicsCafe,Food,Southern,319 Birch Street,Ewing,Camden,10,54,3,9
+PizzaShack462919,PastaGeneric,Cafe,Swimming,450 Jackson Road,Bernards,Camden,12,41,2,7
+Hills648545,ElectronicsLittle,Sport,Mountain Biking,698 Juniper Street,Cherry Hill,New Brunswick,9,35,5,7
+AlcoholSeller542214,Whole SalesSmall,Food,Chinese,523 Willow Street,Haddon,Newark,16,32,1,8
+PizzaShack798011,Ice CreamLittle,Cafe,Italian,703 School Street,Pittsgrove,New Brunswick,18,24,2,8
+AlcoholSeller687791,Ice CreamPizza,Sport,Vietnamese,782 Evergreen,East Hanover,Camden,4,32,4,6
+SurfingInTheUSA388263,DeliFactory,Cafe,Spanish,776 Davis Road,Edgewater Park,Camden,4,49,4,9
+Eating185601,ParkDeli,Cafe,BBQ,417 Pioneer Road,Plainsboro,New Brunswick,18,79,2,7
+SportGoods66538,Ice CreamClothing,Sport,Canoeing,306 Ridge Street,East Hanover,Camden,9,46,4,5
+Hills382633,BurgersIce Cream,Sport,Italian,274 Chestnut Avenue,Roxbury,Newark,14,76,2,9
+RuggedOutdoors417124,RestaurantBurgers,Outdoor,Diner,28 Orchard Avenue,Fairfield,New Brunswick,14,39,3,7
+RuggedOutdoors354364,RingDeli,Outdoor,BBQ,696 Center Avenue,Piscataway,Newark,20,72,3,10
+SellingGoods598417,SportsSports,Food,Diner,615 Maple Road,Berlin,Camden,15,50,4,9
+SportsCenter293751,RingFine n Dine,Outdoor,Golf,320 Main Street,Cherry Hill,Newark,4,22,3,7
+Eating244594,StorePolish,Food,Vietnamese,52 Strawberry Avenue,Roxbury,Newark,21,38,4,5
+AlcoholSeller759928,LittleRestaurant,Outdoor,Thai,674 North Park,Edison,New Brunswick,8,69,5,6
+PizzaShack429443,Fine n DineWhole Sales,Outdoor,Indian,153 Quail Lane,Bedminster,Camden,18,22,3,5
+EthnicFood911281,PastaWhole Sales,Sport,Diner,827 Cedar Avenue,South Hackensack,Newark,16,60,3,7
+SellingGoods231647,StoreRing,Cafe,Archery,918 Spruce Street,Haddon,Camden,15,61,4,8
+SellingGoods497723,Ice CreamSports,Cafe,Shooting Range,374 Narragansett Avenue,Gloucester,Newark,12,65,2,6
+SellingGoods577298,Outdoor SpotPolish,Sport,Spanish,788 Johnson Street,Roxbury,Newark,3,54,4,8
+SurfingInTheUSA377981,Outdoor SpotGeneric,Sport,Coffee Shop,411 Orchard Avenue,Pittsgrove,Newark,6,66,2,9
+Sporty962707,FactoryPizza,Outdoor,Italian,454 Johnson Street,Haddon,New Brunswick,11,35,5,9
+EthnicFood363690,MediumOutdoor Spot,Food,Sailing,402 Airport Lane,Aberdeen,New Brunswick,6,35,5,6
+FoodLove519748,ElectronicsPark,Food,Coffee Shop,523 Lehua Lane,Branchburg,Camden,7,64,1,5
+EthnicFood917432,Whole SalesWhole Sales,Food,Surfing,150 Spruce Street,Bedminster,Camden,14,40,3,8
+SportGoods325200,ElectronicsGeneric,Food,Romanian,728 Elm Street,Plainsboro,New Brunswick,15,61,2,8
+SportsCenter352090,GenericStore,Sport,Camping,943 Sunset Road,East Windsor,New Brunswick,12,32,4,6
+Hills66603,Whole SalesRing,Cafe,Skiing,972 Cedar Street,Union,Camden,14,41,4,5
+FoodLove311052,GenericBig,Sport,Bubble Tea,84 Court Avenue,Plainsboro,Newark,12,65,2,6
+PizzaShack355699,Whole SalesPasta,Outdoor,Archery,346 Prospect Street,Parsippany-Troy Hills,Camden,7,41,2,8
+SellingGoods364294,FactoryCafe,Cafe,Vietnamese,188 Pioneer Road,Ewing,Camden,5,73,3,5
+FoodLove66777,MediumSports,Outdoor,Diner,256 Oak Lane,Aberdeen,Camden,14,21,3,10
+PizzaShack625399,ParkPark,Cafe,Italian,362 Lakeview,Princeton,New Brunswick,6,49,4,10
+SellingGoods357110,GenericCafe,Sport,Japanese,527 Market Street,Roxbury,Camden,16,43,3,6
+GoodCafe819464,PastaBurgers,Sport,BBQ,851 Chestnut Avenue,Rochelle,New Brunswick,6,77,2,8
+FoodLove656345,KingSports,Sport,Shooting Range,331 Wood Avenue,Princeton,Camden,17,36,1,9
+GoodCafe247510,Whole SalesFactory,Outdoor,Skiing,931 Aloha Street,Edison,New Brunswick,4,58,2,7
+SportGoods733679,BurgersFactory,Food,Canoeing,48 Main Street,Bridgewater,Newark,17,33,4,6
+SellingGoods612076,ElectronicsBurgers,Food,Coffee Shop,106 Lehua Lane,Bedminster,Camden,8,78,5,8
+Sporty373122,SportsWhole Sales,Food,Bowling,501 Orchard Avenue,Pittsgrove,Camden,10,62,3,9
+EthnicFood888106,CafeMedium,Sport,Surfing,177 Forest Street,Pittsgrove,Newark,16,42,1,6
+ApplesAndOranges344596,KingLittle,Outdoor,BBQ,15 Sycamore Street,Piscataway,Newark,4,78,5,8
+FoodLove995784,RestaurantRestaurant,Cafe,Golf,131 Cedar Avenue,Edgewater Park,New Brunswick,13,54,3,9
+Sporty647561,MallElectronics,Cafe,Chinese,24 Center Street,Cherry Hill,Newark,12,21,3,9
+SportGoods466341,KingPizza,Food,Vietnamese,898 Adams Lane,East Hanover,Newark,13,42,4,5
+Sporty346796,SmallFactory,Food,Diner,215 Lee Street,Hillsborough,Camden,4,39,1,10
+SportsCenter15752,StoreDeli,Food,Japanese,587 Apache Street,Sparta,Newark,7,43,2,6
+SellingGoods236188,SmallClothing,Sport,South American,590 Mill Street,Fairfield,New Brunswick,15,29,1,8
+FoodLove400930,CafeStore,Outdoor,Fast food,630 Shore Street,Teaneck,New Brunswick,17,47,5,5
+PizzaShack888847,ElectronicsRing,Outdoor,Indian,666 Chestnut Avenue,Rockway,Newark,15,57,3,6
+SportGoods618166,Ice CreamClothing,Outdoor,Mountain Biking,776 North Park,Piscataway,New Brunswick,8,34,3,9
+SurfingInTheUSA203819,Outdoor SpotFine n Dine,Food,Go Karting,290 Hampton Street,Edison,Camden,3,38,4,7
+FoodLove835119,BurgersFine n Dine,Food,Thai,74 Center Avenue,Roxbury,Newark,7,61,1,8
+AlcoholSeller853866,GenericKing,Sport,Spanish,164 Main Street,Allamuchy,Camden,6,68,2,8
+RuggedOutdoors316310,ParkRestaurant,Food,Sailing,343 South Park,Teaneck,Camden,7,26,4,8
+PizzaShack196244,StoreFactory,Outdoor,Go Karting,39 Cherry Avenue,Berlin,Newark,5,50,2,6
+AlcoholSeller987019,ElectronicsKing,Food,Canoeing,410 Meadow Street,Gloucester,New Brunswick,15,54,2,6
+SportGoods253760,CafeLittle,Sport,Archery,126 Prospect Street,Montgomery,New Brunswick,5,64,2,9
+Eating850065,MediumIce Cream,Outdoor,Japanese,318 Pinon Street,Union,Newark,20,52,5,7
+Hills338760,CafePolish,Sport,Polish,562 Hickory Street,Berlin,New Brunswick,6,57,2,9
+SportsCenter162674,PolishCafe,Food,Mediterranean,748 Aspen Street,Franklin,Newark,14,51,4,10
+GoodCafe42861,LittleMall,Outdoor,Vietnamese,604 Aloha Street,Bernards,Newark,19,36,2,5
+Sporty238058,DeliMall,Sport,Bar,408 Cedar Street,Bridgewater,New Brunswick,13,60,3,9
+PizzaShack262605,RestaurantRestaurant,Cafe,Thai,531 Ridge Road,Piscataway,Newark,5,62,1,10
+SurfingInTheUSA274438,Fine n DineClothing,Cafe,Sailing,580 Columbine Road,Montgomery,New Brunswick,20,77,1,10
+SellingGoods191597,PastaOutdoor Spot,Outdoor,Sailing,861 River Road,Roxbury,Camden,14,22,2,10
+SportGoods135157,BigStore,Cafe,Coffee Shop,906 Johnson Street,South Orange,Camden,14,37,4,6
+Eating283061,ElectronicsPark,Cafe,Bar,511 Court Avenue,South Hackensack,Newark,2,23,5,8
+Sporty324928,SportsClothing,Food,Indian,169 Maple Road,Fairfield,New Brunswick,7,33,1,5
+FoodLove863824,SportsFine n Dine,Outdoor,Mediterranean,372 Mesquite Road,Roxbury,Camden,10,65,3,8
+Hills155619,SmallMall,Food,Chinese,851 Dogwood Street,Haddon,Camden,20,37,3,10
+PizzaShack181914,RingSports,Food,Canoeing,922 Market Street,South Hackensack,Newark,3,30,1,9
+SellingGoods6576,RestaurantPizza,Food,Shooting Range,55 Elm Street,Riverside,Camden,11,27,2,5
+FoodLove20206,GenericFactory,Sport,Go Karting,844 Market Street,East Brunswick,New Brunswick,15,77,1,10
+Sporty107611,KingPolish,Cafe,BBQ,529 Oak Lane,East Hanover,New Brunswick,14,75,5,9
+SurfingInTheUSA436709,Fine n DineFine n Dine,Outdoor,Surfing,333 Washington Street,Fairfield,Camden,18,70,4,5
+FoodLove219106,SportsSmall,Food,Bar,231 Center Street,Branchburg,Newark,10,44,3,10
+SurfingInTheUSA771529,ElectronicsPolish,Outdoor,Diner,902 Columbine Road,Rochelle,New Brunswick,4,23,5,5
+SurfingInTheUSA357856,BigBurgers,Food,Southern,662 Apache Street,Ewing,Camden,19,55,4,6
+SportsCenter252739,RingRing,Sport,Vietnamese,512 Washington Street,Stow Creek,New Brunswick,9,27,1,8
+SurfingInTheUSA598369,MediumGeneric,Sport,Fast food,922 Quail Lane,Cherry Hill,Camden,15,75,3,6
+ApplesAndOranges985809,FactoryPolish,Sport,Coffee Shop,533 Chestnut Avenue,East Hanover,New Brunswick,12,35,2,10
+AlcoholSeller323628,FactoryPolish,Cafe,Camping,265 Birch Street,Bernards,New Brunswick,12,27,5,7
+Sporty687627,BurgersPasta,Food,Bar,644 Hill Avenue,Stillwater,New Brunswick,5,33,4,10
+GoodCafe729277,BurgersPolish,Cafe,Spanish,447 Hickory Street,Allamuchy,Camden,20,74,2,7
+Hills979573,PolishStore,Cafe,Japanese,297 Hemlock,Alexandria,Camden,19,78,5,6
+Sporty731917,PolishClothing,Cafe,Italian,605 Oak Lane,Stow Creek,Camden,18,78,5,5
+GoodCafe229670,StoreBurgers,Outdoor,Polish,656 Walnut Street,East Brunswick,Newark,17,29,5,6
+SportsCenter85087,Outdoor SpotDeli,Outdoor,Polish,467 Cypress Street,Teaneck,Camden,13,72,3,10
+SurfingInTheUSA641151,ClothingGeneric,Sport,Go Karting,945 Main Street,Robbinsville,New Brunswick,10,25,4,6
+SellingGoods362475,StoreDeli,Food,Thai,26 Cedar Street,Roxbury,New Brunswick,18,70,3,5
+Eating908240,FactoryBig,Food,Italian,136 Shore Street,South Orange,Newark,16,68,5,9
+SurfingInTheUSA493753,LittleClothing,Cafe,Bar,717 Sycamore Street,East Hanover,New Brunswick,21,74,1,10
+AlcoholSeller701440,CafeGeneric,Food,Golf,319 Madison Avenue,Bridgewater,Camden,8,46,4,5
+Eating610906,ClothingKing,Food,Romanian,955 Center Street,Sparta,New Brunswick,14,32,1,10
+Sporty338834,Whole SalesKing,Sport,Chinese,328 Evergreen,Robbinsville,New Brunswick,13,23,4,8
+RuggedOutdoors532141,KingKing,Cafe,Indian,215 Birch Street,Hillsborough,Camden,13,32,4,10
+GoodCafe435863,ParkRing,Food,Fast food,635 Mesquite Road,Cherry Hill,Newark,20,49,5,9
+SurfingInTheUSA603412,BigBurgers,Outdoor,Indian,211 Bay Road,Union,Camden,17,28,3,6
+Sporty782531,FactoryPolish,Outdoor,Golf,527 Bay Road,Rochelle,Camden,13,33,3,5
+Eating122173,Whole SalesLittle,Sport,Fast food,302 Airport Lane,Aberdeen,Newark,12,64,3,5
+EthnicFood513187,Ice CreamMedium,Food,Bubble Tea,36 Sunset Road,Scotch Plains,Camden,19,45,5,9
+SellingGoods229204,DeliRestaurant,Food,Bar,299 Ridge Road,Aberdeen,Camden,2,33,5,5
+SportGoods617927,RestaurantDeli,Outdoor,Camping,796 Shore Street,Union,Newark,7,25,2,7
+PizzaShack749548,BurgersPizza,Outdoor,Thai,967 Walnut Street,Lyndhurst,New Brunswick,15,53,1,8
+GoodCafe178888,StoreLittle,Cafe,Italian,531 Madison Avenue,Lyndhurst,Camden,3,30,1,10
+GoodCafe493612,Ice CreamLittle,Food,Bar,357 Main Street,Pittsgrove,New Brunswick,8,49,2,5
+FoodLove88619,CafeIce Cream,Food,Diner,658 Aspen Street,Aberdeen,New Brunswick,19,48,2,7
+SportsCenter125674,Fine n DineDeli,Cafe,Romanian,250 Adams Lane,East Brunswick,New Brunswick,4,52,5,6
+EthnicFood642449,RingFactory,Outdoor,South American,770 Lee Street,Stow Creek,Newark,8,44,2,5
+PizzaShack301229,Whole SalesBurgers,Food,Mountain Biking,827 Hill Avenue,Gloucester,New Brunswick,8,76,1,5
+RuggedOutdoors899169,Whole SalesElectronics,Outdoor,Japanese,639 Airport Lane,Branchburg,Camden,15,77,5,7
+SportsCenter572971,DeliGeneric,Food,Archery,768 Church Street,East Hanover,New Brunswick,12,77,5,5
+SportGoods213136,PastaElectronics,Cafe,Indian,869 Quail Lane,Branchburg,Newark,12,42,1,6
+PizzaShack435209,RestaurantCafe,Cafe,Skiing,857 Narragansett Avenue,Bedminster,Newark,20,58,1,6
+GoodCafe697084,SportsKing,Outdoor,Canoeing,342 Main Street,South Hackensack,New Brunswick,19,43,3,5
+ApplesAndOranges890544,BurgersFine n Dine,Sport,Indian,493 Washington Street,Plainsboro,Newark,19,30,5,6
+Sporty186939,MediumFine n Dine,Food,Indian,224 Jackson Road,East Hanover,Camden,3,46,5,6
+FoodLove750486,PolishLittle,Sport,Bowling,301 Navajo Road,Edgewater Park,Newark,16,77,3,9
+PizzaShack170797,ParkMall,Food,Italian,213 Hickory Street,Bernards,New Brunswick,20,62,1,8
+Eating557588,GenericPolish,Outdoor,Camping,7 Adams Lane,Hillsborough,New Brunswick,13,25,1,7
+AlcoholSeller398297,Fine n DineCafe,Sport,Bubble Tea,792 Lehua Lane,Rockway,New Brunswick,13,63,1,10
+Hills565533,BurgersOutdoor Spot,Sport,Polish,712 Church Street,Cherry Hill,Camden,6,29,3,9
+SportsCenter201145,BurgersBig,Cafe,Indian,881 School Street,Bridgewater,Newark,11,68,3,9
+PizzaShack998764,DeliRing,Sport,Indian,353 Prospect Street,Hillsborough,New Brunswick,18,31,2,9
+AlcoholSeller646072,PastaStore,Food,Spanish,597 Hemlock Road,Plainsboro,New Brunswick,8,27,2,7
+Eating69066,PolishBig,Cafe,Polish,656 Cypress Street,Roxbury,Camden,3,61,2,10
+GoodCafe636896,StoreSmall,Sport,BBQ,669 Sunset Road,Fairfield,Camden,13,68,1,8
+GoodCafe19266,ClothingGeneric,Sport,Bar,53 Hill Avenue,Parsippany-Troy Hills,Camden,16,21,1,10
+SportGoods263486,BigElectronics,Sport,Bubble Tea,661 Lakeview,Pittsgrove,Camden,17,39,2,9
+SportGoods600937,ElectronicsPasta,Outdoor,Diner,648 Center Avenue,Aberdeen,New Brunswick,8,39,4,10
+AlcoholSeller83838,Ice CreamDeli,Food,Mexican,421 Bay Road,Stow Creek,Newark,13,63,2,6
+EthnicFood529458,FactoryWhole Sales,Food,Coffee Shop,524 Lee Street,Cherry Hill,Newark,14,40,3,7
+FoodLove973045,Ice CreamBurgers,Outdoor,Mountain Biking,788 Aloha Street,East Windsor,Newark,16,26,3,10
+FoodLove598041,RingGeneric,Cafe,Chinese,684 Hemlock,Bridgewater,Newark,21,31,1,8
+FoodLove753955,BigOutdoor Spot,Cafe,Surfing,507 Pioneer Road,Edgewater Park,New Brunswick,14,52,1,9
+Eating608873,BurgersDeli,Outdoor,Swimming,670 Lehua Lane,Alexandria,Newark,4,51,3,9
+AlcoholSeller370626,BurgersPolish,Outdoor,Shooting Range,981 Oak Lane,Aberdeen,New Brunswick,19,45,5,10
+EthnicFood300046,MediumPolish,Food,Canoeing,174 Cypress Street,Edison,New Brunswick,18,28,3,6
+Hills720671,Whole SalesGeneric,Food,Bar,632 Hickory Street,Piscataway,Newark,14,48,5,5
+PizzaShack646678,StoreElectronics,Outdoor,Coffee Shop,484 Dogwood Street,Union,Camden,15,32,2,10
+Hills846046,RestaurantMedium,Cafe,Fast food,138 Magnolia,Aberdeen,New Brunswick,18,47,3,6
+Eating308627,PolishIce Cream,Cafe,Southern,557 Jackson Road,Plainsboro,New Brunswick,18,51,3,10
+Sporty875348,MallRing,Food,Mediterranean,88 Lehua Lane,Pittsgrove,Camden,15,52,5,5
+Sporty45597,SportsFine n Dine,Sport,Bowling,488 Ridge Street,Stillwater,New Brunswick,16,76,1,5
+FoodLove820398,SmallFine n Dine,Cafe,Indian,355 Hickory Street,Ewing,Newark,14,75,2,10
+FoodLove951192,GenericRing,Outdoor,Bowling,98 Center Street,Cranbury,Camden,8,45,4,5
+SportsCenter560820,ParkIce Cream,Outdoor,Southern,748 Ridge Avenue,Piscataway,Camden,17,75,4,8
+SurfingInTheUSA921517,PastaSports,Sport,Thai,177 Pinon Street,Ewing,Newark,11,56,5,9
+FoodLove962471,BurgersCafe,Sport,Swimming,526 Cherry Avenue,Plainsboro,New Brunswick,9,44,3,7
+EthnicFood665,GenericMedium,Outdoor,Thai,172 Aloha Street,Princeton,Camden,20,42,3,9
+SportGoods745690,Outdoor SpotDeli,Cafe,Thai,85 Apache Street,Bernards,Newark,19,77,2,10
+Eating843289,Ice CreamWhole Sales,Outdoor,Southern,237 Cedar Avenue,Roxbury,New Brunswick,11,76,3,6
+EthnicFood279032,SmallRestaurant,Food,Japanese,542 Adams Lane,Parsippany-Troy Hills,Camden,20,66,3,5
+SellingGoods828557,StoreIce Cream,Outdoor,Bubble Tea,192 Willow Street,Hillsborough,Camden,13,61,5,5
+Eating219144,PolishIce Cream,Food,Spanish,610 Sycamore Street,Scotch Plains,New Brunswick,5,38,1,6
+RuggedOutdoors459060,StoreBurgers,Food,Polish,687 Evergreen,Branchburg,Newark,9,32,2,5
+PizzaShack620270,DeliPizza,Sport,Southern,465 Laurel Steet,Pittsgrove,New Brunswick,20,58,2,5
+RuggedOutdoors821376,PizzaDeli,Outdoor,Mediterranean,608 Forest Street,Riverside,New Brunswick,19,44,2,6
+Eating407375,DeliStore,Outdoor,Bubble Tea,246 Orchard Avenue,Plainsboro,Camden,10,79,4,10
+Eating740884,Fine n DineKing,Outdoor,Go Karting,130 Center Avenue,Edison,Newark,4,76,3,8
+Hills136220,SmallPark,Outdoor,Romanian,8 Lakeview,East Hanover,New Brunswick,14,74,5,6
+SportGoods107341,ElectronicsPolish,Outdoor,Canoeing,753 Cottonwood Lane,Edgewater Park,Camden,11,70,3,8
+EthnicFood280268,BigSports,Food,Swimming,589 Davis Road,Princeton,Newark,17,55,5,8
+Sporty997348,LittleMall,Outdoor,Skiing,672 Prospect Street,Montgomery,Newark,8,36,2,6
+AlcoholSeller637493,KingIce Cream,Cafe,Bubble Tea,672 Ridge Street,Rockway,Camden,15,24,3,6
+EthnicFood710443,MallOutdoor Spot,Outdoor,Vietnamese,878 Sycamore Street,Union,Camden,6,79,4,9
+SportsCenter399769,SmallKing,Food,Chinese,601 Sycamore Street,Piscataway,Camden,19,56,1,10
+EthnicFood365170,DeliDeli,Cafe,Chinese,734 Hillside Street,East Hanover,Camden,7,76,4,9
+ApplesAndOranges907648,Whole SalesBurgers,Outdoor,Bowling,486 Lakeview,Parsippany-Troy Hills,New Brunswick,3,54,4,9
+FoodLove222986,Outdoor SpotGeneric,Cafe,BBQ,169 Sunset Road,Robbinsville,Camden,9,48,5,6
+SurfingInTheUSA136423,Outdoor SpotStore,Food,Diner,609 Sycamore Street,Rochelle,Camden,3,49,2,6
+AlcoholSeller717560,SportsPizza,Sport,Romanian,630 Willow Street,Franklin,New Brunswick,7,21,5,5
+SellingGoods481477,RingFactory,Food,Canoeing,968 Walnut Street,South Hackensack,Camden,2,57,5,7
+GoodCafe311147,ParkBig,Food,Mexican,463 Laurel Steet,Rochelle,Camden,11,25,1,10
+GoodCafe589192,RingSmall,Cafe,Italian,718 Highland Road,Rochelle,Camden,7,26,4,9
+FoodLove62072,StoreClothing,Sport,Bubble Tea,418 Highland Road,Riverside,Newark,18,67,5,7
+Sporty949232,Outdoor SpotSmall,Cafe,Surfing,370 Ridge Road,Bedminster,New Brunswick,15,38,4,10
+RuggedOutdoors893270,Fine n DineMedium,Outdoor,Indian,491 Magnolia,Ewing,Newark,18,54,3,5
+FoodLove292495,GenericBurgers,Sport,Spanish,409 Ridge Road,Robbinsville,New Brunswick,9,40,5,9
+AlcoholSeller134317,DeliSports,Outdoor,Mountain Biking,248 Spruce Street,Teaneck,New Brunswick,16,61,1,7
+FoodLove480804,Ice CreamPark,Food,Camping,709 Madison Avenue,East Hanover,Camden,14,59,4,8
+Hills498936,RingStore,Outdoor,Go Karting,432 Pinon Street,Fairfield,Newark,21,39,4,7
+SurfingInTheUSA951194,FactoryWhole Sales,Cafe,Italian,350 Orchard Avenue,Piscataway,Camden,14,77,3,7
+SellingGoods684311,MallWhole Sales,Sport,Mediterranean,180 Wood Avenue,Edison,Camden,16,73,5,7
+Sporty755392,SportsRestaurant,Food,Fast food,369 Ridge Road,Robbinsville,Camden,7,64,2,5
+SellingGoods803013,PizzaCafe,Food,South American,379 Hemlock Road,East Windsor,Newark,15,66,2,10
+SportGoods15367,MallKing,Food,Mediterranean,580 Birch Street,East Brunswick,Newark,9,30,3,5
+SurfingInTheUSA408643,PastaOutdoor Spot,Outdoor,Camping,948 Birch Street,Union,Newark,3,57,3,8
+PizzaShack787075,PizzaMall,Cafe,Mountain Biking,505 Birch Street,Alexandria,Newark,8,42,5,5
+Eating331254,Fine n DineCafe,Sport,Diner,991 River Road,South Hackensack,Camden,18,62,5,6
+ApplesAndOranges593178,PastaGeneric,Cafe,Indian,881 Pioneer Road,Berlin,Camden,14,79,3,8
+Eating346147,KingStore,Outdoor,Go Karting,94 Hill Avenue,Alexandria,Camden,2,63,1,10
+PizzaShack841060,MediumDeli,Cafe,Southern,719 Madison Avenue,Stow Creek,New Brunswick,4,75,2,10
+AlcoholSeller195514,PastaMedium,Food,Japanese,216 Cedar Avenue,Haddon,New Brunswick,9,21,2,6
+RuggedOutdoors636785,MediumRestaurant,Food,Fast food,213 Elm Street,Bedminster,Newark,13,47,3,10
+SportsCenter640360,SportsLittle,Cafe,Japanese,847 Johnson Street,Aberdeen,New Brunswick,8,47,5,10
+Sporty474526,MediumDeli,Cafe,Golf,263 Madison Avenue,Roxbury,Camden,20,27,5,5
+FoodLove603273,ParkKing,Outdoor,Canoeing,502 School Street,Alexandria,Newark,21,59,5,7
+SurfingInTheUSA71495,Whole SalesClothing,Sport,Golf,181 Hampton Street,Stow Creek,Newark,20,25,3,8
+ApplesAndOranges911899,Outdoor SpotFactory,Outdoor,Go Karting,31 Cherry Avenue,Allamuchy,Newark,9,70,2,5
+FoodLove540750,FactoryBig,Food,Diner,934 Pinon Street,South Orange,New Brunswick,5,48,5,10
+SellingGoods64433,KingFine n Dine,Food,South American,595 Mesquite Road,Ewing,New Brunswick,17,48,3,6
+GoodCafe588253,Outdoor SpotPasta,Outdoor,Golf,755 Wood Avenue,East Windsor,Camden,10,25,2,6
+SurfingInTheUSA953713,DeliRing,Cafe,Sailing,466 Aloha Street,South Hackensack,Newark,20,61,2,6
+FoodLove155928,PolishBurgers,Food,Go Karting,401 Strawberry Avenue,Bridgewater,Newark,4,40,5,9
+EthnicFood474492,MallPolish,Cafe,Bubble Tea,617 Ridge Avenue,Hillsborough,Newark,17,65,1,9
+ApplesAndOranges224691,SmallStore,Sport,Diner,730 Willow Street,Franklin,New Brunswick,10,64,1,8
+PizzaShack556592,ElectronicsPark,Outdoor,Bowling,923 Meadow Street,Haddon,New Brunswick,19,55,5,7
+AlcoholSeller640039,RestaurantStore,Cafe,Shooting Range,346 Cedar Avenue,Pittsgrove,New Brunswick,11,41,5,6
+FoodLove721336,ElectronicsBig,Cafe,Coffee Shop,771 North Park,Montgomery,Camden,14,68,3,8
+GoodCafe630909,MediumLittle,Cafe,Go Karting,821 Narragansett Avenue,Montgomery,New Brunswick,16,48,1,6
+FoodLove231416,RestaurantStore,Food,BBQ,453 Quail Lane,Stillwater,Newark,16,53,2,9
+SportsCenter738121,ParkWhole Sales,Sport,Thai,176 Hemlock,Rochelle,New Brunswick,15,66,3,9
+Hills973804,FactoryPolish,Sport,Mountain Biking,541 Narragansett Avenue,Princeton,Newark,9,23,3,8
+FoodLove617832,FactoryFactory,Sport,Canoeing,122 Forest Street,Princeton,New Brunswick,7,31,2,9
+FoodLove792341,Ice CreamKing,Sport,BBQ,644 Hickory Street,Alexandria,Newark,19,28,2,5
+PizzaShack240763,Ice CreamRing,Cafe,Archery,596 Spruce Street,Haddon,Newark,3,37,1,9
+Sporty419419,BurgersMall,Food,Thai,776 Hemlock Road,Pittsgrove,Newark,5,31,1,5
+SportGoods560764,FactoryDeli,Sport,Golf,151 Hickory Street,Princeton,Camden,15,29,1,5
+ApplesAndOranges15565,StoreIce Cream,Sport,Mexican,919 Maplestory Road,Princeton,New Brunswick,2,55,1,8
+EthnicFood5601,StoreClothing,Outdoor,Bar,46 Hickory Street,South Hackensack,New Brunswick,9,24,1,8
+AlcoholSeller350174,RingGeneric,Outdoor,Go Karting,358 Hill Avenue,Edgewater Park,New Brunswick,9,52,3,7
+AlcoholSeller902766,PizzaDeli,Sport,Thai,398 Wood Avenue,South Brunswick,Camden,17,51,3,8
+Eating369137,Fine n DinePolish,Outdoor,Golf,395 Oak Lane,Alexandria,Newark,15,41,3,6
+SellingGoods896551,Fine n DineOutdoor Spot,Food,Polish,595 River Road,Piscataway,Camden,21,50,1,8
+PizzaShack659766,LittleFine n Dine,Cafe,Mexican,365 Main Street,Gloucester,Camden,20,65,4,6
+Hills466759,FactoryPolish,Sport,Golf,892 Wood Avenue,Bridgewater,Newark,19,42,2,7
+FoodLove948912,BurgersBurgers,Sport,Southern,534 Mill Street,Parsippany-Troy Hills,Camden,5,44,4,8
+AlcoholSeller109405,Fine n DineBurgers,Outdoor,Bowling,596 Aloha Street,Bridgewater,Newark,15,21,2,8
+ApplesAndOranges442290,Ice CreamIce Cream,Cafe,South American,956 South Park,East Windsor,New Brunswick,15,72,5,5
+SellingGoods589033,CafePizza,Outdoor,Golf,297 Cedar Avenue,South Hackensack,New Brunswick,13,44,4,8
+PizzaShack221997,FactoryCafe,Food,Skiing,941 Ridge Road,Sparta,Camden,9,31,4,8
+SellingGoods58814,ParkPasta,Outdoor,South American,540 Washington Street,Edison,Camden,2,28,1,6
+GoodCafe252545,PastaFine n Dine,Cafe,Spanish,548 Sunset Road,Fairfield,Camden,15,43,4,9
+ApplesAndOranges143329,SportsFactory,Sport,Shooting Range,516 Mountain View,Berlin,Newark,7,41,2,7
+RuggedOutdoors652644,MallFine n Dine,Cafe,Diner,829 Cottonwood Lane,Gloucester,Newark,12,67,3,8
+Eating812187,ElectronicsWhole Sales,Cafe,Diner,188 Birch Street,Riverside,New Brunswick,8,62,3,9
+Sporty286504,StoreElectronics,Food,Swimming,95 Market Street,Hillsborough,Camden,20,24,1,5
+RuggedOutdoors776889,Ice CreamBurgers,Cafe,Indian,98 Cottonwood Lane,Scotch Plains,New Brunswick,18,50,2,5
+SportsCenter306964,Fine n DineWhole Sales,Sport,Mexican,501 Market Street,Gloucester,New Brunswick,10,73,3,5
+SellingGoods237197,ClothingSports,Sport,Canoeing,802 Center Street,Edison,Newark,9,62,2,5
+SellingGoods924358,RestaurantDeli,Food,Archery,568 Center Avenue,Branchburg,Camden,19,25,1,5
+PizzaShack998342,PolishOutdoor Spot,Sport,Diner,2 Chestnut Avenue,Princeton,Camden,9,47,5,6
+GoodCafe260016,ClothingRestaurant,Outdoor,Romanian,343 Wood Avenue,Pittsgrove,New Brunswick,10,45,5,10
+RuggedOutdoors336548,Ice CreamRestaurant,Outdoor,Fast food,390 Spring Street,Haddon,Camden,14,63,5,5
+AlcoholSeller70565,CafeMedium,Food,Spanish,112 Laurel Steet,Ewing,Camden,5,49,4,6
+Hills145808,SmallBurgers,Cafe,Spanish,746 Hemlock,Franklin,New Brunswick,21,53,3,9
+GoodCafe356671,KingPasta,Sport,Polish,51 Navajo Road,Parsippany-Troy Hills,Newark,10,80,2,7
+ApplesAndOranges633771,ElectronicsDeli,Cafe,Bar,416 Ridge Road,East Windsor,New Brunswick,16,76,2,9
+PizzaShack564326,FactoryKing,Outdoor,Vietnamese,342 Ridge Avenue,Alexandria,New Brunswick,16,39,5,7
+SportGoods222954,PizzaLittle,Cafe,Romanian,131 Lehua Lane,Cherry Hill,Camden,16,33,5,6
+AlcoholSeller772747,Whole SalesElectronics,Cafe,Sailing,636 Mesquite Road,Teaneck,New Brunswick,13,75,5,9
+Sporty21999,MediumMedium,Cafe,Swimming,361 Pioneer Road,Sparta,Newark,16,63,3,8
+ApplesAndOranges413453,ElectronicsMall,Sport,Coffee Shop,906 Cottonwood Lane,Stow Creek,Newark,17,74,5,7
+Sporty731270,Ice CreamMedium,Sport,Indian,415 Palo Verde,Gloucester,Camden,11,66,1,7
+SurfingInTheUSA309389,DeliOutdoor Spot,Outdoor,Camping,124 Cedar Avenue,Rochelle,Newark,12,57,5,7
+SportGoods271309,PizzaSports,Food,Coffee Shop,81 Cottonwood Lane,South Hackensack,New Brunswick,6,79,5,10
+SportGoods769889,FactoryKing,Outdoor,South American,776 Airport Lane,Bridgewater,New Brunswick,16,79,2,7
+EthnicFood991339,Outdoor SpotPizza,Cafe,Diner,938 Palo Verde,Riverside,New Brunswick,12,39,3,8
+ApplesAndOranges956286,Outdoor SpotLittle,Outdoor,Shooting Range,964 Forest Street,Lyndhurst,Newark,16,33,5,7
+RuggedOutdoors659310,PastaCafe,Food,Polish,278 Palo Verde,Allamuchy,New Brunswick,3,34,3,8
+ApplesAndOranges61668,ElectronicsIce Cream,Sport,Mediterranean,405 Ridge Street,Stow Creek,Newark,3,26,4,5
+Hills862040,BigPizza,Outdoor,Golf,712 Hickory Street,Franklin,Camden,2,39,4,10
+Eating37174,RingSports,Cafe,Skiing,669 Adams Lane,Parsippany-Troy Hills,New Brunswick,4,73,3,5
+RuggedOutdoors30480,StoreRestaurant,Cafe,Italian,830 Airport Lane,Pittsgrove,Newark,11,37,3,6
+RuggedOutdoors768513,Fine n DinePasta,Food,Bowling,801 Maple Road,Ewing,New Brunswick,15,73,4,6
+PizzaShack69528,SportsFine n Dine,Outdoor,Polish,694 Strawberry Avenue,Union,Newark,12,40,2,6
+ApplesAndOranges490368,Outdoor SpotSmall,Food,Coffee Shop,6 Jackson Road,Edison,New Brunswick,18,38,2,6
+SportsCenter882058,FactoryPasta,Cafe,Vietnamese,690 Spring Street,East Hanover,Camden,8,23,5,6
+GoodCafe192470,SmallCafe,Cafe,Chinese,62 Orchard Avenue,Roxbury,Newark,7,60,2,8
+ApplesAndOranges648858,PastaFactory,Cafe,Romanian,925 Navajo Road,Plainsboro,New Brunswick,6,42,3,9
+SellingGoods175185,FactoryIce Cream,Sport,Polish,851 Center Street,Lyndhurst,Camden,2,72,2,6
+ApplesAndOranges825365,BigPizza,Outdoor,Swimming,722 Lehua Lane,Montgomery,New Brunswick,4,29,1,6
+SellingGoods41872,FactoryKing,Outdoor,Shooting Range,621 Johnson Street,South Hackensack,New Brunswick,7,39,5,10
+AlcoholSeller623906,SmallStore,Outdoor,Surfing,618 Aloha Street,Union,Newark,14,26,1,9
+PizzaShack664807,Ice CreamBig,Food,Shooting Range,199 Oak Lane,Hillsborough,Camden,14,71,2,7
+FoodLove899566,ParkFactory,Cafe,Shooting Range,211 Hemlock Road,South Brunswick,Camden,8,79,5,7
+Hills335102,ElectronicsMedium,Food,Diner,94 Jackson Road,Robbinsville,Camden,18,42,2,6
+Sporty468834,Outdoor SpotBig,Outdoor,Mediterranean,694 Johnson Street,Rockway,New Brunswick,13,39,5,7
+Sporty491796,ParkBig,Cafe,BBQ,555 Birch Street,Berlin,New Brunswick,15,67,5,5
+Sporty94572,PizzaStore,Sport,Bubble Tea,792 Evergreen,Sparta,Newark,14,67,1,8
+Eating388759,MallKing,Cafe,Golf,367 Hillside Street,Pittsgrove,Newark,15,34,5,6
+SportGoods98057,Whole SalesSmall,Food,Italian,970 Oak Lane,Gloucester,New Brunswick,9,32,1,10
+RuggedOutdoors994774,ClothingMall,Cafe,Vietnamese,762 Columbine Road,Union,Camden,12,59,4,5
+SellingGoods204035,PizzaElectronics,Sport,Coffee Shop,214 South Park,Scotch Plains,New Brunswick,3,63,3,6
+ApplesAndOranges501438,PastaBig,Food,Mexican,521 Church Street,Bernards,Newark,14,60,5,10
+FoodLove31616,KingClothing,Outdoor,Chinese,860 Johnson Street,Edgewater Park,Newark,12,28,1,6
+Eating959751,DeliKing,Cafe,Swimming,837 Quail Lane,Sparta,Newark,11,62,5,8
+PizzaShack96442,RingGeneric,Food,Mediterranean,874 Mill Street,East Hanover,Newark,10,48,4,6
+SportGoods811312,LittlePolish,Cafe,Skiing,906 Oak Lane,East Hanover,New Brunswick,18,69,2,5
+SportGoods850750,SportsWhole Sales,Cafe,Fast food,891 Quail Lane,Haddon,Newark,12,58,4,10
+RuggedOutdoors355480,BigKing,Food,Shooting Range,701 Pioneer Road,East Hanover,New Brunswick,2,40,1,10
