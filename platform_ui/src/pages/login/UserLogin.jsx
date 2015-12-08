@@ -5,7 +5,7 @@ var request = require('request');
 var UserLogin = React.createClass({
 	loginUser: function(){
 		request({
-			url: 'http://ruexploring.com:8080/LoginUser',
+			url: 'http://localhost:8080/LoginUser',
 			method: 'POST',
 			json: {
 				ID: $('#userID').val(),

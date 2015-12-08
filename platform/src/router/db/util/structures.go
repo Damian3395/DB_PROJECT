@@ -4,6 +4,10 @@ type User_struct struct {
 	ID string
 }
 
+type Analyze_struct struct {
+	COUPON_ID string
+}
+
 type Login_struct struct {
 	ID string
 	PASSWORD string

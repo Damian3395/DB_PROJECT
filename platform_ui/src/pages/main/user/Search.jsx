@@ -10,7 +10,7 @@ var Search = React.createClass({
 	},
 	createTicket: function(id){
 		request({
-			url: 'http://www.ruexploring.com:8080/CreateTicket',
+			url: 'http://localhost:8080/CreateTicket',
 			method: 'POST',
 			json: {
 				ID: this.props.userID,
@@ -25,7 +25,7 @@ var Search = React.createClass({
 	},
 	getSearchResult: function(){
 		request({
-			url: 'http://www.ruexploring.com:8080/QueryCoupon',
+			url: 'http://localhost:8080/QueryCoupon',
 			method: 'POST',
 			json: {
 				ID: this.props.userID,

@@ -9,8 +9,7 @@ import(
 func main(){
 	fmt.Printf("Starting Server\n")
 	//Serve Webpage
-	http.Handle("/", http.FileServer(http.Dir("../platform_ui/build")))
-	
+		
 	//Serve Basic Webpage Functions
 	http.HandleFunc("/LoginUser", router.HandleLoginUser)
 	http.HandleFunc("/LoginBusiness", router.HandleLoginBusiness)
@@ -40,7 +39,11 @@ func main(){
 	http.HandleFunc("/RemoveCoupon", router.RemoveCoupon)
 	http.HandleFunc("/GetActiveCoupons", router.GetActiveCoupons)
 	http.HandleFunc("/GetExpiredCoupons", router.GetExpiredCoupons)	
+	http.HandleFunc("/GetCouponAnalytics", router.GetCouponAnalytics)
+	
+	//Static Webpage
+	http.Handle("/", http.FileServer(http.Dir("../platform_ui/build")))
 
 	//Listen On Port 8080
-	http.ListenAndServe("172.31.3.216:8080", nil)
+	http.ListenAndServe(":8080", nil)
 }

@@ -44,7 +44,7 @@ var RegisterUser = React.createClass({
 			this.setState({error: "Password Field 1 and 2 Do Not Match!"});
 		}else{
 			request({
-				url: 'http://www.ruexploring.com:8080/RegisterUser',
+				url: 'http://localhost:8080/RegisterUser',
 				method: 'POST',
 				json: {
 					FIRST_NAME: firstName,

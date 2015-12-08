@@ -27,7 +27,7 @@ var RegisterBusiness = React.createClass({
 			this.setState({error: "Password Field 1 and 2 Do Not Match!"});
 		}else{
 			request({
-				url: 'http://www.ruexploring.com:8080/RegisterBusiness',
+				url: 'http://localhost:8080/RegisterBusiness',
 				method: 'POST',
 				json: {
 					NAME: name,

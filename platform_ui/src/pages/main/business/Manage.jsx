@@ -13,7 +13,7 @@ var Manage = React.createClass({
 	},
 	componentWillMount: function(){
 		request({
-			url: 'http://www.ruexploring.com:8080/GetActiveCoupons',
+			url: 'http://localhost:8080/GetActiveCoupons',
 			method: 'POST',
 			json: {
 				ID: this.props.userID
@@ -22,7 +22,7 @@ var Manage = React.createClass({
 			if(error){
 				console.log(error);
 			}else{
-				if(body == "None"){
+				if(body == "No Active Coupons"){
 					console.log("No Active Coupons")
 					this.setState({c: "No Active Coupons"});	
 				}else{
@@ -39,7 +39,7 @@ var Manage = React.createClass({
 			student_only = "True"
 		}
 		request({
-			url: 'http://www.ruexploring.com:8080/CreateCoupon',
+			url: 'http://localhost:8080/CreateCoupon',
 			method: 'POST',
 			json: {
 				ID: this.props.userID,
@@ -58,11 +58,31 @@ var Manage = React.createClass({
 			}
 		}.bind(this));
 
+		request({
+			url: 'http://localhost:8080/GetActiveCoupons',
+			method: 'POST',
+			json: {
+				ID: this.props.userID
+			}
+		}, function(error, response, body){
+			if(error){
+				console.log(error);
+			}else{
+				if(body == "No Active Coupons"){
+					console.log("No Active Coupons")
+					this.setState({c: "No Active Coupons"});	
+				}else{
+					console.log(body.coupons);
+					var objects = _.cloneDeep(body.coupons);
+					this.setState({c: objects});
+				}
+			}
+		}.bind(this));	
 		this.forceUpdate();
 	},
 	removeCoupon: function(id){
 		request({
-			url: 'http://www.ruexploring.com:8080/RemoveCoupon',
+			url: 'http://localhost:8080/RemoveCoupon',
 			method: 'POST',
 			json: {
 				ID: this.props.userID,
@@ -75,6 +95,28 @@ var Manage = React.createClass({
 				console.log(response.statusCode, body);
 			}
 		}.bind(this));
+
+		request({
+			url: 'http://localhost:8080/GetActiveCoupons',
+			method: 'POST',
+			json: {
+				ID: this.props.userID
+			}
+		}, function(error, response, body){
+			if(error){
+				console.log(error);
+			}else{
+				if(body == "No Active Coupons"){
+					console.log("No Active Coupons")
+					this.setState({c: "No Active Coupons"});	
+				}else{
+					console.log(body.coupons);
+					var objects = _.cloneDeep(body.coupons);
+					this.setState({c: objects});
+				}
+			}
+		}.bind(this));	
+		this.forceUpdate();
 	},
 	isStudent: function(){
 		this.setState({student: !this.state.student});

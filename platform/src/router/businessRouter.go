@@ -184,3 +184,25 @@ func GetExpiredCoupons(w http.ResponseWriter, r *http.Request){
 	fmt.Printf("Done Handling Get Expired Coupons\n")
 	io.WriteString(w, status)
 }
+
+//GetCouponAnalytics
+func GetCouponAnalytics(w http.ResponseWriter, r *http.Request){
+	fmt.Printf("Handling Get Coupon Analytics\n")
+	
+	var analyze util.Analyze_struct
+	util.AnalyzeToJSON(r, &analyze)
+	
+	contents, err := ioutil.ReadAll(r.Body)
+	if err != nil {
+		fmt.Printf("%s", err)
+	}
+	fmt.Printf("%s\n", string(contents))
+
+	status, err := db.AnalyzeCoupon(analyze)
+	if err != nil {
+		fmt.Printf("%s\n", err)
+	}
+
+	fmt.Printf("Done Handling Get Expired Coupons\n")
+	io.WriteString(w, status)
+}
