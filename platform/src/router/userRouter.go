@@ -239,27 +239,3 @@ func QueryCoupon(w http.ResponseWriter, r *http.Request){
 	fmt.Printf("Done Handling Query Coupon\n")
 	io.WriteString(w, status)
 }
-
-func OptimizeCoupon(w http.ResponseWriter, r *http.Request){
-	fmt.Printf("Handling Optimize Coupon\n")
-
-	var query util.User_struct
-	util.UserToJSON(r, &query)
-	
-	contents, err := ioutil.ReadAll(r.Body)
-	if err != nil {
-		fmt.Printf("%s\n", err)
-	}
-	fmt.Printf("%s\n", string(contents))
-	
-	status, err := db.OptimizedSearch(query)
-	if err != nil {
-		fmt.Printf("%s\n", err)
-	}
-	
-	fmt.Printf("Done Handling Optimize Coupon\n")
-	io.WriteString(w, status)
-}
-
-
-

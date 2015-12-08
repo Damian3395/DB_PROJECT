@@ -10,7 +10,7 @@ var Search = React.createClass({
 	},
 	createTicket: function(id){
 		request({
-			url: 'http://www.ruexploring.com/CreateTicket',
+			url: 'http://www.ruexploring.com:8080/CreateTicket',
 			method: 'POST',
 			json: {
 				ID: this.props.userID,
@@ -20,29 +20,12 @@ var Search = React.createClass({
 				console.log(error);
 			}else{
 				console.log(response.statusCode, body);
-			}
-		}.bind(this));
-	},
-	getRandom: function(){
-		request({
-			url: 'http://localhost:8080/OptimizeCoupon',
-			method: 'POST',
-			json: {
-				ID: this.props.userID,
-			}
-		}, function(error, response, body){
-			if(error){
-				console.log(error);
-			}else{
-				console.log(response.statusCode, body);
-				var objects = _.cloneDeep(body.coupons);
-                this.setState({tickets: objects});
 			}
 		}.bind(this));
 	},
 	getSearchResult: function(){
 		request({
-			url: 'http://localhost:8080/QueryCoupon',
+			url: 'http://www.ruexploring.com:8080/QueryCoupon',
 			method: 'POST',
 			json: {
 				ID: this.props.userID,
@@ -64,6 +47,7 @@ var Search = React.createClass({
                 this.setState({tickets: objects});
 			}
 		}.bind(this));
+		this.forceUpdate();
 	},
 	render: function(){
 		var COUPONS = this.state.tickets.map(function(coupon) {

@@ -2,6 +2,15 @@ var React = require('react');
 var Coupon = require('./Coupon.jsx');
 
 var Display = React.createClass({
+	getInitialState: function(){
+		return{tickets: []};	
+	},
+	componentWillReceiveProps: function(nextProps){
+		if(nextProps.tickets.length != this.props.tickets.length){
+			console.log("update display state")
+			this.setState({tickets: nextProps.tickets});
+		}
+	},
 	useCoupon: function(id){
 		this.props.useCoupon(id);
 	},
@@ -10,7 +19,7 @@ var Display = React.createClass({
 		if(this.props.tickets == "Active Coupons Does Not Exist"){
 			DISPLAY = <div>Active Coupons Does Not Exist</div>;
 		}else{
-			var COUPONS = this.props.tickets.map(function(coupon) {
+			var COUPONS = this.state.tickets.map(function(coupon) {
             return <div className="row">
                         <div className="col-md-8">
                             <Coupon type={coupon.TYPE} 

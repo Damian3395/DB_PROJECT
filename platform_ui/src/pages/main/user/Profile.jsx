@@ -10,7 +10,7 @@ var Profile = React.createClass({
 	},
 	componentWillMount: function(){
 		request({
-			url: 'http://www.ruexploring.com/GetUserValidTickets',
+			url: 'http://www.ruexploring.com:8080/GetUserValidTickets',
 			method: 'POST',
 			json: {
 				ID: this.props.userID
@@ -31,7 +31,7 @@ var Profile = React.createClass({
 	},
 	useCoupon: function(id){
 		request({
-			url: 'http://localhost:8080/UseTicket',
+			url: 'http://www.ruexploring.com:8080/UseTicket',
 			method: 'POST',
 			json: {
 				ID: this.props.userID,
@@ -46,7 +46,7 @@ var Profile = React.createClass({
 		}.bind(this));
 
 		request({
-			url: 'http://localhost:8080/GetUserValidTickets',
+			url: 'http://www.ruexploring.com:8080/GetUserValidTickets',
 			method: 'POST',
 			json: {
 				ID: this.props.userID

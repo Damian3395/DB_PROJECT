@@ -13,7 +13,7 @@ var Manage = React.createClass({
 	},
 	componentWillMount: function(){
 		request({
-			url: 'http://www.ruexploring.com/GetActiveCoupons',
+			url: 'http://www.ruexploring.com:8080/GetActiveCoupons',
 			method: 'POST',
 			json: {
 				ID: this.props.userID
@@ -39,7 +39,7 @@ var Manage = React.createClass({
 			student_only = "True"
 		}
 		request({
-			url: 'http://localhost:8080/CreateCoupon',
+			url: 'http://www.ruexploring.com:8080/CreateCoupon',
 			method: 'POST',
 			json: {
 				ID: this.props.userID,
@@ -62,7 +62,7 @@ var Manage = React.createClass({
 	},
 	removeCoupon: function(id){
 		request({
-			url: 'http://localhost:8080/RemoveCoupon',
+			url: 'http://www.ruexploring.com:8080/RemoveCoupon',
 			method: 'POST',
 			json: {
 				ID: this.props.userID,

@@ -64,7 +64,7 @@ func HandleRegisterBusiness(w http.ResponseWriter, r *http.Request){
 
 func HandleImages(w http.ResponseWriter, r *http.Request){
 	fmt.Printf("Handling Image Requests\n");
-  	filePath := "../res/img/" + r.URL.Query().Get("img")
+  	filePath := "./res/img/" + r.URL.Query().Get("img")
   	fmt.Println("Serving Image File: ", filePath) 
   	http.ServeFile(w, r, filePath)
 	fmt.Println("Done Handling Image Request")

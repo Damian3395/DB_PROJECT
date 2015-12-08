@@ -9,7 +9,7 @@ import(
 func main(){
 	fmt.Printf("Starting Server\n")
 	//Serve Webpage
-	http.Handle("/", http.FileServer(http.Dir("../../platform_ui/build")))
+	http.Handle("/", http.FileServer(http.Dir("../platform_ui/build")))
 	
 	//Serve Basic Webpage Functions
 	http.HandleFunc("/LoginUser", router.HandleLoginUser)
@@ -30,7 +30,6 @@ func main(){
 	http.HandleFunc("/UseTicket", router.UseTicket)
 	http.HandleFunc("/CreateTicket", router.CreateTicket)
 	http.HandleFunc("/QueryCoupon", router.QueryCoupon)
-	http.HandleFunc("/OptimizeCoupon", router.OptimizeCoupon)
 
 	//Serve Business Application Functions
 	http.HandleFunc("/GetBusinessInformation", router.GetBusinessInformation)
@@ -43,5 +42,5 @@ func main(){
 	http.HandleFunc("/GetExpiredCoupons", router.GetExpiredCoupons)	
 
 	//Listen On Port 8080
-	http.ListenAndServe("http://www.ruexploring.com:8080", nil)
+	http.ListenAndServe("172.31.3.216:8080", nil)
 }

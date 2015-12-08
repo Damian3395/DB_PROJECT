@@ -2,38 +2,28 @@ package db
 
 import
 (
-	"fmt"
 	"strings"
+	"fmt"
 	"github.com/jmcvetta/neoism"
 	"encoding/json"
 	util "./util"
 )
 
-func QueryCoupon(query util.QuerySearch_struct)	(string, error){
-	fmt.Printf("Accessing NEO4J Server Cyphering QueryCoupon\n")
+func getMatches(res *[]struct{A string `json:"n.ID"`}, query util.QuerySearch_struct) (error){
 	database, err := neoism.Connect("http://neo4j:12345@localhost:7474/db/data")
 	
 	if err != nil {
 		fmt.Printf("NEO4J Connection FAILED\n")
-		return "Internal Service Error", err	
+		return err	
 	}
-		
-	bestMatch := []struct {
-		A string `json:"n.ID"`		 
-    }{}
 
-	used := []struct {
-		A string `json:"n.COUPON_ID"`
-	}{}
-	
-	
 	cq := neoism.CypherQuery{
     Statement: `
     	MATCH (n:Activity)
 		WHERE n.NAME = {key_words} OR
-				n.MAIN_CATEGORY = {main} OR
-				n.SUB_CATEGORY = {sub} OR
-				n.CAMPUS = {campus} OR
+				n.MAIN_CATEGORY = {main} AND
+				n.SUB_CATEGORY = {sub} AND
+				n.CAMPUS = {campus} AND
 				n.MIN_AGE >= {min_age} AND
 				n.MAX_AGE <= {max_age} OR
 				n.MIN_PEOPLE >= {min_people} and
@@ -48,152 +38,186 @@ func QueryCoupon(query util.QuerySearch_struct)	(string, error){
 							 "max_age": query.MAX_AGE,
 							 "min_people": query.MIN_PEOPLE,
 							 "max_people": query.MAX_PEOPLE},
-    Result:     &bestMatch,
+    Result:     res,
 	}
 	err = database.Cypher(&cq)
 	if err != nil {
 		fmt.Printf("Error Cyphering To Database\n")
-		return "Internal Service Error", err
+		return err
 	}
-
-		fmt.Printf("%s\n", len(bestMatch))
-		cq = neoism.CypherQuery{
-		Statement: `
-			MATCH (t:Ticket)
-			WHERE t.ID = "user_id"
-			RETURN t.COUPON_ID
-		`,
-		Parameters: neoism.Props{"user_id": query.ID},
-		Result:     &used,
-		}
-		err = database.Cypher(&cq)
-		if err != nil {
-			fmt.Printf("Error Cyphering To Database\n")
-			return "Internal Service Error", err
-		}
-
-
-	fmt.Printf("%s\n", len(used))
-	//response := ""
-	//data := map[string]interface{}{}
-	//jsonString := "{\"coupons\": ["
-	for i := 0; i < len(bestMatch); i++ {
-		coupons := []struct {
-			N neoism.Node 
-		}{}
-		cq := neoism.CypherQuery{
-		Statement: `
-			MATCH (c:Coupon)
-			WHERE c.ID = {user_id} AND c.VALID = "TRUE"
-			RETURN c 
-		`,
-		Parameters: neoism.Props{"user_id": bestMatch[i].A},
-		Result:     &coupons,
-		}
-		err = database.Cypher(&cq)
-		if err != nil {
-			fmt.Printf("Error Cyphering To Database\n")
-			return "Internal Service Error", err
-		}
 		
-		
-		for i := 0; i < len(coupons); i++ {
-			coupon, err := json.Marshal(coupons[i].N.Data)
-			if err != nil {
-				fmt.Printf("%s\n", err)
-			}
-			fmt.Printf("%s\n", string(coupon))
-		}
-	}
-/*
-	response := ""
-	data := map[string]interface{}{}
-	if len(res) != 0 {
-		jsonString := "{\"objects\": ["
-		for i:=0; i < len(res); i++ {
-			coupon, err := json.Marshal(res[i].N.Data)
-			if err != nil {
-				fmt.Printf("%s\n", err)
-			}	
-			jsonString += string(coupon)
-			if i != (len(res)-1){
-				jsonString += ","
-			}
-		}
-		jsonString += "]}"
-		
-		dec := json.NewDecoder(strings.NewReader(jsonString))
-		dec.Decode(&data)
-		
-		coupons, err := json.Marshal(data)
-		if err != nil {
-			fmt.Printf("%s\n", err)
-		}
-		response = string(coupons)
-			
-		return response, nil
-	}
-*/
-
-	return "", nil
+	return nil
 }
 
-func OptimizedSearch(query util.User_struct) (string, error){
-	fmt.Printf("Accessing NEO4J Server Cyphering OptimizedSearch\n")
+func getCouponsFromMatchs(business []struct{A string `json:"n.ID"`}) (string, int, error){
+	database, err := neoism.Connect("http://neo4j:12345@localhost:7474/db/data")
+	
+	if err != nil {
+		fmt.Printf("NEO4J Connection FAILED\n")
+		return "", 0, err	
+	}
+
+	coupon := []struct{
+		A string `json:"n.COUPON_ID"` 
+	}{}
+
+	size := 0
+	coupons := ""	
+	for i := 0; i < len(business); i++ {
+		id := business[i].A
+		
+		cq := neoism.CypherQuery{
+		Statement: `
+			MATCH (n:Coupon)
+			WHERE n.ID = {user_id} AND n.VALID = "TRUE"
+			RETURN n.COUPON_ID
+		`,
+		Parameters: neoism.Props{"user_id": id},
+		Result:     &coupon,
+		}
+		err = database.Cypher(&cq)
+		if err != nil {
+			fmt.Printf("Error Cyphering To Database\n")
+			return "", 0, err
+		}
+
+		if i > 0 && len(coupon) != 0 {
+			coupons += ","
+		}
+
+		for x:=0; x < len(coupon); x++ {
+			size++
+			coupons += coupon[x].A
+			if x != (len(coupon)-1) {
+				coupons += ","
+			}
+		}
+	}
+
+	return coupons, size, nil
+}
+
+func getUserTickets(res *[]struct{A string `json:"n.COUPON_ID"`}, id string) (error){
+	database, err := neoism.Connect("http://neo4j:12345@localhost:7474/db/data")
+	
+	if err != nil {
+		fmt.Printf("NEO4J Connection FAILED\n")
+		return err	
+	}
+
+	cq := neoism.CypherQuery{
+		Statement: `
+			MATCH (n:Ticket)
+			WHERE n.ID = {user_id}
+			RETURN n.COUPON_ID
+		`,
+		Parameters: neoism.Props{"user_id": id},
+		Result:     &res,
+	}
+	err = database.Cypher(&cq)
+	if err != nil {
+		fmt.Printf("Error Cyphering To Database\n")
+		return err
+	}
+
+	return nil
+}
+
+func QueryCoupon(query util.QuerySearch_struct)	(string, error){
+	fmt.Printf("Accessing NEO4J Server Cyphering QueryCoupon\n")
+	
+	bestMatches := []struct{
+		A string `json:"n.ID"`
+	}{}	
+
+	tickets := []struct{
+		A string `json:"n.COUPON_ID"`
+	}{}
+
+	err := getMatches(&bestMatches, query)
+	if err != nil {
+		fmt.Printf("%s\n", err)
+	}
+	
+	matchedCoupons, size, err := getCouponsFromMatchs(bestMatches)
+	if err != nil {
+		fmt.Printf("%s\n", err)	
+	}
+
+	err = getUserTickets(&tickets, query.ID)
+	if err != nil {
+		fmt.Printf("%s\n", err)
+	}
+
+	coupons := strings.Split(matchedCoupons,",")	
+
+	for i:= 0; i < len(coupons); i++ {
+		for x:= 0; x < len(tickets); x++ {
+			if coupons[i] == tickets[x].A {
+				coupons[i] = ""
+				size--
+				x = len(tickets)
+			}
+		}
+	}
+
+	if size == 0 {
+		return "No Matches Found", nil
+	}
+
 	database, err := neoism.Connect("http://neo4j:12345@localhost:7474/db/data")
 	
 	if err != nil {
 		fmt.Printf("NEO4J Connection FAILED\n")
 		return "Internal Service Error", err	
 	}
-	
-	res := []struct {
-		N neoism.Node 
-    }{}
-
-	cq := neoism.CypherQuery{
-    Statement: `
-    	MATCH (n:Ticket)
-      	WHERE n.USER_ID = {user_id}
-       	RETURN n
-    `,
-    Parameters: neoism.Props{"user_id": query.ID},
-    Result:     &res,
-	}
-	err = database.Cypher(&cq)
-	if err != nil {
-		fmt.Printf("Error Cyphering To Database\n")
-		return "Internal Service Error", err
-	}
-
 
 	response := ""
 	data := map[string]interface{}{}
-	if len(res) != 0 {
-		jsonString := "{\"objects\": ["
-		for i:=0; i < len(res); i++ {
-			coupon, err := json.Marshal(res[i].N.Data)
+	jsonString := "{\"coupons\": ["
+	for i:=0; i < len(coupons); i++ {
+		id := coupons[i]
+		res := []struct {
+			N neoism.Node
+		}{}
+
+		if coupons[i] != ""{
+			cq := neoism.CypherQuery{
+				Statement: `
+				MATCH (n:Coupon)
+				WHERE n.COUPON_ID = {id}
+				RETURN n
+			`,
+			Parameters: neoism.Props{"id": id},
+			Result:     &res,
+			}
+			err = database.Cypher(&cq)
 			if err != nil {
-				fmt.Printf("%s\n", err)
-			}	
-			jsonString += string(coupon)
-			if i != (len(res)-1){
-				jsonString += ","
+				fmt.Printf("Error Cyphering To Database\n")
+				return "Internal Service Error", err
+			}
+		
+			if len(res) != 0 {	
+				couponStr, err := json.Marshal(res[0].N.Data)
+				if err != nil {
+					fmt.Printf("%s\n", err)
+				}					
+				jsonString += string(couponStr)
+				if i != (len(coupons)-1){
+					jsonString += ","
+				}
 			}
 		}
-		jsonString += "]}"
-		
-		dec := json.NewDecoder(strings.NewReader(jsonString))
-		dec.Decode(&data)
-		
-		coupons, err := json.Marshal(data)
-		if err != nil {
-			fmt.Printf("%s\n", err)
-		}
-		response = string(coupons)
-			
-		return response, nil
-	}
+	}	
+	jsonString += "]}"
 
-	return "No Active Coupons", nil
+	dec := json.NewDecoder(strings.NewReader(jsonString))	
+	dec.Decode(&data)
+	couponSTR, err := json.Marshal(data)
+	if err != nil {
+		fmt.Printf("%s\n", err)
+	}
+	response = string(couponSTR)
+
+	return response, nil
 }
