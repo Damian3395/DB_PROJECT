@@ -6,11 +6,11 @@ var Charts = require('./Charts.jsx');
 
 var Analytics = React.createClass({
 	getIntialState: function(){
-		return{coupons: [], Data: []};
+		return{error: "", coupons: [], Data: []};
 	},
 	componentWillMount: function(){
 		request({
-			url: 'http://localhost:8080/GetExpiredCoupons',
+			url: 'http://www.ruexploring.com:80/GetExpiredCoupons',
 			method: 'POST',
 			json: {
 				ID: this.props.userID,
@@ -20,7 +20,7 @@ var Analytics = React.createClass({
 			if(error){
 				console.log(error);
 			}else if(body == "Error"){
-				this.setState({coupons: body});	
+				this.setState({error: body});	
 			}else{
 				console.log(response.statusCode, body);
 				this.setState({coupons: body.coupons});
@@ -31,7 +31,7 @@ var Analytics = React.createClass({
 		var id = $('#COUPON_ID').val()
 		if(id != "DNE"){
 			request({
-				url: 'http://localhost:8080/GetCouponAnalytics',
+				url: 'http://www.ruexploring.com:80/GetCouponAnalytics',
 				method: 'POST',
 				json: {
 					COUPON_ID: id,
@@ -48,7 +48,7 @@ var Analytics = React.createClass({
 	},
 	render: function(){
 		var DISPLAY;
-		if(this.state.coupons == "Expired Coupons Does Not Exist"){
+		if(this.state.error == "Error"){
 			DISPLAY = <option id="DNE">Expired Coupons Does Not Exist</option>
 		}else{
 			DISPLAY = this.state.coupons.map(function(coupon) {

@@ -45,5 +45,5 @@ func main(){
 	http.Handle("/", http.FileServer(http.Dir("../platform_ui/build")))
 
 	//Listen On Port 8080
-	http.ListenAndServe("172.31.3.216:80", nil)
+	http.ListenAndServe(":80", nil)
 }

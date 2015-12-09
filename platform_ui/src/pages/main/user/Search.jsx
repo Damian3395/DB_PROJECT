@@ -3,29 +3,42 @@ var $ = require('jquery');
 var _ = require('lodash');
 var request = require('request');
 var Options = require('../../misc/Options.jsx');
+var Coupon = require('./Coupon.jsx');
+var Error = require('../../misc/Error.jsx')
 
 var Search = React.createClass({
 	getInitialState: function(){
-		return{tickets: []};	
+		return{error: "", tickets: []};	
 	},
 	createTicket: function(id){
 		request({
-			url: 'http://localhost:8080/CreateTicket',
+			url: 'http://www.ruexploring.com:80/CreateTicket',
 			method: 'POST',
 			json: {
 				ID: this.props.userID,
+				COUPON_ID: id
 			}
 		}, function(error, response, body){
 			if(error){
 				console.log(error);
 			}else{
 				console.log(response.statusCode, body);
+				if(body != "Max Active Tickets Reached"){
+					$('#query').val("");
+					$('#min_age').val("0");
+					$('#max_age').val("0");
+					$('#min_people').val("0");
+					$('#max_people').val("0");
+					this.setState({tickets: []});
+				}else{
+					this.setState({error: body, tickets: []});	
+				}
 			}
 		}.bind(this));
 	},
 	getSearchResult: function(){
 		request({
-			url: 'http://localhost:8080/QueryCoupon',
+			url: 'http://www.ruexploring.com:80/QueryCoupon',
 			method: 'POST',
 			json: {
 				ID: this.props.userID,
@@ -72,6 +85,7 @@ var Search = React.createClass({
 			<div>
 				<div className="row">
 					<div className="col-md-12">
+						<Error error={this.state.error}/>
 						<h3 className="text-center"><strong>Search For Coupons</strong></h3>
 					</div>
 				</div>

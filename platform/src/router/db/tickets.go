@@ -122,14 +122,13 @@ func GetUserValidTickets(user util.User_struct) (string, error){
 
 	if len(res) == 0 {
 		return "Active Coupons Does Not Exist", nil
-	}else{
-		fmt.Printf("%s\n", res[0].A)
 	}
 
 	response := ""
 	data := map[string]interface{}{}
 	jsonString := "{\"coupons\": ["
 	for i := 0; i < len(res); i++ {
+		fmt.Printf("Index: %d\n", i)
 		cq := neoism.CypherQuery{
 		Statement: `
 			MATCH (n:Coupon)

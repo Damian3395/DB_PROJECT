@@ -9,7 +9,7 @@ var Settings = React.createClass({
 	},
 	componentWillMount: function(){
 		request({
-			url: 'http://localhost:8080/GetUserInformation',
+			url: 'http://www.ruexploring.com:80/GetUserInformation',
 			method: 'POST',
 			json: {
 				ID: this.props.userID
@@ -30,7 +30,7 @@ var Settings = React.createClass({
 			}
 		}.bind(this));
 		request({
-			url: 'http://localhost:8080/GetStudentInformation',
+			url: 'http://www.ruexploring.com:80/GetStudentInformation',
 			method: 'POST',
 			json: {
 				ID: this.props.userID
@@ -53,7 +53,7 @@ var Settings = React.createClass({
 	},
 	updateGeneral: function(){
 		request({
-			url: 'http://localhost:8080/UpdateUserGeneral',
+			url: 'http://www.ruexploring.com:80/UpdateUserGeneral',
 			method: 'POST',
 			json: {
 				ID: this.props.userID,
@@ -75,7 +75,7 @@ var Settings = React.createClass({
 	},
 	updateAddress: function(){
 		request({
-			url: 'http://localhost:8080/UpdateUserAddress',
+			url: 'http://www.ruexploring.com:80/UpdateUserAddress',
 			method: 'POST',
 			json: {
 				ID: this.props.userID,
@@ -97,7 +97,7 @@ var Settings = React.createClass({
 	},
 	updateStudent: function(){
 		request({
-			url: 'http://localhost:8080/UpdateUserStudent',
+			url: 'http://www.ruexploring.com:80/UpdateUserStudent',
 			method: 'POST',
 			json: {
 				ID: this.props.userID,
@@ -131,7 +131,7 @@ var Settings = React.createClass({
 			year = $('#year').val();
 		}
 		request({
-			url: 'http://localhost:8080/UpdateUserAll',
+			url: 'http://www.ruexploring.com:80/UpdateUserAll',
 			method: 'POST',
 			json: {
 				ID: this.props.userID,

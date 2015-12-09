@@ -7,7 +7,7 @@ var Options = require('../../misc/Options.jsx');
 var Settings = React.createClass({
 	componentWillMount: function(){
 		request({
-			url: 'http://localhost:8080/GetBusinessInformation',
+			url: 'http://www.ruexploring.com:80/GetBusinessInformation',
 			method: 'POST',
 			json: {
 				ID: this.props.userID,
@@ -36,7 +36,7 @@ var Settings = React.createClass({
 	},
 	updateGeneral: function(){
 		request({
-			url: 'http://localhost:8080/UpdateBusinessGeneral',
+			url: 'http://www.ruexploring.com:80/UpdateBusinessGeneral',
 			method: 'POST',
 			json: {
 				ID: this.props.userID,
@@ -63,7 +63,7 @@ var Settings = React.createClass({
 	},
 	updateAddress: function(){
 		request({
-			url: 'http://localhost:8080/UpdateBusinessAddress',
+			url: 'http://www.ruexploring.com:80/UpdateBusinessAddress',
 			method: 'POST',
 			json: {
 				ID: this.props.userID,
@@ -81,7 +81,7 @@ var Settings = React.createClass({
 	},
 	updateAll: function(){
 		request({
-			url: 'http://localhost:8080/UpdateBusinessAll',
+			url: 'http://www.ruexploring.com:80/UpdateBusinessAll',
 			method: 'POST',
 			json: {
 				ID: this.props.userID,

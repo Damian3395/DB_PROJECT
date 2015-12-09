@@ -10,7 +10,7 @@ var Profile = React.createClass({
 	},
 	componentWillMount: function(){
 		request({
-			url: 'http://localhost:8080/GetUserValidTickets',
+			url: 'http://www.ruexploring.com:80/GetUserValidTickets',
 			method: 'POST',
 			json: {
 				ID: this.props.userID
@@ -31,7 +31,7 @@ var Profile = React.createClass({
 	},
 	useCoupon: function(id){
 		request({
-			url: 'http://localhost:8080/UseTicket',
+			url: 'http://www.ruexploring.com:80/UseTicket',
 			method: 'POST',
 			json: {
 				ID: this.props.userID,
@@ -42,26 +42,6 @@ var Profile = React.createClass({
 				console.log(error);
 			}else{
 				console.log(response.statusCode, body);
-			}
-		}.bind(this));
-
-		request({
-			url: 'http://localhost:8080/GetUserValidTickets',
-			method: 'POST',
-			json: {
-				ID: this.props.userID
-			}
-		}, function(error, response, body){
-			if(error){
-				console.log(error);
-			}else{
-				console.log(response.statusCode, body);
-                if(body == "Active Coupons Does Not Exist"){
-					this.setState({tickets: body});
-				}else{
-					var objects = _.cloneDeep(body.coupons);
-					this.setState({tickets: objects});
-				}
 			}
 		}.bind(this));
 

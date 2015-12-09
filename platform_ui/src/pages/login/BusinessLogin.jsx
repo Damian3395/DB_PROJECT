@@ -5,7 +5,7 @@ var request = require('request');
 var BusinessLogin = React.createClass({
 	loginBusiness: function(state){
 		request({
-			url: 'http://localhost:8080/LoginBusiness',
+			url: 'http://www.ruexploring.com:80/LoginBusiness',
 			method: 'POST',
 			json: {
 				ID: $('#userID').val(),

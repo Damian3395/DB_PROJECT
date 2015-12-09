@@ -20,6 +20,10 @@ func UpdateBusinessGeneral(update util.UpdateGeneralBusiness_struct) (string, er
 	res := []struct {
 		A	string `json:"n.NAME"`
     }{}
+
+	res2 := []struct {
+		A	string `json:"n.NAME"`
+	}{}
 	
 	cq := neoism.CypherQuery{
     	Statement: `
@@ -41,7 +45,23 @@ func UpdateBusinessGeneral(update util.UpdateGeneralBusiness_struct) (string, er
 		return "Internal Service Error", err
 	}
 
-	if len(res) == 1 {
+	cq = neoism.CypherQuery{
+    	Statement: `
+        	MATCH (n:Coupon)
+       		WHERE n.ID = {user_id}
+        	SET	n.NAME = {name}
+			RETURN n.NAME
+    	`,
+    	Parameters: neoism.Props{"user_id": update.ID, "name": update.NAME},
+    	Result:     &res2,
+	}
+	err = database.Cypher(&cq)
+	if err != nil {
+		fmt.Printf("Error Cyphering To Database\n")
+		return "Internal Service Error", err
+	}
+
+	if len(res) == 1 && len(res2) == 1{
 		return "Success", nil
 	}
 
@@ -61,6 +81,10 @@ func UpdateBusinessAddress(update util.UpdateAddressBusiness_struct) (string, er
 	res := []struct {
 		A	string `json:"n.NAME"`
     }{}
+
+	res2 := []struct {
+		A	string `json:"n.NAME"`
+	}{}
 	
 	cq := neoism.CypherQuery{
     	Statement: `
@@ -79,7 +103,24 @@ func UpdateBusinessAddress(update util.UpdateAddressBusiness_struct) (string, er
 		return "Internal Service Error", err
 	}
 
-	if len(res) == 1 {
+	cq = neoism.CypherQuery{
+    	Statement: `
+        	MATCH (n:Coupon)
+       		WHERE n.ID = {user_id}
+        	SET n.ADDRESS = {address}, n.CAMPUS = {campus}
+			RETURN n.NAME
+    	`,
+    	Parameters: neoism.Props{"user_id": update.ID, "address": update.ADDRESS, "campus": update.CAMPUS},
+    	Result:     &res2,
+	}
+
+	err = database.Cypher(&cq)
+	if err != nil {
+		fmt.Printf("Error Cyphering To Database\n")
+		return "Internal Service Error", err
+	}
+
+	if len(res) == 1 && len(res2) == 1{
 		return "Success", nil
 	}
 
@@ -100,6 +141,10 @@ func UpdateBusinessAll(update util.Business_struct) (string, error){
 		A	string `json:"n.NAME"`
     }{}
 	
+	res2 := []struct{
+		A string `json:"n.NAME"`
+	}{}
+
 	cq := neoism.CypherQuery{
     	Statement: `
         	MATCH (n:Activity)
@@ -124,7 +169,25 @@ func UpdateBusinessAll(update util.Business_struct) (string, error){
 		return "Internal Service Error", err
 	}
 
-	if len(res) == 1 {
+	cq = neoism.CypherQuery{
+    	Statement: `
+        	MATCH (n:Coupon)
+       		WHERE n.ID = {user_id}
+        	SET n.ADDRESS = {address}, n.CAMPUS = {campus}, n.NAME = {name}
+			RETURN n.NAME
+    	`,
+    	Parameters: neoism.Props{"user_id": update.ID, "name": update.NAME, 
+									"address": update.ADDRESS, "campus": update.CAMPUS},
+    	Result:     &res2,
+	}
+
+	err = database.Cypher(&cq)
+	if err != nil {
+		fmt.Printf("Error Cyphering To Database\n")
+		return "Internal Service Error", err
+	}
+
+	if len(res) == 1 && len(res2) == 1 {
 		return "Success", nil
 	}
 

@@ -22,11 +22,11 @@ func getMatches(res *[]struct{A string `json:"n.ID"`}, query util.QuerySearch_st
     	MATCH (n:Activity)
 		WHERE n.NAME = {key_words} OR
 				n.MAIN_CATEGORY = {main} AND
-				n.SUB_CATEGORY = {sub} AND
-				n.CAMPUS = {campus} AND
-				n.MIN_AGE >= {min_age} AND
+				n.SUB_CATEGORY = {sub} OR
+				n.CAMPUS = {campus} OR
+				n.MIN_AGE >= {min_age} AND 
 				n.MAX_AGE <= {max_age} OR
-				n.MIN_PEOPLE >= {min_people} and
+				n.MIN_PEOPLE >= {min_people} AND
 				n.MAX_PEOPLE <= {max_people}
 		RETURN n.ID		
     `,

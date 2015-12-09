@@ -37,11 +37,11 @@ var Display = React.createClass({
                     </div>
             ;
 			}.bind(this));
-			DISPLAY = <div>{COUPONS}</div>;
+			DISPLAY = <div>{COUPONS}</div>
 		}
 		return(
 			<div>
-				{DISPLAY};
+				{DISPLAY}
 			</div>	
 		);
 	}
