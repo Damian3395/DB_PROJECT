@@ -7,16 +7,6 @@
 * Add PATH Environment Variable: 'export PATH=$PATH:/usr/local/go/bin'
 * Set GOPATH Environment Variable To Point To Workspace: 'export GOPATH=$HOME/"dir of workspace"'
 * Test: 'go version'
-###	Windows:
-* Install By Using MSI installer
-* Set Environment Path:
-	* Control Panel
-	* System and Security
-	* System
-	* Advanced System Settings
-	* Environment Variables
-	* Add The Directory Of The Go/Bin Folder Into System Variables PATH 
-* Test: 'go version'
 
 ## NPM/Node.js: [NodeJS](https://nodejs.org/en/download/)
 ###	Linux Ubuntu:
@@ -24,8 +14,6 @@
 * curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 * sudo apt-get install -yes nodejs
 * sudo apt-get install npm
-###	Windows:
-* Just Run Installer From Download Page
 
 ## Node Modules:
 * Open platform_ui directory
@@ -49,25 +37,16 @@
 * npm install request -g --save-dev
 * npm install request --save-dev
 
+## Start Backend Services
+* sudo -s
+* source start.sh
+
 ## Setup BackEnd:
 ###	Linux Ubuntu:
 * Open platform directory
 * Compile Code: 'make'
 * Run Server: './server'
-###	Windows:
-* Open platform directory
-* Compile code: 'go build server.go'
-* Run Server: 'server.exe'
 
-##	Setup FrontEnd:
+## Setup FrontEnd:
 * Open platform directory
 * 'gulp build'
-
-##	How To Submit Work To GitHub
-* git add --all
-* git commit -m "What Work Are You Committing"
-* git push origin master
-
-## How To Update Local Repository
-* git pull master origin
-* make sure to update any environment changes
